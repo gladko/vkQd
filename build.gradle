@@ -1,0 +1,53 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+//plugins {
+//    id 'io.franzbecker.gradle-lombok' version '1.14'
+//}
+//
+//lombok {
+//    version = "$lombokVersion"
+//    sha256 = ''
+//}
+
+allprojects {
+    group = 'vk.vkPets'
+    version = '0.0.1'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+
+    dependencies {
+        implementation ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
+        implementation ("com.devexperts.qd:dxlib:${qdsVersion}")
+        implementation ("com.devexperts.qd:mars:${qdsVersion}")
+        implementation ("com.devexperts.qd:qds:${qdsVersion}")
+        implementation ("com.devexperts.qd:qds-file:${qdsVersion}")
+        implementation ("com.devexperts.qd:qds-monitoring:${qdsVersion}")
+        implementation ("com.devexperts.qd:qds-tools:${qdsVersion}")
+
+//    implementation files("../libs/${qdsVersion}/dxfeed-api-${qdsVersion}.jar")
+//    implementation files("../libs/${qdsVersion}/dxlib-${qdsVersion}.jar")
+//    implementation files("../libs/${qdsVersion}/mars-${qdsVersion}.jar")
+//    implementation files("../libs/${qdsVersion}/qds-${qdsVersion}.jar")
+//    implementation files("../libs/${qdsVersion}/qds-file-${qdsVersion}.jar")
+//    implementation files("../libs/${qdsVersion}/qds-monitoring-${qdsVersion}.jar")
+//    implementation files("../libs/${qdsVersion}/qds-tools-${qdsVersion}.jar")
+
+        compileOnly 'org.jetbrains:annotations:19.0.0'
+        testCompileOnly 'org.jetbrains:annotations:19.0.0'
+    }
+}

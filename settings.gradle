@@ -1,0 +1,3 @@
+include 'qdIntro'
+include 'qdApp'
+include 'qdPerfBench'
