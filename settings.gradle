@@ -1,3 +1,5 @@
 include 'qdIntro'
 include 'qdApp'
 include 'qdPerfBench'
+include 'tools'
+

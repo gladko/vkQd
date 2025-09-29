@@ -8,5 +8,8 @@ for lib in "qds-tools" "qds" "dxlib" "qds-file" "mars" "qds-monitoring" "dxfeed-
   QDS_PATH="$QDS_PATH;$QDS_LIBS_DIR$lib$QDS_SUFFIX"
 done
 
+# add custom tools
+QDS_PATH="$QDS_PATH;tools/build/libs/vk-qds-tools-0.0.1.jar"
+
 echo "using QDS_PATH: $QDS_PATH"
 java -cp "$QDS_PATH" com.devexperts.qd.tools.Tools "$@"

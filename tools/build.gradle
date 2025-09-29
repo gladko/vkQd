@@ -1,0 +1,13 @@
+//jar {
+//    manifest{
+//        attributes ("Fw-Version" : "2.50.00", "${parent.manifestSectionName}")
+//    }
+//    baseName 'vk-qds-tools'
+
+//    archiveName 'vk-qds-tools'
+
+//}
+
+tasks.jar {
+    archiveBaseName.set("vk-qds-tools")
+}
