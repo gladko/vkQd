@@ -1,10 +1,14 @@
 package com.devexperts.qd.tools;
 
 import com.devexperts.logging.Logging;
-import com.devexperts.qd.*;
-import com.devexperts.qd.ng.RecordBuffer;
+import com.devexperts.qd.DataScheme;
+import com.devexperts.qd.QDFilter;
+import com.devexperts.qd.SubscriptionIterator;
 import com.devexperts.qd.ng.RecordProvider;
-import com.devexperts.qd.qtp.*;
+import com.devexperts.qd.qtp.MessageAdapter;
+import com.devexperts.qd.qtp.MessageType;
+import com.devexperts.qd.qtp.MessageVisitor;
+import com.devexperts.qd.qtp.ProtocolDescriptor;
 import com.devexperts.qd.stats.QDStats;
 
 
@@ -12,47 +16,36 @@ public class VkNetTestProducerAdapter extends MessageAdapter {
     private static final Logging log = Logging.getLogging(VkNetTestProducerAdapter.class);
 
     public static class Factory extends ConfigurableFactory {
-        private final RecordProvider recordProvider;
-        private final long publishingPeriod;
+        private final RecordProvider dataGenerator;
         private final Stat stat;
 
-        Factory(RecordProvider recordProvider, long publishingPeriod, Stat stat) {
-//            super(ticker, null, null, null);
-            this.recordProvider = recordProvider;
-            this.publishingPeriod = publishingPeriod;
+        Factory(RecordProvider dataGenerator, Stat stat) {
+            this.dataGenerator = dataGenerator;
             this.stat = stat;
         }
 
         @Override
         public MessageAdapter createAdapter(QDStats stats) {
-            return new VkNetTestProducerAdapter(stats, stat, recordProvider, publishingPeriod, QDFilter.ANYTHING);
+            return new VkNetTestProducerAdapter(stats, stat, dataGenerator, QDFilter.ANYTHING);
         }
     }
 
-    private final Stat stat;
-    private final RecordProvider recordProvider;
+
+    private final RecordProvider dataGenerator;
     // kind of data generation trigger
     private volatile boolean receivedProtocolDescriptor;
     private final QDFilter filter;
-    private final long publishingPeriod;
 
 
-    VkNetTestProducerAdapter(QDStats stats, Stat stat, RecordProvider recordProvider, long publishingPeriod, QDFilter filter) {
+    VkNetTestProducerAdapter(QDStats stats, Stat stat, RecordProvider dataGenerator, QDFilter filter) {
         super(null, stats);
         this.doNotCloseOnErrors = true; // special mode to decode even bad stuff
 
         this.filter = filter;
-        this.recordProvider = recordProvider;
-        this.publishingPeriod = publishingPeriod;
-        this.stat = stat;
+        this.dataGenerator = dataGenerator;
         useDescribeProtocol();
         addMask(getMessageMask(VkNetTest.SUBSCRIPTION_TYPE));
         offerData();
-
-//        if (publishingPeriod > 0) {
-//            Executors.newSingleThreadScheduledExecutor().scheduleWithFixedDelay(
-//                    this::offerData, 0, publishingPeriod, TimeUnit.MILLISECONDS);
-//        }
     }
 
     // notifies TransportConnection that there is data to send.
@@ -90,11 +83,8 @@ public class VkNetTestProducerAdapter extends MessageAdapter {
 
     @Override
     public void processDescribeProtocol(ProtocolDescriptor desc, boolean logDescriptor) {
-        super.processDescribeProtocol(desc, logDescriptor);
+        super.processDescribeProtocol(desc, true);
         receivedProtocolDescriptor = true;
-//        if (publishingPeriod <= 0) {
-//            offerData();
-//        }
         notifyListener();
     }
 
@@ -104,7 +94,7 @@ public class VkNetTestProducerAdapter extends MessageAdapter {
         int c = 0;
         while (iterator.nextRecord() != null)
             c++;
-        log.warn("Ignored " + c + " " + message + " messages");
+        log.debug("Ignored " + c + " " + message + " messages");
     }
 
     @Override
@@ -119,17 +109,11 @@ public class VkNetTestProducerAdapter extends MessageAdapter {
             return false;
         }
 
-        generateData(visitor);
-        return true;
-    }
+        visitor.visitData(dataGenerator, VkNetTest.DATA_TYPE);
 
-    private void generateData(MessageVisitor visitor) {
-        RecordBuffer buffer = RecordBuffer.getInstance();
-        recordProvider.retrieve(buffer);
-        stat.counter.addAndGet(buffer.size());
-        visitor.visitData(buffer, VkNetTest.DATA_TYPE);
-        buffer.release();
-
-//        System.out.println(stat.counter.get());
+        // returning false to finish current iteration and send data but
+        // at the same time immediately notify that new data is already available and may be retrieved
+        addMask(getMessageMask(VkNetTest.DATA_TYPE));
+        return false;
     }
 }

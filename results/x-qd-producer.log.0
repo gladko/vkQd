@@ -1,0 +1,357 @@
+W 250929 180235.868 [main] Options - DEPRECATED option -l|--log <file> is used. Use -Dlog.file=<file> option.
+I 250929 180235.935 [main] QDFactory - Using scheme com.dxfeed.api.impl.DXFeedScheme LAsqQr-Pl_jjxtG3Vc9tGPt9RbSTKSKKdi525y8pEw4
+I 250929 180236.571 [main] NetTestSide - 1000000 random symbols were generated (including 24547 not coded)
+I 250929 180236.571 [main] NetTestSide - Using record TimeAndSale
+I 250929 180236.693 [main] MARS - Started time synchronization tracker using multicast 239.192.51.45:5145 with xpmVy
+I 250929 180236.733 [main] MARS - Started JVM self-monitoring
+I 250929 180236.733 [main] MonitoringEndpoint - nettest.1 MonitoringEndpoint with monitoring.stat=PT10S
+I 250929 180236.746 [main] MonitoringEndpoint - Log striped connectors: false
+I 250929 180236.748 [main] MonitoredQDEndpoint - nettest.1 with collectors [Ticker]
+I 250929 180236.818 [main] ServerSocket-Agent - Starting ServerSocketConnector to *:7003
+I 250929 180236.820 [main] ServerSocket-Agent - Acceptor started for address: *:7003
+I 250929 180236.820 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Trying to listen at *:7003
+I 250929 180236.825 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Listening at *:7003
+I 250929 180249.903 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Accepted client socket connection: 0:0:0:0:0:0:0:1:59767->0:0:0:0:0:0:0:1:7003
+I 250929 180249.910 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Accepted client socket connection: 127.0.0.1:59771->127.0.0.1:7003
+I 250929 180249.912 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Accepted client socket connection: 127.0.0.1:59770->127.0.0.1:7003
+I 250929 180249.913 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Accepted client socket connection: 0:0:0:0:0:0:0:1:59769->0:0:0:0:0:0:0:1:7003
+I 250929 180249.914 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Accepted client socket connection: 127.0.0.1:59768->127.0.0.1:7003
+I 250929 180249.914 [ServerSocket-Agent-:7003-Acceptor] ServerSocketConnector - Accepted client socket connection: 0:0:0:0:0:0:0:1:59772->0:0:0:0:0:0:0:1:7003
+I 250929 180249.953 [0:0:0:0:0:0:0:1:59769->0:0:0:0:0:0:0:1:7003-Reader] MessageAdapter - Agent received protocol descriptor nettest.4@qdwnA [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, ADDSUB, REMSUB] from 0:0:0:0:0:0:0:1
+I 250929 180249.953 [127.0.0.1:59768->127.0.0.1:7003-Reader] MessageAdapter - Agent received protocol descriptor nettest.3@qdwnA [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, ADDSUB, REMSUB] from 127.0.0.1
+I 250929 180249.953 [0:0:0:0:0:0:0:1:59772->0:0:0:0:0:0:0:1:7003-Reader] MessageAdapter - Agent received protocol descriptor nettest.6@qdwnA [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, ADDSUB, REMSUB] from 0:0:0:0:0:0:0:1
+I 250929 180249.953 [0:0:0:0:0:0:0:1:59767->0:0:0:0:0:0:0:1:7003-Reader] MessageAdapter - Agent received protocol descriptor nettest.2@qdwnA [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, ADDSUB, REMSUB] from 0:0:0:0:0:0:0:1
+I 250929 180249.953 [127.0.0.1:59771->127.0.0.1:7003-Reader] MessageAdapter - Agent received protocol descriptor nettest.1@qdwnA [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, ADDSUB, REMSUB] from 127.0.0.1
+I 250929 180249.953 [127.0.0.1:59770->127.0.0.1:7003-Reader] MessageAdapter - Agent received protocol descriptor nettest.5@qdwnA [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, ADDSUB, REMSUB] from 127.0.0.1
+I 250929 180250.036 {nettest.1} Subscription: 7,700; Storage: 7; Buffer: 0; Dropped: 0; Read: 7,324 Bps (sub 1,674 rps); Write: 133 Bps (data 1 rps lag 1,917 us); rtt 4,987 us; TOP bytes read TimeAndSale: 98%; write TimeAndSale: 35%; CPU: 8.57%
+    ServerSocket-Agent *:7003 [6] Read: 7,324 Bps (sub 1,674 rps); Write: 133 Bps (data 1 rps lag 1,917 us); rtt 4,987 us; TOP bytes read TimeAndSale: 98%; write TimeAndSale: 35%
+I 250929 180300.064 {nettest.1} Subscription: 1,000,000; Storage: 744,107; Buffer: 0; Dropped: 0; Read: 2,820,481 Bps (sub 596,826 rps); Write: 32,627,927 Bps (data 793,474 rps lag 164 us); rtt 313,690 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 99%; CPU: 21.48%
+    ServerSocket-Agent *:7003 [6] Read: 2,820,481 Bps (sub 596,826 rps); Write: 32,627,927 Bps (data 793,474 rps lag 164 us); rtt 313,690 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 99%
+I 250929 180300.064 {*nettest*} 236737 RPS (6 connections)
+I 250929 180310.003 {nettest.1} Subscription: 1,000,000; Storage: 997,188; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 112,819,023 Bps (data 2,739,672 rps lag 86 us); rtt 182,154 us; TOP bytes write TimeAndSale: 100%; CPU: 23.88%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 112,819,023 Bps (data 2,739,672 rps lag 86 us); rtt 182,154 us; TOP bytes write TimeAndSale: 100%
+I 250929 180310.003 {*nettest*} 451353 RPS (6 connections)
+I 250929 180320.003 {nettest.1} Subscription: 1,000,000; Storage: 999,963; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 107,437,799 Bps (data 2,609,079 rps lag 80 us); rtt 518 us; TOP bytes write TimeAndSale: 100%; CPU: 22.40%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 107,437,799 Bps (data 2,609,079 rps lag 80 us); rtt 518 us; TOP bytes write TimeAndSale: 100%
+I 250929 180320.003 {*nettest*} 435100 RPS (6 connections)
+I 250929 180330.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 109,050,975 Bps (data 2,648,243 rps lag 84 us); rtt 495 us; TOP bytes write TimeAndSale: 100%; CPU: 24.04%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 109,050,975 Bps (data 2,648,243 rps lag 84 us); rtt 495 us; TOP bytes write TimeAndSale: 100%
+I 250929 180330.003 {*nettest*} 441600 RPS (6 connections)
+I 250929 180340.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 106,661,709 Bps (data 2,590,189 rps lag 87 us); rtt 404 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 23.62%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 106,661,709 Bps (data 2,590,189 rps lag 87 us); rtt 404 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180340.005 {*nettest*} 431913 RPS (6 connections)
+I 250929 180350.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 89,586,282 Bps (data 2,175,477 rps lag 98 us); rtt 386 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 22.69%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 89,586,282 Bps (data 2,175,477 rps lag 98 us); rtt 386 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180350.004 {*nettest*} 362736 RPS (6 connections)
+I 250929 180400.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 92,775,768 Bps (data 2,252,906 rps lag 100 us); rtt 457 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.33%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 92,775,768 Bps (data 2,252,906 rps lag 100 us); rtt 457 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180400.003 {*nettest*} 375737 RPS (6 connections)
+I 250929 180410.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 101,632,413 Bps (data 2,468,053 rps lag 116 us); rtt 759 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.97%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 101,632,413 Bps (data 2,468,053 rps lag 116 us); rtt 759 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180410.005 {*nettest*} 411517 RPS (6 connections)
+I 250929 180420.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 113,511,460 Bps (data 2,756,510 rps lag 103 us); rtt 642 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.50%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 113,511,460 Bps (data 2,756,510 rps lag 103 us); rtt 642 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180420.003 {*nettest*} 459691 RPS (6 connections)
+I 250929 180430.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 119,205,996 Bps (data 2,894,890 rps lag 101 us); rtt 384 us; TOP bytes write TimeAndSale: 100%; CPU: 30.67%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 119,205,996 Bps (data 2,894,890 rps lag 101 us); rtt 384 us; TOP bytes write TimeAndSale: 100%
+I 250929 180430.004 {*nettest*} 482751 RPS (6 connections)
+I 250929 180440.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 102,225,805 Bps (data 2,482,297 rps lag 111 us); rtt 411 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.97%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 102,225,805 Bps (data 2,482,297 rps lag 111 us); rtt 411 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180440.004 {*nettest*} 413800 RPS (6 connections)
+I 250929 180450.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 110,402,011 Bps (data 2,680,929 rps lag 106 us); rtt 436 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.60%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 110,402,011 Bps (data 2,680,929 rps lag 106 us); rtt 436 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180450.002 {*nettest*} 447189 RPS (6 connections)
+I 250929 180500.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 112,491,055 Bps (data 2,731,657 rps lag 105 us); rtt 318 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.91%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 112,491,055 Bps (data 2,731,657 rps lag 105 us); rtt 318 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180500.004 {*nettest*} 455508 RPS (6 connections)
+I 250929 180510.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 108,929,045 Bps (data 2,645,207 rps lag 103 us); rtt 288 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.48%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 108,929,045 Bps (data 2,645,207 rps lag 103 us); rtt 288 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180510.002 {*nettest*} 440988 RPS (6 connections)
+I 250929 180520.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 112,735,525 Bps (data 2,737,630 rps lag 98 us); rtt 299 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.98%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 112,735,525 Bps (data 2,737,630 rps lag 98 us); rtt 299 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180520.005 {*nettest*} 456563 RPS (6 connections)
+I 250929 180530.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 102,283,581 Bps (data 2,483,835 rps lag 104 us); rtt 349 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.42%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 102,283,581 Bps (data 2,483,835 rps lag 104 us); rtt 349 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180530.002 {*nettest*} 414124 RPS (6 connections)
+I 250929 180540.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 105,528,518 Bps (data 2,560,413 rps lag 106 us); rtt 376 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.82%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 105,528,518 Bps (data 2,560,413 rps lag 106 us); rtt 376 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180540.003 {*nettest*} 426957 RPS (6 connections)
+I 250929 180550.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 103,515,467 Bps (data 2,454,183 rps lag 109 us); rtt 346 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.41%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 103,515,467 Bps (data 2,454,183 rps lag 109 us); rtt 346 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180550.004 {*nettest*} 409259 RPS (6 connections)
+I 250929 180600.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 112,055,320 Bps (data 2,656,477 rps lag 104 us); rtt 381 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.01%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 112,055,320 Bps (data 2,656,477 rps lag 104 us); rtt 381 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180600.003 {*nettest*} 443044 RPS (6 connections)
+I 250929 180610.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 101,568,784 Bps (data 2,407,992 rps lag 109 us); rtt 376 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.74%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 101,568,784 Bps (data 2,407,992 rps lag 109 us); rtt 376 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180610.003 {*nettest*} 401400 RPS (6 connections)
+I 250929 180620.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 120,712,988 Bps (data 2,861,840 rps lag 98 us); rtt 322 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.25%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 120,712,988 Bps (data 2,861,840 rps lag 98 us); rtt 322 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180620.004 {*nettest*} 477352 RPS (6 connections)
+I 250929 180630.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 130,928,726 Bps (data 3,104,068 rps lag 90 us); rtt 339 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.96%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 130,928,726 Bps (data 3,104,068 rps lag 90 us); rtt 339 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180630.001 {*nettest*} 517555 RPS (6 connections)
+I 250929 180640.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 92,255,988 Bps (data 2,187,238 rps lag 110 us); rtt 328 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 23.91%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 92,255,988 Bps (data 2,187,238 rps lag 110 us); rtt 328 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180640.003 {*nettest*} 364727 RPS (6 connections)
+I 250929 180650.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 112,450,041 Bps (data 2,665,985 rps lag 98 us); rtt 387 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.79%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 112,450,041 Bps (data 2,665,985 rps lag 98 us); rtt 387 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180650.003 {*nettest*} 444600 RPS (6 connections)
+I 250929 180700.006 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 91,075,650 Bps (data 2,159,200 rps lag 115 us); rtt 379 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.89%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 91,075,650 Bps (data 2,159,200 rps lag 115 us); rtt 379 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180700.007 {*nettest*} 359956 RPS (6 connections)
+I 250929 180710.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 106,487,178 Bps (data 2,524,559 rps lag 104 us); rtt 335 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.63%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 106,487,178 Bps (data 2,524,559 rps lag 104 us); rtt 335 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180710.002 {*nettest*} 421110 RPS (6 connections)
+I 250929 180720.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 107,572,762 Bps (data 2,550,268 rps lag 105 us); rtt 389 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.88%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 107,572,762 Bps (data 2,550,268 rps lag 105 us); rtt 389 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180720.003 {*nettest*} 425157 RPS (6 connections)
+I 250929 180730.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 102,803,159 Bps (data 2,437,274 rps lag 110 us); rtt 426 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.67%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 102,803,159 Bps (data 2,437,274 rps lag 110 us); rtt 426 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180730.003 {*nettest*} 406400 RPS (6 connections)
+I 250929 180740.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 73,805,666 Bps (data 1,749,764 rps lag 142 us); rtt 497 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 22.24%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 73,805,666 Bps (data 1,749,764 rps lag 142 us); rtt 497 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180740.002 {*nettest*} 291829 RPS (6 connections)
+I 250929 180750.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 101,158,246 Bps (data 2,398,214 rps lag 106 us); rtt 376 us; TOP bytes write TimeAndSale: 100%; CPU: 24.68%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 101,158,246 Bps (data 2,398,214 rps lag 106 us); rtt 376 us; TOP bytes write TimeAndSale: 100%
+I 250929 180750.003 {*nettest*} 399960 RPS (6 connections)
+I 250929 180800.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 101,425,850 Bps (data 2,404,572 rps lag 111 us); rtt 327 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.80%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 101,425,850 Bps (data 2,404,572 rps lag 111 us); rtt 327 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180800.003 {*nettest*} 401000 RPS (6 connections)
+I 250929 180810.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 74,431,493 Bps (data 1,764,624 rps lag 132 us); rtt 576 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 23.66%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 74,431,493 Bps (data 1,764,624 rps lag 132 us); rtt 576 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180810.002 {*nettest*} 294129 RPS (6 connections)
+I 250929 180820.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 69,249,140 Bps (data 1,641,781 rps lag 148 us); rtt 862 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 21.32%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 69,249,140 Bps (data 1,641,781 rps lag 148 us); rtt 862 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180820.004 {*nettest*} 273845 RPS (6 connections)
+I 250929 180830.011 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 91,230,545 Bps (data 2,162,855 rps lag 121 us); rtt 460 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.98%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 91,230,545 Bps (data 2,162,855 rps lag 121 us); rtt 460 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180830.011 {*nettest*} 360747 RPS (6 connections)
+I 250929 180840.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 106,062,336 Bps (data 2,514,510 rps lag 107 us); rtt 404 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.68%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 106,062,336 Bps (data 2,514,510 rps lag 107 us); rtt 404 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180840.004 {*nettest*} 419293 RPS (6 connections)
+I 250929 180850.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 90,795,469 Bps (data 2,152,595 rps lag 110 us); rtt 585 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.07%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 90,795,469 Bps (data 2,152,595 rps lag 110 us); rtt 585 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180850.002 {*nettest*} 358971 RPS (6 connections)
+I 250929 180900.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 115,955,412 Bps (data 2,749,014 rps lag 94 us); rtt 525 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.85%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 115,955,412 Bps (data 2,749,014 rps lag 94 us); rtt 525 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180900.003 {*nettest*} 458354 RPS (6 connections)
+I 250929 180910.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 115,775,652 Bps (data 2,744,751 rps lag 98 us); rtt 334 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.37%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 115,775,652 Bps (data 2,744,751 rps lag 98 us); rtt 334 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180910.002 {*nettest*} 457645 RPS (6 connections)
+I 250929 180920.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 90,581,013 Bps (data 2,147,439 rps lag 118 us); rtt 483 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.76%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 90,581,013 Bps (data 2,147,439 rps lag 118 us); rtt 483 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180920.002 {*nettest*} 358100 RPS (6 connections)
+I 250929 180930.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 109,859,036 Bps (data 2,604,566 rps lag 102 us); rtt 543 us; TOP bytes write TimeAndSale: 100%; CPU: 27.99%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 109,859,036 Bps (data 2,604,566 rps lag 102 us); rtt 543 us; TOP bytes write TimeAndSale: 100%
+I 250929 180930.003 {*nettest*} 434356 RPS (6 connections)
+I 250929 180940.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 113,950,509 Bps (data 2,701,435 rps lag 101 us); rtt 320 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 30.49%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 113,950,509 Bps (data 2,701,435 rps lag 101 us); rtt 320 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180940.004 {*nettest*} 450454 RPS (6 connections)
+I 250929 180950.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 108,790,352 Bps (data 2,579,200 rps lag 103 us); rtt 361 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.70%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 108,790,352 Bps (data 2,579,200 rps lag 103 us); rtt 361 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 180950.003 {*nettest*} 430043 RPS (6 connections)
+I 250929 181000.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 115,413,492 Bps (data 2,736,142 rps lag 96 us); rtt 303 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.68%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 115,413,492 Bps (data 2,736,142 rps lag 96 us); rtt 303 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181000.003 {*nettest*} 456300 RPS (6 connections)
+I 250929 181010.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 118,470,930 Bps (data 2,808,648 rps lag 91 us); rtt 317 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.89%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 118,470,930 Bps (data 2,808,648 rps lag 91 us); rtt 317 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181010.003 {*nettest*} 468400 RPS (6 connections)
+I 250929 181020.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 100,488,536 Bps (data 2,382,347 rps lag 103 us); rtt 432 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.79%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 100,488,536 Bps (data 2,382,347 rps lag 103 us); rtt 432 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181020.003 {*nettest*} 397200 RPS (6 connections)
+I 250929 181030.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 109,100,402 Bps (data 2,586,446 rps lag 103 us); rtt 509 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.23%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 109,100,402 Bps (data 2,586,446 rps lag 103 us); rtt 509 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181030.003 {*nettest*} 431200 RPS (6 connections)
+I 250929 181040.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 106,905,225 Bps (data 2,534,425 rps lag 104 us); rtt 370 us; TOP bytes write TimeAndSale: 100%; CPU: 27.93%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 106,905,225 Bps (data 2,534,425 rps lag 104 us); rtt 370 us; TOP bytes write TimeAndSale: 100%
+I 250929 181040.003 {*nettest*} 422700 RPS (6 connections)
+I 250929 181050.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 111,133,957 Bps (data 2,634,744 rps lag 102 us); rtt 436 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.59%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 111,133,957 Bps (data 2,634,744 rps lag 102 us); rtt 436 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181050.004 {*nettest*} 439356 RPS (6 connections)
+I 250929 181100.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 114,751,705 Bps (data 2,720,574 rps lag 100 us); rtt 453 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.64%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 114,751,705 Bps (data 2,720,574 rps lag 100 us); rtt 453 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181100.004 {*nettest*} 453600 RPS (6 connections)
+I 250929 181110.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 120,978,713 Bps (data 2,868,071 rps lag 95 us); rtt 326 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.99%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 120,978,713 Bps (data 2,868,071 rps lag 95 us); rtt 326 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181110.003 {*nettest*} 478247 RPS (6 connections)
+I 250929 181120.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 120,553,710 Bps (data 2,858,104 rps lag 94 us); rtt 343 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.29%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 120,553,710 Bps (data 2,858,104 rps lag 94 us); rtt 343 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181120.004 {*nettest*} 476552 RPS (6 connections)
+I 250929 181130.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 114,615,177 Bps (data 2,717,231 rps lag 100 us); rtt 362 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.60%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 114,615,177 Bps (data 2,717,231 rps lag 100 us); rtt 362 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181130.004 {*nettest*} 453145 RPS (6 connections)
+I 250929 181140.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 115,820,692 Bps (data 2,745,759 rps lag 99 us); rtt 361 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.43%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 115,820,692 Bps (data 2,745,759 rps lag 99 us); rtt 361 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181140.001 {*nettest*} 457891 RPS (6 connections)
+I 250929 181150.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 113,801,605 Bps (data 2,698,038 rps lag 99 us); rtt 312 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.88%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 113,801,605 Bps (data 2,698,038 rps lag 99 us); rtt 312 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181150.001 {*nettest*} 449900 RPS (6 connections)
+I 250929 181200.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 123,482,137 Bps (data 2,927,437 rps lag 91 us); rtt 324 us; TOP bytes write TimeAndSale: 100%; CPU: 28.00%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 123,482,137 Bps (data 2,927,437 rps lag 91 us); rtt 324 us; TOP bytes write TimeAndSale: 100%
+I 250929 181200.004 {*nettest*} 488153 RPS (6 connections)
+I 250929 181210.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 126,367,012 Bps (data 2,995,865 rps lag 89 us); rtt 354 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.38%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 126,367,012 Bps (data 2,995,865 rps lag 89 us); rtt 354 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181210.002 {*nettest*} 499499 RPS (6 connections)
+I 250929 181220.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 100,014,394 Bps (data 2,371,188 rps lag 106 us); rtt 333 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.71%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 100,014,394 Bps (data 2,371,188 rps lag 106 us); rtt 333 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181220.002 {*nettest*} 395400 RPS (6 connections)
+I 250929 181230.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 105,350,451 Bps (data 2,497,706 rps lag 105 us); rtt 318 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.29%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 105,350,451 Bps (data 2,497,706 rps lag 105 us); rtt 318 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181230.002 {*nettest*} 416500 RPS (6 connections)
+I 250929 181240.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 102,954,773 Bps (data 2,440,846 rps lag 105 us); rtt 298 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.52%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 102,954,773 Bps (data 2,440,846 rps lag 105 us); rtt 298 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181240.003 {*nettest*} 407059 RPS (6 connections)
+I 250929 181250.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 110,694,801 Bps (data 2,624,347 rps lag 102 us); rtt 344 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.18%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 110,694,801 Bps (data 2,624,347 rps lag 102 us); rtt 344 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181250.004 {*nettest*} 437556 RPS (6 connections)
+I 250929 181300.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 102,262,841 Bps (data 2,424,479 rps lag 107 us); rtt 400 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.74%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 102,262,841 Bps (data 2,424,479 rps lag 107 us); rtt 400 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181300.002 {*nettest*} 404380 RPS (6 connections)
+I 250929 181310.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 120,044,657 Bps (data 2,846,078 rps lag 92 us); rtt 310 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.52%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 120,044,657 Bps (data 2,846,078 rps lag 92 us); rtt 310 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181310.003 {*nettest*} 474552 RPS (6 connections)
+I 250929 181320.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 123,256,841 Bps (data 2,922,242 rps lag 91 us); rtt 238 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.42%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 123,256,841 Bps (data 2,922,242 rps lag 91 us); rtt 238 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181320.003 {*nettest*} 487300 RPS (6 connections)
+I 250929 181330.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 117,686,099 Bps (data 2,790,091 rps lag 97 us); rtt 257 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.65%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 117,686,099 Bps (data 2,790,091 rps lag 97 us); rtt 257 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181330.002 {*nettest*} 465146 RPS (6 connections)
+I 250929 181340.000 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 108,284,252 Bps (data 2,567,162 rps lag 103 us); rtt 327 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.76%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 108,284,252 Bps (data 2,567,162 rps lag 103 us); rtt 327 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181340.001 {*nettest*} 428142 RPS (6 connections)
+I 250929 181350.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 111,838,575 Bps (data 2,651,484 rps lag 102 us); rtt 312 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.56%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 111,838,575 Bps (data 2,651,484 rps lag 102 us); rtt 312 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181350.003 {*nettest*} 442111 RPS (6 connections)
+I 250929 181400.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 100,328,674 Bps (data 2,378,606 rps lag 110 us); rtt 304 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.30%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 100,328,674 Bps (data 2,378,606 rps lag 110 us); rtt 304 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181400.003 {*nettest*} 396600 RPS (6 connections)
+I 250929 181410.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 114,119,916 Bps (data 2,705,538 rps lag 100 us); rtt 320 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.64%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 114,119,916 Bps (data 2,705,538 rps lag 100 us); rtt 320 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181410.003 {*nettest*} 451300 RPS (6 connections)
+I 250929 181420.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 121,216,106 Bps (data 2,873,762 rps lag 94 us); rtt 330 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.71%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 121,216,106 Bps (data 2,873,762 rps lag 94 us); rtt 330 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181420.004 {*nettest*} 479052 RPS (6 connections)
+I 250929 181430.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 128,373,210 Bps (data 3,043,536 rps lag 88 us); rtt 384 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.24%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 128,373,210 Bps (data 3,043,536 rps lag 88 us); rtt 384 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181430.003 {*nettest*} 507550 RPS (6 connections)
+I 250929 181440.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 114,564,735 Bps (data 2,715,997 rps lag 97 us); rtt 303 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.18%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 114,564,735 Bps (data 2,715,997 rps lag 97 us); rtt 303 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181440.002 {*nettest*} 452945 RPS (6 connections)
+I 250929 181450.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 103,925,652 Bps (data 2,463,800 rps lag 107 us); rtt 347 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.76%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 103,925,652 Bps (data 2,463,800 rps lag 107 us); rtt 347 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181450.002 {*nettest*} 410800 RPS (6 connections)
+I 250929 181500.009 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 85,553,184 Bps (data 2,028,386 rps lag 217 us); rtt 526 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 45.28%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 85,553,184 Bps (data 2,028,386 rps lag 217 us); rtt 526 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181500.009 {*nettest*} 338563 RPS (6 connections)
+I 250929 181510.005 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 121,165,106 Bps (data 2,872,633 rps lag 131 us); rtt 702 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 36.78%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 121,165,106 Bps (data 2,872,633 rps lag 131 us); rtt 702 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181510.005 {*nettest*} 479391 RPS (6 connections)
+I 250929 181520.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 117,568,085 Bps (data 2,787,303 rps lag 132 us); rtt 642 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 36.03%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 117,568,085 Bps (data 2,787,303 rps lag 132 us); rtt 642 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181520.003 {*nettest*} 464992 RPS (6 connections)
+I 250929 181530.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 125,824,486 Bps (data 2,983,212 rps lag 127 us); rtt 632 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 37.49%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 125,824,486 Bps (data 2,983,212 rps lag 127 us); rtt 632 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181530.002 {*nettest*} 497549 RPS (6 connections)
+I 250929 181540.014 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 124,708,724 Bps (data 2,956,630 rps lag 129 us); rtt 563 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 36.52%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 124,708,724 Bps (data 2,956,630 rps lag 129 us); rtt 563 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181540.014 {*nettest*} 493308 RPS (6 connections)
+I 250929 181550.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 125,569,347 Bps (data 2,977,144 rps lag 143 us); rtt 1,325 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 35.18%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 125,569,347 Bps (data 2,977,144 rps lag 143 us); rtt 1,325 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181550.003 {*nettest*} 497347 RPS (6 connections)
+I 250929 181600.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 102,348,186 Bps (data 2,426,435 rps lag 108 us); rtt 1,526 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.63%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 102,348,186 Bps (data 2,426,435 rps lag 108 us); rtt 1,526 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181600.002 {*nettest*} 404740 RPS (6 connections)
+I 250929 181610.000 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 96,064,561 Bps (data 2,277,537 rps lag 105 us); rtt 361 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.37%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 96,064,561 Bps (data 2,277,537 rps lag 105 us); rtt 361 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181610.000 {*nettest*} 379675 RPS (6 connections)
+I 250929 181620.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 105,716,574 Bps (data 2,506,337 rps lag 103 us); rtt 407 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.37%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 105,716,574 Bps (data 2,506,337 rps lag 103 us); rtt 407 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181620.004 {*nettest*} 418032 RPS (6 connections)
+I 250929 181630.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 87,872,504 Bps (data 2,083,206 rps lag 115 us); rtt 376 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.46%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 87,872,504 Bps (data 2,083,206 rps lag 115 us); rtt 376 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181630.002 {*nettest*} 347369 RPS (6 connections)
+I 250929 181640.029 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 105,627,667 Bps (data 2,504,192 rps lag 105 us); rtt 403 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.67%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 105,627,667 Bps (data 2,504,192 rps lag 105 us); rtt 403 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181640.033 {*nettest*} 417306 RPS (6 connections)
+I 250929 181650.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 96,192,218 Bps (data 2,280,621 rps lag 110 us); rtt 381 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.47%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 96,192,218 Bps (data 2,280,621 rps lag 110 us); rtt 381 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181650.003 {*nettest*} 380441 RPS (6 connections)
+I 250929 181700.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 99,872,535 Bps (data 2,367,667 rps lag 110 us); rtt 411 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.67%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 99,872,535 Bps (data 2,367,667 rps lag 110 us); rtt 411 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181700.003 {*nettest*} 394800 RPS (6 connections)
+I 250929 181710.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 103,535,720 Bps (data 2,454,500 rps lag 114 us); rtt 454 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 30.36%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 103,535,720 Bps (data 2,454,500 rps lag 114 us); rtt 454 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181710.002 {*nettest*} 409240 RPS (6 connections)
+I 250929 181720.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 117,310,409 Bps (data 2,781,157 rps lag 93 us); rtt 366 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.73%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 117,310,409 Bps (data 2,781,157 rps lag 93 us); rtt 366 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181720.003 {*nettest*} 463753 RPS (6 connections)
+I 250929 181730.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 118,462,891 Bps (data 2,808,669 rps lag 93 us); rtt 339 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.65%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 118,462,891 Bps (data 2,808,669 rps lag 93 us); rtt 339 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181730.001 {*nettest*} 468393 RPS (6 connections)
+I 250929 181740.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 111,424,505 Bps (data 2,641,653 rps lag 100 us); rtt 431 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 28.80%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 111,424,505 Bps (data 2,641,653 rps lag 100 us); rtt 431 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181740.001 {*nettest*} 440600 RPS (6 connections)
+I 250929 181750.006 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 104,811,557 Bps (data 2,484,972 rps lag 105 us); rtt 396 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.99%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 104,811,557 Bps (data 2,484,972 rps lag 105 us); rtt 396 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181750.007 {*nettest*} 414351 RPS (6 connections)
+I 250929 181800.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 100,201,549 Bps (data 2,375,481 rps lag 107 us); rtt 351 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.76%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 100,201,549 Bps (data 2,375,481 rps lag 107 us); rtt 351 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181800.001 {*nettest*} 396037 RPS (6 connections)
+I 250929 181810.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 92,360,533 Bps (data 2,189,683 rps lag 115 us); rtt 353 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.32%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 92,360,533 Bps (data 2,189,683 rps lag 115 us); rtt 353 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181810.001 {*nettest*} 365100 RPS (6 connections)
+I 250929 181820.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 97,217,808 Bps (data 2,304,843 rps lag 112 us); rtt 397 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.24%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 97,217,808 Bps (data 2,304,843 rps lag 112 us); rtt 397 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181820.002 {*nettest*} 384361 RPS (6 connections)
+I 250929 181830.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 94,135,560 Bps (data 2,231,699 rps lag 112 us); rtt 483 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 24.22%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 94,135,560 Bps (data 2,231,699 rps lag 112 us); rtt 483 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181830.004 {*nettest*} 372225 RPS (6 connections)
+I 250929 181840.001 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 107,732,482 Bps (data 2,554,049 rps lag 100 us); rtt 476 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.67%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 107,732,482 Bps (data 2,554,049 rps lag 100 us); rtt 476 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181840.002 {*nettest*} 425785 RPS (6 connections)
+I 250929 181850.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 101,863,714 Bps (data 2,415,052 rps lag 101 us); rtt 316 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.42%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 101,863,714 Bps (data 2,415,052 rps lag 101 us); rtt 316 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181850.002 {*nettest*} 402800 RPS (6 connections)
+I 250929 181900.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 10 Bps; Write: 108,915,635 Bps (data 2,582,145 rps lag 101 us); rtt 417 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.52%
+    ServerSocket-Agent *:7003 [6] Read: 10 Bps; Write: 108,915,635 Bps (data 2,582,145 rps lag 101 us); rtt 417 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 181900.002 {*nettest*} 430600 RPS (6 connections)
+I 250929 181910.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 109,405,255 Bps (data 2,593,837 rps lag 103 us); rtt 329 us; TOP bytes write TimeAndSale: 100%; CPU: 28.37%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 109,405,255 Bps (data 2,593,837 rps lag 103 us); rtt 329 us; TOP bytes write TimeAndSale: 100%
+I 250929 181910.004 {*nettest*} 432513 RPS (6 connections)
+I 250929 181920.006 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 95,812,324 Bps (data 2,271,533 rps lag 109 us); rtt 406 us; TOP bytes write TimeAndSale: 100%; CPU: 25.64%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 95,812,324 Bps (data 2,271,533 rps lag 109 us); rtt 406 us; TOP bytes write TimeAndSale: 100%
+I 250929 181920.007 {*nettest*} 378786 RPS (6 connections)
+I 250929 181930.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 105,770,579 Bps (data 2,507,670 rps lag 104 us); rtt 558 us; TOP bytes write TimeAndSale: 100%; CPU: 27.74%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 105,770,579 Bps (data 2,507,670 rps lag 104 us); rtt 558 us; TOP bytes write TimeAndSale: 100%
+I 250929 181930.002 {*nettest*} 418109 RPS (6 connections)
+I 250929 181940.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 95,426,174 Bps (data 2,262,423 rps lag 110 us); rtt 286 us; TOP bytes write TimeAndSale: 100%; CPU: 24.89%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 95,426,174 Bps (data 2,262,423 rps lag 110 us); rtt 286 us; TOP bytes write TimeAndSale: 100%
+I 250929 181940.003 {*nettest*} 377262 RPS (6 connections)
+I 250929 181950.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 112,992,926 Bps (data 2,678,900 rps lag 99 us); rtt 282 us; TOP bytes write TimeAndSale: 100%; CPU: 26.27%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 112,992,926 Bps (data 2,678,900 rps lag 99 us); rtt 282 us; TOP bytes write TimeAndSale: 100%
+I 250929 181950.004 {*nettest*} 446655 RPS (6 connections)
+I 250929 182000.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 114,190,364 Bps (data 2,707,283 rps lag 95 us); rtt 312 us; TOP bytes write TimeAndSale: 100%; CPU: 27.04%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 114,190,364 Bps (data 2,707,283 rps lag 95 us); rtt 312 us; TOP bytes write TimeAndSale: 100%
+I 250929 182000.002 {*nettest*} 451490 RPS (6 connections)
+I 250929 182010.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 109,876,489 Bps (data 2,605,061 rps lag 100 us); rtt 325 us; TOP bytes write TimeAndSale: 100%; CPU: 27.02%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 109,876,489 Bps (data 2,605,061 rps lag 100 us); rtt 325 us; TOP bytes write TimeAndSale: 100%
+I 250929 182010.003 {*nettest*} 434456 RPS (6 connections)
+I 250929 182020.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 112,351,920 Bps (data 2,663,806 rps lag 101 us); rtt 333 us; TOP bytes write TimeAndSale: 100%; CPU: 28.41%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 112,351,920 Bps (data 2,663,806 rps lag 101 us); rtt 333 us; TOP bytes write TimeAndSale: 100%
+I 250929 182020.003 {*nettest*} 444200 RPS (6 connections)
+I 250929 182030.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 108,658,669 Bps (data 2,576,133 rps lag 103 us); rtt 389 us; TOP bytes write TimeAndSale: 100%; CPU: 28.68%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 108,658,669 Bps (data 2,576,133 rps lag 103 us); rtt 389 us; TOP bytes write TimeAndSale: 100%
+I 250929 182030.003 {*nettest*} 429500 RPS (6 connections)
+I 250929 182040.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 114,393,235 Bps (data 2,712,034 rps lag 101 us); rtt 377 us; TOP bytes write TimeAndSale: 100%; CPU: 29.51%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 114,393,235 Bps (data 2,712,034 rps lag 101 us); rtt 377 us; TOP bytes write TimeAndSale: 100%
+I 250929 182040.003 {*nettest*} 452300 RPS (6 connections)
+I 250929 182050.004 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 100,982,873 Bps (data 2,394,134 rps lag 108 us); rtt 389 us; TOP bytes write TimeAndSale: 100%; CPU: 27.03%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 100,982,873 Bps (data 2,394,134 rps lag 108 us); rtt 389 us; TOP bytes write TimeAndSale: 100%
+I 250929 182050.005 {*nettest*} 399220 RPS (6 connections)
+I 250929 182100.002 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 117,086,272 Bps (data 2,775,972 rps lag 96 us); rtt 379 us; TOP bytes write TimeAndSale: 100%; CPU: 27.23%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 117,086,272 Bps (data 2,775,972 rps lag 96 us); rtt 379 us; TOP bytes write TimeAndSale: 100%
+I 250929 182100.002 {*nettest*} 462838 RPS (6 connections)
+I 250929 182110.003 {nettest.1} Subscription: 1,000,000; Storage: 1,000,000; Buffer: 0; Dropped: 0; Read: 9 Bps; Write: 119,983,812 Bps (data 2,844,701 rps lag 92 us); rtt 263 us; TOP bytes write TimeAndSale: 100%; CPU: 27.01%
+    ServerSocket-Agent *:7003 [6] Read: 9 Bps; Write: 119,983,812 Bps (data 2,844,701 rps lag 92 us); rtt 263 us; TOP bytes write TimeAndSale: 100%
+I 250929 182110.003 {*nettest*} 474352 RPS (6 connections)

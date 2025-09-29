@@ -1,0 +1,1112 @@
+W 250929 182942.694 [main] Options - DEPRECATED option -l|--log <file> is used. Use -Dlog.file=<file> option.
+I 250929 182942.695 [main] VkNetTest - Using record TimeAndSale
+I 250929 182943.329 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 182943.332 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 182943.333 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 182943.333 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 182943.334 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 182943.334 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 182943.335 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 182943.335 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 182943.336 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 182943.336 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 182943.337 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 182943.337 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 182943.341 [pool-1-thread-1] VkNetTest - 
+0 RPS (6 connections)
+I 250929 182943.343 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 182943.343 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 182943.343 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 182943.343 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 182943.343 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 182943.344 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 182943.347 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 182943.347 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 182943.347 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 182943.347 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 182943.347 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 182943.347 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 182943.370 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 0 Bps; Write: 0 Bps; CPU: 26.93%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [0] Read: 0 Bps; Write: 0 Bps
+I 250929 182943.453 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 182943.453 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 182943.456 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 182943.467 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 182943.612 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 182943.636 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 182953.371 [pool-1-thread-1] VkNetTest - 
+4279098 RPS (6 connections)
+I 250929 182953.373 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 166,868,372 Bps (data 4,266,729 rps lag 6,226 us); Write: 2,826,772 Bps (sub 598,205 rps); rtt 6,521 us; TOP bytes read TimeAndSale: 99%; write TimeAndSale: 99%; CPU: 11.78%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 166,868,372 Bps (data 4,266,729 rps lag 6,226 us); Write: 2,826,772 Bps (sub 598,205 rps); rtt 6,521 us; TOP bytes read TimeAndSale: 99%; write TimeAndSale: 99%
+I 250929 183003.375 [pool-1-thread-1] VkNetTest - 
+4004693 RPS (6 connections)
+I 250929 183003.376 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 156,556,516 Bps (data 4,003,001 rps lag 754 us); Write: 9 Bps; rtt 494 us; TOP bytes read TimeAndSale: 100%; CPU: 8.93%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 156,556,516 Bps (data 4,003,001 rps lag 754 us); Write: 9 Bps; rtt 494 us; TOP bytes read TimeAndSale: 100%
+I 250929 183013.377 [pool-1-thread-1] VkNetTest - 
+4030969 RPS (6 connections)
+I 250929 183013.378 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 157,616,195 Bps (data 4,030,152 rps lag 424 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%; CPU: 8.60%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 157,616,195 Bps (data 4,030,152 rps lag 424 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%
+I 250929 183023.379 [pool-1-thread-1] VkNetTest - 
+3866255 RPS (6 connections)
+I 250929 183023.380 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 151,173,962 Bps (data 3,865,399 rps lag 449 us); Write: 9 Bps; rtt 184 us; TOP bytes read TimeAndSale: 100%; CPU: 7.93%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 151,173,962 Bps (data 3,865,399 rps lag 449 us); Write: 9 Bps; rtt 184 us; TOP bytes read TimeAndSale: 100%
+I 250929 183033.382 [pool-1-thread-1] VkNetTest - 
+3922979 RPS (6 connections)
+I 250929 183033.384 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 153,376,896 Bps (data 3,921,740 rps lag 441 us); Write: 9 Bps; rtt 173 us; TOP bytes read TimeAndSale: 100%; CPU: 8.56%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 153,376,896 Bps (data 3,921,740 rps lag 441 us); Write: 9 Bps; rtt 173 us; TOP bytes read TimeAndSale: 100%
+I 250929 183043.384 [pool-1-thread-1] VkNetTest - 
+3722113 RPS (6 connections)
+I 250929 183043.385 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 145,540,350 Bps (data 3,721,389 rps lag 438 us); Write: 9 Bps; rtt 157 us; TOP bytes read TimeAndSale: 100%; CPU: 9.01%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 145,540,350 Bps (data 3,721,389 rps lag 438 us); Write: 9 Bps; rtt 157 us; TOP bytes read TimeAndSale: 100%
+I 250929 183053.386 [pool-1-thread-1] VkNetTest - 
+3486909 RPS (6 connections)
+I 250929 183053.386 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 136,343,057 Bps (data 3,486,248 rps lag 469 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%; CPU: 8.59%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 136,343,057 Bps (data 3,486,248 rps lag 469 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%
+I 250929 183103.388 [pool-1-thread-1] VkNetTest - 
+3374225 RPS (6 connections)
+I 250929 183103.390 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 131,940,638 Bps (data 3,373,632 rps lag 481 us); Write: 9 Bps; rtt 171 us; TOP bytes read TimeAndSale: 100%; CPU: 8.19%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 131,940,638 Bps (data 3,373,632 rps lag 481 us); Write: 9 Bps; rtt 171 us; TOP bytes read TimeAndSale: 100%
+I 250929 183113.391 [pool-1-thread-1] VkNetTest - 
+3048840 RPS (6 connections)
+I 250929 183113.391 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 119,198,923 Bps (data 3,047,788 rps lag 514 us); Write: 9 Bps; rtt 176 us; TOP bytes read TimeAndSale: 100%; CPU: 8.27%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 119,198,923 Bps (data 3,047,788 rps lag 514 us); Write: 9 Bps; rtt 176 us; TOP bytes read TimeAndSale: 100%
+I 250929 183123.393 [pool-1-thread-1] VkNetTest - 
+2803860 RPS (6 connections)
+I 250929 183123.393 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 109,634,267 Bps (data 2,803,299 rps lag 580 us); Write: 9 Bps; rtt 225 us; TOP bytes read TimeAndSale: 100%; CPU: 8.17%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 109,634,267 Bps (data 2,803,299 rps lag 580 us); Write: 9 Bps; rtt 225 us; TOP bytes read TimeAndSale: 100%
+I 250929 183133.394 [pool-1-thread-1] VkNetTest - 
+2917449 RPS (6 connections)
+I 250929 183133.395 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 114,090,963 Bps (data 2,917,223 rps lag 556 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%; CPU: 8.23%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 114,090,963 Bps (data 2,917,223 rps lag 556 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%
+I 250929 183143.396 [pool-1-thread-1] VkNetTest - 
+2872519 RPS (6 connections)
+I 250929 183143.397 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 112,319,751 Bps (data 2,871,900 rps lag 558 us); Write: 9 Bps; rtt 195 us; TOP bytes read TimeAndSale: 100%; CPU: 8.45%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 112,319,751 Bps (data 2,871,900 rps lag 558 us); Write: 9 Bps; rtt 195 us; TOP bytes read TimeAndSale: 100%
+I 250929 183153.398 [pool-1-thread-1] VkNetTest - 
+3043223 RPS (6 connections)
+I 250929 183153.398 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 118,994,498 Bps (data 3,042,635 rps lag 524 us); Write: 9 Bps; rtt 179 us; TOP bytes read TimeAndSale: 100%; CPU: 8.57%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 118,994,498 Bps (data 3,042,635 rps lag 524 us); Write: 9 Bps; rtt 179 us; TOP bytes read TimeAndSale: 100%
+I 250929 183203.400 [pool-1-thread-1] VkNetTest - 
+3207589 RPS (6 connections)
+I 250929 183203.402 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 125,426,247 Bps (data 3,207,030 rps lag 509 us); Write: 9 Bps; rtt 180 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 7.97%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 125,426,247 Bps (data 3,207,030 rps lag 509 us); Write: 9 Bps; rtt 180 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 183213.404 [pool-1-thread-1] VkNetTest - 
+3263219 RPS (6 connections)
+I 250929 183213.404 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 127,566,152 Bps (data 3,261,770 rps lag 489 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%; CPU: 7.91%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 127,566,152 Bps (data 3,261,770 rps lag 489 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%
+I 250929 183223.407 [pool-1-thread-1] VkNetTest - 
+3491256 RPS (6 connections)
+I 250929 183223.407 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 136,497,798 Bps (data 3,490,148 rps lag 605 us); Write: 9 Bps; rtt 303 us; TOP bytes read TimeAndSale: 100%; CPU: 8.67%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 136,497,798 Bps (data 3,490,148 rps lag 605 us); Write: 9 Bps; rtt 303 us; TOP bytes read TimeAndSale: 100%
+I 250929 183233.410 [pool-1-thread-1] VkNetTest - 
+3328125 RPS (6 connections)
+I 250929 183233.410 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 130,128,656 Bps (data 3,327,290 rps lag 1,081 us); Write: 9 Bps; rtt 765 us; TOP bytes read TimeAndSale: 100%; CPU: 8.13%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 130,128,656 Bps (data 3,327,290 rps lag 1,081 us); Write: 9 Bps; rtt 765 us; TOP bytes read TimeAndSale: 100%
+I 250929 183243.413 [pool-1-thread-1] VkNetTest - 
+3093992 RPS (6 connections)
+I 250929 183243.413 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 120,965,535 Bps (data 3,093,023 rps lag 631 us); Write: 9 Bps; rtt 293 us; TOP bytes read TimeAndSale: 100%; CPU: 8.15%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 120,965,535 Bps (data 3,093,023 rps lag 631 us); Write: 9 Bps; rtt 293 us; TOP bytes read TimeAndSale: 100%
+I 250929 183253.414 [pool-1-thread-1] VkNetTest - 
+2915425 RPS (6 connections)
+I 250929 183253.415 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 114,006,680 Bps (data 2,915,071 rps lag 651 us); Write: 9 Bps; rtt 291 us; TOP bytes read TimeAndSale: 100%; CPU: 8.02%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 114,006,680 Bps (data 2,915,071 rps lag 651 us); Write: 9 Bps; rtt 291 us; TOP bytes read TimeAndSale: 100%
+I 250929 183303.416 [pool-1-thread-1] VkNetTest - 
+2911947 RPS (6 connections)
+I 250929 183303.416 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 113,864,643 Bps (data 2,911,430 rps lag 621 us); Write: 9 Bps; rtt 261 us; TOP bytes read TimeAndSale: 100%; CPU: 8.20%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 113,864,643 Bps (data 2,911,430 rps lag 621 us); Write: 9 Bps; rtt 261 us; TOP bytes read TimeAndSale: 100%
+I 250929 183313.417 [pool-1-thread-1] VkNetTest - 
+2809542 RPS (6 connections)
+I 250929 183313.417 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 109,866,659 Bps (data 2,809,176 rps lag 638 us); Write: 9 Bps; rtt 281 us; TOP bytes read TimeAndSale: 100%; CPU: 8.37%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 109,866,659 Bps (data 2,809,176 rps lag 638 us); Write: 9 Bps; rtt 281 us; TOP bytes read TimeAndSale: 100%
+I 250929 183323.419 [pool-1-thread-1] VkNetTest - 
+3230693 RPS (6 connections)
+I 250929 183323.420 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 126,327,346 Bps (data 3,230,108 rps lag 508 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%; CPU: 8.12%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 126,327,346 Bps (data 3,230,108 rps lag 508 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%
+I 250929 183333.420 [pool-1-thread-1] VkNetTest - 
+3405745 RPS (6 connections)
+I 250929 183333.420 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 133,180,767 Bps (data 3,405,370 rps lag 503 us); Write: 9 Bps; rtt 201 us; TOP bytes read TimeAndSale: 100%; CPU: 8.59%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 133,180,767 Bps (data 3,405,370 rps lag 503 us); Write: 9 Bps; rtt 201 us; TOP bytes read TimeAndSale: 100%
+I 250929 183343.422 [pool-1-thread-1] VkNetTest - 
+3450432 RPS (6 connections)
+I 250929 183343.423 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 134,923,681 Bps (data 3,449,879 rps lag 510 us); Write: 9 Bps; rtt 215 us; TOP bytes read TimeAndSale: 100%; CPU: 7.56%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 134,923,681 Bps (data 3,449,879 rps lag 510 us); Write: 9 Bps; rtt 215 us; TOP bytes read TimeAndSale: 100%
+I 250929 183353.424 [pool-1-thread-1] VkNetTest - 
+3337922 RPS (6 connections)
+I 250929 183353.425 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 130,513,589 Bps (data 3,337,132 rps lag 498 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%; CPU: 8.17%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 130,513,589 Bps (data 3,337,132 rps lag 498 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%
+I 250929 183403.426 [pool-1-thread-1] VkNetTest - 
+3142246 RPS (6 connections)
+I 250929 183403.426 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 122,866,792 Bps (data 3,141,617 rps lag 516 us); Write: 9 Bps; rtt 180 us; TOP bytes read TimeAndSale: 100%; CPU: 7.76%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 122,866,792 Bps (data 3,141,617 rps lag 516 us); Write: 9 Bps; rtt 180 us; TOP bytes read TimeAndSale: 100%
+I 250929 183413.428 [pool-1-thread-1] VkNetTest - 
+2883101 RPS (6 connections)
+I 250929 183413.428 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 112,729,627 Bps (data 2,882,463 rps lag 569 us); Write: 9 Bps; rtt 209 us; TOP bytes read TimeAndSale: 100%; CPU: 7.92%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 112,729,627 Bps (data 2,882,463 rps lag 569 us); Write: 9 Bps; rtt 209 us; TOP bytes read TimeAndSale: 100%
+I 250929 183423.430 [pool-1-thread-1] VkNetTest - 
+2906663 RPS (6 connections)
+I 250929 183423.430 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 113,654,977 Bps (data 2,906,149 rps lag 550 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%; CPU: 7.90%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 113,654,977 Bps (data 2,906,149 rps lag 550 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%
+I 250929 183433.431 [pool-1-thread-1] VkNetTest - 
+2930011 RPS (6 connections)
+I 250929 183433.431 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 114,576,907 Bps (data 2,929,650 rps lag 559 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%; CPU: 8.31%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 114,576,907 Bps (data 2,929,650 rps lag 559 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%
+I 250929 183443.433 [pool-1-thread-1] VkNetTest - 
+3048170 RPS (6 connections)
+I 250929 183443.434 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 119,190,899 Bps (data 3,047,637 rps lag 559 us); Write: 9 Bps; rtt 218 us; TOP bytes read TimeAndSale: 100%; CPU: 8.81%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 119,190,899 Bps (data 3,047,637 rps lag 559 us); Write: 9 Bps; rtt 218 us; TOP bytes read TimeAndSale: 100%
+I 250929 183453.434 [pool-1-thread-1] VkNetTest - 
+3280643 RPS (6 connections)
+I 250929 183453.434 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 128,290,658 Bps (data 3,280,278 rps lag 559 us); Write: 9 Bps; rtt 243 us; TOP bytes read TimeAndSale: 100%; CPU: 7.28%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 128,290,658 Bps (data 3,280,278 rps lag 559 us); Write: 9 Bps; rtt 243 us; TOP bytes read TimeAndSale: 100%
+I 250929 183503.436 [pool-1-thread-1] VkNetTest - 
+3484796 RPS (6 connections)
+I 250929 183503.436 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 136,259,911 Bps (data 3,484,120 rps lag 488 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%; CPU: 8.14%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 136,259,911 Bps (data 3,484,120 rps lag 488 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%
+I 250929 183513.438 [pool-1-thread-1] VkNetTest - 
+3159486 RPS (6 connections)
+I 250929 183513.438 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 123,539,016 Bps (data 3,158,866 rps lag 527 us); Write: 9 Bps; rtt 203 us; TOP bytes read TimeAndSale: 100%; CPU: 7.65%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 123,539,016 Bps (data 3,158,866 rps lag 527 us); Write: 9 Bps; rtt 203 us; TOP bytes read TimeAndSale: 100%
+I 250929 183523.441 [pool-1-thread-1] VkNetTest - 
+2861897 RPS (6 connections)
+I 250929 183523.441 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 111,888,486 Bps (data 2,860,944 rps lag 548 us); Write: 9 Bps; rtt 189 us; TOP bytes read TimeAndSale: 100%; CPU: 7.99%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 111,888,486 Bps (data 2,860,944 rps lag 548 us); Write: 9 Bps; rtt 189 us; TOP bytes read TimeAndSale: 100%
+I 250929 183533.444 [pool-1-thread-1] VkNetTest - 
+2819061 RPS (6 connections)
+I 250929 183533.445 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 110,223,476 Bps (data 2,818,318 rps lag 692 us); Write: 9 Bps; rtt 328 us; TOP bytes read TimeAndSale: 100%; CPU: 8.00%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 110,223,476 Bps (data 2,818,318 rps lag 692 us); Write: 9 Bps; rtt 328 us; TOP bytes read TimeAndSale: 100%
+I 250929 183543.447 [pool-1-thread-1] VkNetTest - 
+2790896 RPS (6 connections)
+I 250929 183543.447 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 109,116,338 Bps (data 2,790,038 rps lag 634 us); Write: 10 Bps; rtt 272 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 7.75%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 109,116,338 Bps (data 2,790,038 rps lag 634 us); Write: 10 Bps; rtt 272 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 183553.448 [pool-1-thread-1] VkNetTest - 
+2796908 RPS (6 connections)
+I 250929 183553.448 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 109,373,792 Bps (data 2,796,588 rps lag 574 us); Write: 9 Bps; rtt 210 us; TOP bytes read TimeAndSale: 100%; CPU: 7.65%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 109,373,792 Bps (data 2,796,588 rps lag 574 us); Write: 9 Bps; rtt 210 us; TOP bytes read TimeAndSale: 100%
+I 250929 183603.452 [pool-1-thread-1] VkNetTest - 
+2981668 RPS (6 connections)
+I 250929 183603.452 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 116,566,779 Bps (data 2,980,537 rps lag 580 us); Write: 9 Bps; rtt 244 us; TOP bytes read TimeAndSale: 100%; CPU: 8.28%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 116,566,779 Bps (data 2,980,537 rps lag 580 us); Write: 9 Bps; rtt 244 us; TOP bytes read TimeAndSale: 100%
+I 250929 183613.454 [pool-1-thread-1] VkNetTest - 
+3399874 RPS (6 connections)
+I 250929 183613.454 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 132,940,575 Bps (data 3,399,215 rps lag 474 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%; CPU: 7.94%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 132,940,575 Bps (data 3,399,215 rps lag 474 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%
+I 250929 183623.455 [pool-1-thread-1] VkNetTest - 
+3424004 RPS (6 connections)
+I 250929 183623.455 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 133,895,456 Bps (data 3,423,634 rps lag 459 us); Write: 9 Bps; rtt 152 us; TOP bytes read TimeAndSale: 100%; CPU: 7.74%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 133,895,456 Bps (data 3,423,634 rps lag 459 us); Write: 9 Bps; rtt 152 us; TOP bytes read TimeAndSale: 100%
+I 250929 183633.458 [pool-1-thread-1] VkNetTest - 
+3220671 RPS (6 connections)
+I 250929 183633.458 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 125,919,093 Bps (data 3,219,651 rps lag 482 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%; CPU: 8.04%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 125,919,093 Bps (data 3,219,651 rps lag 482 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%
+I 250929 183643.460 [pool-1-thread-1] VkNetTest - 
+2913518 RPS (6 connections)
+I 250929 183643.460 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 113,924,408 Bps (data 2,912,977 rps lag 540 us); Write: 9 Bps; rtt 185 us; TOP bytes read TimeAndSale: 100%; CPU: 7.96%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 113,924,408 Bps (data 2,912,977 rps lag 540 us); Write: 9 Bps; rtt 185 us; TOP bytes read TimeAndSale: 100%
+I 250929 183653.462 [pool-1-thread-1] VkNetTest - 
+2993742 RPS (6 connections)
+I 250929 183653.463 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 117,059,702 Bps (data 2,993,123 rps lag 530 us); Write: 9 Bps; rtt 178 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 8.45%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 117,059,702 Bps (data 2,993,123 rps lag 530 us); Write: 9 Bps; rtt 178 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 183703.464 [pool-1-thread-1] VkNetTest - 
+2942601 RPS (6 connections)
+I 250929 183703.464 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 115,058,925 Bps (data 2,941,985 rps lag 535 us); Write: 9 Bps; rtt 176 us; TOP bytes read TimeAndSale: 100%; CPU: 8.42%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 115,058,925 Bps (data 2,941,985 rps lag 535 us); Write: 9 Bps; rtt 176 us; TOP bytes read TimeAndSale: 100%
+I 250929 183713.467 [pool-1-thread-1] VkNetTest - 
+3035284 RPS (6 connections)
+I 250929 183713.467 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 118,672,728 Bps (data 3,034,421 rps lag 518 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%; CPU: 8.47%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 118,672,728 Bps (data 3,034,421 rps lag 518 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%
+I 250929 183723.469 [pool-1-thread-1] VkNetTest - 
+3274742 RPS (6 connections)
+I 250929 183723.469 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 128,042,338 Bps (data 3,274,088 rps lag 495 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%; CPU: 8.51%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 128,042,338 Bps (data 3,274,088 rps lag 495 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%
+I 250929 183733.470 [pool-1-thread-1] VkNetTest - 
+3581439 RPS (6 connections)
+I 250929 183733.470 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 140,047,234 Bps (data 3,581,061 rps lag 443 us); Write: 9 Bps; rtt 150 us; TOP bytes read TimeAndSale: 100%; CPU: 7.95%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 140,047,234 Bps (data 3,581,061 rps lag 443 us); Write: 9 Bps; rtt 150 us; TOP bytes read TimeAndSale: 100%
+I 250929 183743.472 [pool-1-thread-1] VkNetTest - 
+3336946 RPS (6 connections)
+I 250929 183743.473 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 130,478,969 Bps (data 3,336,340 rps lag 460 us); Write: 9 Bps; rtt 159 us; TOP bytes read TimeAndSale: 100%; CPU: 8.34%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 130,478,969 Bps (data 3,336,340 rps lag 460 us); Write: 9 Bps; rtt 159 us; TOP bytes read TimeAndSale: 100%
+I 250929 183753.475 [pool-1-thread-1] VkNetTest - 
+3149340 RPS (6 connections)
+I 250929 183753.475 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 123,126,278 Bps (data 3,148,355 rps lag 503 us); Write: 9 Bps; rtt 177 us; TOP bytes read TimeAndSale: 100%; CPU: 8.48%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 123,126,278 Bps (data 3,148,355 rps lag 503 us); Write: 9 Bps; rtt 177 us; TOP bytes read TimeAndSale: 100%
+I 250929 183803.476 [pool-1-thread-1] VkNetTest - 
+2870086 RPS (6 connections)
+I 250929 183803.476 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 112,229,321 Bps (data 2,869,697 rps lag 546 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%; CPU: 7.77%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 112,229,321 Bps (data 2,869,697 rps lag 546 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%
+I 250929 183813.480 [pool-1-thread-1] VkNetTest - 
+2946825 RPS (6 connections)
+I 250929 183813.480 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 115,202,013 Bps (data 2,945,729 rps lag 545 us); Write: 9 Bps; rtt 191 us; TOP bytes read TimeAndSale: 100%; CPU: 8.40%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 115,202,013 Bps (data 2,945,729 rps lag 545 us); Write: 9 Bps; rtt 191 us; TOP bytes read TimeAndSale: 100%
+I 250929 183823.481 [pool-1-thread-1] VkNetTest - 
+2861303 RPS (6 connections)
+I 250929 183823.483 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 111,896,668 Bps (data 2,861,222 rps lag 543 us); Write: 9 Bps; rtt 183 us; TOP bytes read TimeAndSale: 100%; CPU: 8.37%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 111,896,668 Bps (data 2,861,222 rps lag 543 us); Write: 9 Bps; rtt 183 us; TOP bytes read TimeAndSale: 100%
+I 250929 183833.485 [pool-1-thread-1] VkNetTest - 
+2719234 RPS (6 connections)
+I 250929 183833.485 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 106,291,448 Bps (data 2,717,880 rps lag 614 us); Write: 9 Bps; rtt 227 us; TOP bytes read TimeAndSale: 100%; CPU: 7.99%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 106,291,448 Bps (data 2,717,880 rps lag 614 us); Write: 9 Bps; rtt 227 us; TOP bytes read TimeAndSale: 100%
+I 250929 183843.487 [pool-1-thread-1] VkNetTest - 
+2463996 RPS (6 connections)
+I 250929 183843.487 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 96,343,918 Bps (data 2,463,512 rps lag 620 us); Write: 9 Bps; rtt 175 us; TOP bytes read TimeAndSale: 100%; CPU: 6.64%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 96,343,918 Bps (data 2,463,512 rps lag 620 us); Write: 9 Bps; rtt 175 us; TOP bytes read TimeAndSale: 100%
+I 250929 183853.488 [pool-1-thread-1] VkNetTest - 
+2645819 RPS (6 connections)
+I 250929 183853.488 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 103,460,331 Bps (data 2,645,505 rps lag 570 us); Write: 9 Bps; rtt 156 us; TOP bytes read TimeAndSale: 100%; CPU: 6.62%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 103,460,331 Bps (data 2,645,505 rps lag 570 us); Write: 9 Bps; rtt 156 us; TOP bytes read TimeAndSale: 100%
+I 250929 183903.490 [pool-1-thread-1] VkNetTest - 
+2762302 RPS (6 connections)
+I 250929 183903.490 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 108,009,484 Bps (data 2,761,832 rps lag 545 us); Write: 8 Bps; rtt 148 us; TOP bytes read TimeAndSale: 100%; CPU: 5.84%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 108,009,484 Bps (data 2,761,832 rps lag 545 us); Write: 8 Bps; rtt 148 us; TOP bytes read TimeAndSale: 100%
+I 250929 183913.493 [pool-1-thread-1] VkNetTest - 
+2506771 RPS (6 connections)
+I 250929 183913.493 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 98,003,070 Bps (data 2,505,958 rps lag 592 us); Write: 8 Bps; rtt 159 us; TOP bytes read TimeAndSale: 100%; CPU: 5.89%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 98,003,070 Bps (data 2,505,958 rps lag 592 us); Write: 8 Bps; rtt 159 us; TOP bytes read TimeAndSale: 100%
+I 250929 183923.494 [pool-1-thread-1] VkNetTest - 
+2391126 RPS (6 connections)
+I 250929 183923.494 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 93,503,802 Bps (data 2,390,886 rps lag 627 us); Write: 9 Bps; rtt 169 us; TOP bytes read TimeAndSale: 100%; CPU: 6.27%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 93,503,802 Bps (data 2,390,886 rps lag 627 us); Write: 9 Bps; rtt 169 us; TOP bytes read TimeAndSale: 100%
+I 250929 183933.496 [pool-1-thread-1] VkNetTest - 
+2177198 RPS (6 connections)
+I 250929 183933.496 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,132,548 Bps (data 2,176,755 rps lag 784 us); Write: 9 Bps; rtt 285 us; TOP bytes read TimeAndSale: 100%; CPU: 6.14%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,132,548 Bps (data 2,176,755 rps lag 784 us); Write: 9 Bps; rtt 285 us; TOP bytes read TimeAndSale: 100%
+I 250929 183943.499 [pool-1-thread-1] VkNetTest - 
+2065768 RPS (6 connections)
+I 250929 183943.499 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 80,766,977 Bps (data 2,065,167 rps lag 946 us); Write: 9 Bps; rtt 442 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 6.31%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 80,766,977 Bps (data 2,065,167 rps lag 946 us); Write: 9 Bps; rtt 442 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 183953.502 [pool-1-thread-1] VkNetTest - 
+2249263 RPS (6 connections)
+I 250929 183953.502 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,942,932 Bps (data 2,248,640 rps lag 657 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%; CPU: 6.19%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,942,932 Bps (data 2,248,640 rps lag 657 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%
+I 250929 184003.505 [pool-1-thread-1] VkNetTest - 
+2362834 RPS (6 connections)
+I 250929 184003.505 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 92,378,596 Bps (data 2,362,023 rps lag 635 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%; CPU: 6.18%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 92,378,596 Bps (data 2,362,023 rps lag 635 us); Write: 9 Bps; rtt 170 us; TOP bytes read TimeAndSale: 100%
+I 250929 184013.506 [pool-1-thread-1] VkNetTest - 
+2594545 RPS (6 connections)
+I 250929 184013.506 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 101,462,407 Bps (data 2,594,327 rps lag 579 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%; CPU: 6.27%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 101,462,407 Bps (data 2,594,327 rps lag 579 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%
+I 250929 184023.508 [pool-1-thread-1] VkNetTest - 
+2780361 RPS (6 connections)
+I 250929 184023.508 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 108,717,229 Bps (data 2,779,822 rps lag 551 us); Write: 9 Bps; rtt 156 us; TOP bytes read TimeAndSale: 100%; CPU: 6.21%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 108,717,229 Bps (data 2,779,822 rps lag 551 us); Write: 9 Bps; rtt 156 us; TOP bytes read TimeAndSale: 100%
+I 250929 184033.510 [pool-1-thread-1] VkNetTest - 
+2493576 RPS (6 connections)
+I 250929 184033.510 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,506,096 Bps (data 2,493,161 rps lag 599 us); Write: 9 Bps; rtt 167 us; TOP bytes read TimeAndSale: 100%; CPU: 5.82%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,506,096 Bps (data 2,493,161 rps lag 599 us); Write: 9 Bps; rtt 167 us; TOP bytes read TimeAndSale: 100%
+I 250929 184043.513 [pool-1-thread-1] VkNetTest - 
+2316398 RPS (6 connections)
+I 250929 184043.513 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 90,561,841 Bps (data 2,315,614 rps lag 634 us); Write: 9 Bps; rtt 167 us; TOP bytes read TimeAndSale: 100%; CPU: 6.28%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 90,561,841 Bps (data 2,315,614 rps lag 634 us); Write: 9 Bps; rtt 167 us; TOP bytes read TimeAndSale: 100%
+I 250929 184053.515 [pool-1-thread-1] VkNetTest - 
+2063363 RPS (6 connections)
+I 250929 184053.515 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 80,682,124 Bps (data 2,062,999 rps lag 741 us); Write: 9 Bps; rtt 229 us; TOP bytes read TimeAndSale: 100%; CPU: 5.78%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 80,682,124 Bps (data 2,062,999 rps lag 741 us); Write: 9 Bps; rtt 229 us; TOP bytes read TimeAndSale: 100%
+I 250929 184103.517 [pool-1-thread-1] VkNetTest - 
+2196587 RPS (6 connections)
+I 250929 184103.517 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,884,796 Bps (data 2,196,045 rps lag 735 us); Write: 9 Bps; rtt 240 us; TOP bytes read TimeAndSale: 100%; CPU: 6.42%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,884,796 Bps (data 2,196,045 rps lag 735 us); Write: 9 Bps; rtt 240 us; TOP bytes read TimeAndSale: 100%
+I 250929 184113.519 [pool-1-thread-1] VkNetTest - 
+2133384 RPS (6 connections)
+I 250929 184113.519 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,421,674 Bps (data 2,133,046 rps lag 782 us); Write: 9 Bps; rtt 277 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 5.66%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,421,674 Bps (data 2,133,046 rps lag 782 us); Write: 9 Bps; rtt 277 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 184123.521 [pool-1-thread-1] VkNetTest - 
+2186534 RPS (6 connections)
+I 250929 184123.521 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,495,515 Bps (data 2,186,049 rps lag 670 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%; CPU: 5.63%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,495,515 Bps (data 2,186,049 rps lag 670 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%
+I 250929 184133.523 [pool-1-thread-1] VkNetTest - 
+2425110 RPS (6 connections)
+I 250929 184133.523 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 94,825,916 Bps (data 2,424,659 rps lag 607 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 6.75%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 94,825,916 Bps (data 2,424,659 rps lag 607 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 184143.526 [pool-1-thread-1] VkNetTest - 
+2585530 RPS (6 connections)
+I 250929 184143.526 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 101,086,258 Bps (data 2,584,700 rps lag 586 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%; CPU: 6.04%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 101,086,258 Bps (data 2,584,700 rps lag 586 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%
+I 250929 184153.528 [pool-1-thread-1] VkNetTest - 
+2652555 RPS (6 connections)
+I 250929 184153.528 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 103,722,481 Bps (data 2,652,137 rps lag 566 us); Write: 9 Bps; rtt 157 us; TOP bytes read TimeAndSale: 100%; CPU: 5.72%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 103,722,481 Bps (data 2,652,137 rps lag 566 us); Write: 9 Bps; rtt 157 us; TOP bytes read TimeAndSale: 100%
+I 250929 184203.529 [pool-1-thread-1] VkNetTest - 
+2571362 RPS (6 connections)
+I 250929 184203.529 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 100,550,562 Bps (data 2,571,051 rps lag 582 us); Write: 9 Bps; rtt 157 us; TOP bytes read TimeAndSale: 100%; CPU: 6.06%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 100,550,562 Bps (data 2,571,051 rps lag 582 us); Write: 9 Bps; rtt 157 us; TOP bytes read TimeAndSale: 100%
+I 250929 184213.530 [pool-1-thread-1] VkNetTest - 
+2370361 RPS (6 connections)
+I 250929 184213.530 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 92,691,101 Bps (data 2,370,045 rps lag 623 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%; CPU: 6.06%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 92,691,101 Bps (data 2,370,045 rps lag 623 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%
+I 250929 184223.531 [pool-1-thread-1] VkNetTest - 
+2175519 RPS (6 connections)
+I 250929 184223.531 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,074,738 Bps (data 2,175,330 rps lag 755 us); Write: 9 Bps; rtt 257 us; TOP bytes read TimeAndSale: 100%; CPU: 5.60%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,074,738 Bps (data 2,175,330 rps lag 755 us); Write: 9 Bps; rtt 257 us; TOP bytes read TimeAndSale: 100%
+I 250929 184233.533 [pool-1-thread-1] VkNetTest - 
+2184348 RPS (6 connections)
+I 250929 184233.533 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,413,613 Bps (data 2,183,965 rps lag 677 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%; CPU: 6.58%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,413,613 Bps (data 2,183,965 rps lag 677 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%
+I 250929 184243.534 [pool-1-thread-1] VkNetTest - 
+2133600 RPS (6 connections)
+I 250929 184243.534 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,431,584 Bps (data 2,133,283 rps lag 693 us); Write: 9 Bps; rtt 189 us; TOP bytes read TimeAndSale: 100%; CPU: 6.24%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,431,584 Bps (data 2,133,283 rps lag 693 us); Write: 9 Bps; rtt 189 us; TOP bytes read TimeAndSale: 100%
+I 250929 184253.536 [pool-1-thread-1] VkNetTest - 
+2210836 RPS (6 connections)
+I 250929 184253.536 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,449,672 Bps (data 2,210,487 rps lag 664 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%; CPU: 5.67%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,449,672 Bps (data 2,210,487 rps lag 664 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%
+I 250929 184303.537 [pool-1-thread-1] VkNetTest - 
+2335282 RPS (6 connections)
+I 250929 184303.537 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 91,321,833 Bps (data 2,335,037 rps lag 668 us); Write: 9 Bps; rtt 210 us; TOP bytes read TimeAndSale: 100%; CPU: 5.64%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 91,321,833 Bps (data 2,335,037 rps lag 668 us); Write: 9 Bps; rtt 210 us; TOP bytes read TimeAndSale: 100%
+I 250929 184313.539 [pool-1-thread-1] VkNetTest - 
+2593356 RPS (6 connections)
+I 250929 184313.539 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 101,405,511 Bps (data 2,592,837 rps lag 585 us); Write: 9 Bps; rtt 166 us; TOP bytes read TimeAndSale: 100%; CPU: 5.30%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 101,405,511 Bps (data 2,592,837 rps lag 585 us); Write: 9 Bps; rtt 166 us; TOP bytes read TimeAndSale: 100%
+I 250929 184323.541 [pool-1-thread-1] VkNetTest - 
+2481447 RPS (6 connections)
+I 250929 184323.541 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,028,540 Bps (data 2,480,930 rps lag 607 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%; CPU: 5.52%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,028,540 Bps (data 2,480,930 rps lag 607 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%
+I 250929 184333.542 [pool-1-thread-1] VkNetTest - 
+2270829 RPS (6 connections)
+I 250929 184333.542 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,801,502 Bps (data 2,270,632 rps lag 660 us); Write: 9 Bps; rtt 183 us; TOP bytes read TimeAndSale: 100%; CPU: 5.83%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,801,502 Bps (data 2,270,632 rps lag 660 us); Write: 9 Bps; rtt 183 us; TOP bytes read TimeAndSale: 100%
+I 250929 184343.544 [pool-1-thread-1] VkNetTest - 
+2243805 RPS (6 connections)
+I 250929 184343.544 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,735,072 Bps (data 2,243,306 rps lag 657 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%; CPU: 6.31%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,735,072 Bps (data 2,243,306 rps lag 657 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%
+I 250929 184353.545 [pool-1-thread-1] VkNetTest - 
+2103058 RPS (6 connections)
+I 250929 184353.545 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 82,242,135 Bps (data 2,102,848 rps lag 848 us); Write: 9 Bps; rtt 342 us; TOP bytes read TimeAndSale: 100%; CPU: 6.12%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 82,242,135 Bps (data 2,102,848 rps lag 848 us); Write: 9 Bps; rtt 342 us; TOP bytes read TimeAndSale: 100%
+I 250929 184403.547 [pool-1-thread-1] VkNetTest - 
+2137112 RPS (6 connections)
+I 250929 184403.548 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,566,449 Bps (data 2,136,726 rps lag 703 us); Write: 9 Bps; rtt 199 us; TOP bytes read TimeAndSale: 100%; CPU: 5.70%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,566,449 Bps (data 2,136,726 rps lag 703 us); Write: 9 Bps; rtt 199 us; TOP bytes read TimeAndSale: 100%
+I 250929 184413.549 [pool-1-thread-1] VkNetTest - 
+2483920 RPS (6 connections)
+I 250929 184413.549 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,123,188 Bps (data 2,483,395 rps lag 609 us); Write: 9 Bps; rtt 167 us; TOP bytes read TimeAndSale: 100%; CPU: 6.21%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,123,188 Bps (data 2,483,395 rps lag 609 us); Write: 9 Bps; rtt 167 us; TOP bytes read TimeAndSale: 100%
+I 250929 184423.551 [pool-1-thread-1] VkNetTest - 
+2503835 RPS (6 connections)
+I 250929 184423.551 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,903,833 Bps (data 2,503,322 rps lag 603 us); Write: 9 Bps; rtt 173 us; TOP bytes read TimeAndSale: 100%; CPU: 5.75%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,903,833 Bps (data 2,503,322 rps lag 603 us); Write: 9 Bps; rtt 173 us; TOP bytes read TimeAndSale: 100%
+I 250929 184433.553 [pool-1-thread-1] VkNetTest - 
+2680008 RPS (6 connections)
+I 250929 184433.553 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 104,793,024 Bps (data 2,679,512 rps lag 551 us); Write: 9 Bps; rtt 142 us; TOP bytes read TimeAndSale: 100%; CPU: 5.85%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 104,793,024 Bps (data 2,679,512 rps lag 551 us); Write: 9 Bps; rtt 142 us; TOP bytes read TimeAndSale: 100%
+I 250929 184443.553 [pool-1-thread-1] VkNetTest - 
+2255056 RPS (6 connections)
+I 250929 184443.553 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,195,565 Bps (data 2,255,117 rps lag 685 us); Write: 9 Bps; rtt 212 us; TOP bytes read TimeAndSale: 100%; CPU: 5.53%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,195,565 Bps (data 2,255,117 rps lag 685 us); Write: 9 Bps; rtt 212 us; TOP bytes read TimeAndSale: 100%
+I 250929 184453.556 [pool-1-thread-1] VkNetTest - 
+2292361 RPS (6 connections)
+I 250929 184453.556 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 89,622,012 Bps (data 2,291,570 rps lag 664 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%; CPU: 6.32%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 89,622,012 Bps (data 2,291,570 rps lag 664 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%
+I 250929 184503.556 [pool-1-thread-1] VkNetTest - 
+2229608 RPS (6 connections)
+I 250929 184503.556 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,203,087 Bps (data 2,229,691 rps lag 662 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%; CPU: 6.17%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,203,087 Bps (data 2,229,691 rps lag 662 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%
+I 250929 184513.558 [pool-1-thread-1] VkNetTest - 
+2069281 RPS (6 connections)
+I 250929 184513.558 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 80,910,252 Bps (data 2,068,827 rps lag 758 us); Write: 9 Bps; rtt 243 us; TOP bytes read TimeAndSale: 100%; CPU: 5.82%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 80,910,252 Bps (data 2,068,827 rps lag 758 us); Write: 9 Bps; rtt 243 us; TOP bytes read TimeAndSale: 100%
+I 250929 184523.559 [pool-1-thread-1] VkNetTest - 
+2200976 RPS (6 connections)
+I 250929 184523.559 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,069,546 Bps (data 2,200,756 rps lag 657 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%; CPU: 6.37%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,069,546 Bps (data 2,200,756 rps lag 657 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%
+I 250929 184533.561 [pool-1-thread-1] VkNetTest - 
+2429755 RPS (6 connections)
+I 250929 184533.561 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 95,007,889 Bps (data 2,429,277 rps lag 601 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%; CPU: 6.01%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 95,007,889 Bps (data 2,429,277 rps lag 601 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%
+I 250929 184543.563 [pool-1-thread-1] VkNetTest - 
+2614112 RPS (6 connections)
+I 250929 184543.563 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 102,215,047 Bps (data 2,613,540 rps lag 591 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%; CPU: 6.57%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 102,215,047 Bps (data 2,613,540 rps lag 591 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%
+I 250929 184553.564 [pool-1-thread-1] VkNetTest - 
+2626265 RPS (6 connections)
+I 250929 184553.564 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 102,702,532 Bps (data 2,626,043 rps lag 556 us); Write: 9 Bps; rtt 142 us; TOP bytes read TimeAndSale: 100%; CPU: 6.19%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 102,702,532 Bps (data 2,626,043 rps lag 556 us); Write: 9 Bps; rtt 142 us; TOP bytes read TimeAndSale: 100%
+I 250929 184603.565 [pool-1-thread-1] VkNetTest - 
+2331103 RPS (6 connections)
+I 250929 184603.565 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 91,160,765 Bps (data 2,330,932 rps lag 628 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%; CPU: 6.14%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 91,160,765 Bps (data 2,330,932 rps lag 628 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%
+I 250929 184613.566 [pool-1-thread-1] VkNetTest - 
+2196073 RPS (6 connections)
+I 250929 184613.566 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,873,016 Bps (data 2,195,751 rps lag 650 us); Write: 9 Bps; rtt 156 us; TOP bytes read TimeAndSale: 100%; CPU: 5.83%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,873,016 Bps (data 2,195,751 rps lag 650 us); Write: 9 Bps; rtt 156 us; TOP bytes read TimeAndSale: 100%
+I 250929 184623.568 [pool-1-thread-1] VkNetTest - 
+2060573 RPS (6 connections)
+I 250929 184623.568 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 80,574,326 Bps (data 2,060,223 rps lag 719 us); Write: 9 Bps; rtt 204 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 6.26%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 80,574,326 Bps (data 2,060,223 rps lag 719 us); Write: 9 Bps; rtt 204 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 184633.570 [pool-1-thread-1] VkNetTest - 
+2137089 RPS (6 connections)
+I 250929 184633.570 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,561,809 Bps (data 2,136,641 rps lag 709 us); Write: 9 Bps; rtt 205 us; TOP bytes read TimeAndSale: 100%; CPU: 5.97%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,561,809 Bps (data 2,136,641 rps lag 709 us); Write: 9 Bps; rtt 205 us; TOP bytes read TimeAndSale: 100%
+I 250929 184643.571 [pool-1-thread-1] VkNetTest - 
+2266745 RPS (6 connections)
+I 250929 184643.571 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,642,969 Bps (data 2,266,539 rps lag 667 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%; CPU: 6.47%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,642,969 Bps (data 2,266,539 rps lag 667 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%
+I 250929 184653.573 [pool-1-thread-1] VkNetTest - 
+2527231 RPS (6 connections)
+I 250929 184653.573 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 98,817,896 Bps (data 2,526,685 rps lag 589 us); Write: 9 Bps; rtt 158 us; TOP bytes read TimeAndSale: 100%; CPU: 6.51%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 98,817,896 Bps (data 2,526,685 rps lag 589 us); Write: 9 Bps; rtt 158 us; TOP bytes read TimeAndSale: 100%
+I 250929 184703.575 [pool-1-thread-1] VkNetTest - 
+2553343 RPS (6 connections)
+I 250929 184703.575 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 99,839,236 Bps (data 2,552,812 rps lag 584 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%; CPU: 5.98%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 99,839,236 Bps (data 2,552,812 rps lag 584 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%
+I 250929 184713.576 [pool-1-thread-1] VkNetTest - 
+2176202 RPS (6 connections)
+I 250929 184713.576 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,102,838 Bps (data 2,176,026 rps lag 1,109 us); Write: 9 Bps; rtt 638 us; TOP bytes read TimeAndSale: 100%; CPU: 5.45%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,102,838 Bps (data 2,176,026 rps lag 1,109 us); Write: 9 Bps; rtt 638 us; TOP bytes read TimeAndSale: 100%
+I 250929 184723.578 [pool-1-thread-1] VkNetTest - 
+2277469 RPS (6 connections)
+I 250929 184723.578 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 89,050,153 Bps (data 2,276,973 rps lag 649 us); Write: 9 Bps; rtt 171 us; TOP bytes read TimeAndSale: 100%; CPU: 6.46%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 89,050,153 Bps (data 2,276,973 rps lag 649 us); Write: 9 Bps; rtt 171 us; TOP bytes read TimeAndSale: 100%
+I 250929 184733.579 [pool-1-thread-1] VkNetTest - 
+2155231 RPS (6 connections)
+I 250929 184733.579 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 84,281,460 Bps (data 2,154,995 rps lag 684 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%; CPU: 5.78%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 84,281,460 Bps (data 2,154,995 rps lag 684 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%
+I 250929 184743.580 [pool-1-thread-1] VkNetTest - 
+2183507 RPS (6 connections)
+I 250929 184743.580 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,389,093 Bps (data 2,183,309 rps lag 694 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%; CPU: 6.36%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,389,093 Bps (data 2,183,309 rps lag 694 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%
+I 250929 184753.581 [pool-1-thread-1] VkNetTest - 
+2265522 RPS (6 connections)
+I 250929 184753.581 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,595,679 Bps (data 2,265,337 rps lag 679 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 5.82%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,595,679 Bps (data 2,265,337 rps lag 679 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 184803.582 [pool-1-thread-1] VkNetTest - 
+2367777 RPS (6 connections)
+I 250929 184803.582 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 92,594,206 Bps (data 2,367,583 rps lag 647 us); Write: 9 Bps; rtt 193 us; TOP bytes read TimeAndSale: 100%; CPU: 5.97%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 92,594,206 Bps (data 2,367,583 rps lag 647 us); Write: 9 Bps; rtt 193 us; TOP bytes read TimeAndSale: 100%
+I 250929 184813.585 [pool-1-thread-1] VkNetTest - 
+2525591 RPS (6 connections)
+I 250929 184813.585 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 98,743,617 Bps (data 2,524,794 rps lag 576 us); Write: 9 Bps; rtt 150 us; TOP bytes read TimeAndSale: 100%; CPU: 5.69%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 98,743,617 Bps (data 2,524,794 rps lag 576 us); Write: 9 Bps; rtt 150 us; TOP bytes read TimeAndSale: 100%
+I 250929 184823.586 [pool-1-thread-1] VkNetTest - 
+2451809 RPS (6 connections)
+I 250929 184823.586 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 95,878,513 Bps (data 2,451,560 rps lag 592 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%; CPU: 5.97%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 95,878,513 Bps (data 2,451,560 rps lag 592 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%
+I 250929 184833.588 [pool-1-thread-1] VkNetTest - 
+2249818 RPS (6 connections)
+I 250929 184833.588 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,972,020 Bps (data 2,249,410 rps lag 649 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 5.41%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,972,020 Bps (data 2,249,410 rps lag 649 us); Write: 9 Bps; rtt 172 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 184843.588 [pool-1-thread-1] VkNetTest - 
+2145120 RPS (6 connections)
+I 250929 184843.588 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,893,863 Bps (data 2,145,141 rps lag 677 us); Write: 9 Bps; rtt 176 us; TOP bytes read TimeAndSale: 100%; CPU: 6.14%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,893,863 Bps (data 2,145,141 rps lag 677 us); Write: 9 Bps; rtt 176 us; TOP bytes read TimeAndSale: 100%
+I 250929 184853.591 [pool-1-thread-1] VkNetTest - 
+2124978 RPS (6 connections)
+I 250929 184853.591 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,078,481 Bps (data 2,124,238 rps lag 731 us); Write: 10 Bps; rtt 224 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 6.44%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,078,481 Bps (data 2,124,238 rps lag 731 us); Write: 10 Bps; rtt 224 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 184903.593 [pool-1-thread-1] VkNetTest - 
+2122057 RPS (6 connections)
+I 250929 184903.593 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 82,976,809 Bps (data 2,121,653 rps lag 731 us); Write: 9 Bps; rtt 224 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 5.82%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 82,976,809 Bps (data 2,121,653 rps lag 731 us); Write: 9 Bps; rtt 224 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 184913.595 [pool-1-thread-1] VkNetTest - 
+2303953 RPS (6 connections)
+I 250929 184913.595 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 90,090,977 Bps (data 2,303,559 rps lag 673 us); Write: 9 Bps; rtt 205 us; TOP bytes read TimeAndSale: 100%; CPU: 6.28%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 90,090,977 Bps (data 2,303,559 rps lag 673 us); Write: 9 Bps; rtt 205 us; TOP bytes read TimeAndSale: 100%
+I 250929 184923.596 [pool-1-thread-1] VkNetTest - 
+2624757 RPS (6 connections)
+I 250929 184923.596 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 102,639,816 Bps (data 2,624,434 rps lag 597 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%; CPU: 6.21%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 102,639,816 Bps (data 2,624,434 rps lag 597 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%
+I 250929 184933.598 [pool-1-thread-1] VkNetTest - 
+2592254 RPS (6 connections)
+I 250929 184933.598 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 101,362,948 Bps (data 2,591,750 rps lag 574 us); Write: 9 Bps; rtt 152 us; TOP bytes read TimeAndSale: 100%; CPU: 5.98%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 101,362,948 Bps (data 2,591,750 rps lag 574 us); Write: 9 Bps; rtt 152 us; TOP bytes read TimeAndSale: 100%
+I 250929 184943.600 [pool-1-thread-1] VkNetTest - 
+2437276 RPS (6 connections)
+I 250929 184943.600 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 95,299,000 Bps (data 2,436,746 rps lag 586 us); Write: 9 Bps; rtt 140 us; TOP bytes read TimeAndSale: 100%; CPU: 5.87%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 95,299,000 Bps (data 2,436,746 rps lag 586 us); Write: 9 Bps; rtt 140 us; TOP bytes read TimeAndSale: 100%
+I 250929 184953.601 [pool-1-thread-1] VkNetTest - 
+2240981 RPS (6 connections)
+I 250929 184953.601 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,634,085 Bps (data 2,240,736 rps lag 651 us); Write: 9 Bps; rtt 165 us; TOP bytes read TimeAndSale: 100%; CPU: 6.08%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,634,085 Bps (data 2,240,736 rps lag 651 us); Write: 9 Bps; rtt 165 us; TOP bytes read TimeAndSale: 100%
+I 250929 185003.602 [pool-1-thread-1] VkNetTest - 
+2260221 RPS (6 connections)
+I 250929 185003.602 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,392,734 Bps (data 2,260,139 rps lag 677 us); Write: 9 Bps; rtt 192 us; TOP bytes read TimeAndSale: 100%; CPU: 6.00%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,392,734 Bps (data 2,260,139 rps lag 677 us); Write: 9 Bps; rtt 192 us; TOP bytes read TimeAndSale: 100%
+I 250929 185013.605 [pool-1-thread-1] VkNetTest - 
+2201893 RPS (6 connections)
+I 250929 185013.605 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,083,851 Bps (data 2,201,131 rps lag 690 us); Write: 9 Bps; rtt 202 us; TOP bytes read TimeAndSale: 100%; CPU: 5.79%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,083,851 Bps (data 2,201,131 rps lag 690 us); Write: 9 Bps; rtt 202 us; TOP bytes read TimeAndSale: 100%
+I 250929 185023.606 [pool-1-thread-1] VkNetTest - 
+2265011 RPS (6 connections)
+I 250929 185023.606 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,575,806 Bps (data 2,264,823 rps lag 666 us); Write: 9 Bps; rtt 189 us; TOP bytes read TimeAndSale: 100%; CPU: 6.44%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,575,806 Bps (data 2,264,823 rps lag 666 us); Write: 9 Bps; rtt 189 us; TOP bytes read TimeAndSale: 100%
+I 250929 185033.607 [pool-1-thread-1] VkNetTest - 
+2450290 RPS (6 connections)
+I 250929 185033.607 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 95,820,088 Bps (data 2,450,045 rps lag 648 us); Write: 9 Bps; rtt 203 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 5.79%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 95,820,088 Bps (data 2,450,045 rps lag 648 us); Write: 9 Bps; rtt 203 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 185043.609 [pool-1-thread-1] VkNetTest - 
+2629414 RPS (6 connections)
+I 250929 185043.609 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 102,810,408 Bps (data 2,628,809 rps lag 579 us); Write: 9 Bps; rtt 165 us; TOP bytes read TimeAndSale: 100%; CPU: 5.88%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 102,810,408 Bps (data 2,628,809 rps lag 579 us); Write: 9 Bps; rtt 165 us; TOP bytes read TimeAndSale: 100%
+I 250929 185053.610 [pool-1-thread-1] VkNetTest - 
+2541274 RPS (6 connections)
+I 250929 185053.610 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 99,378,618 Bps (data 2,541,061 rps lag 582 us); Write: 9 Bps; rtt 152 us; TOP bytes read TimeAndSale: 100%; CPU: 5.85%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 99,378,618 Bps (data 2,541,061 rps lag 582 us); Write: 9 Bps; rtt 152 us; TOP bytes read TimeAndSale: 100%
+I 250929 185103.611 [pool-1-thread-1] VkNetTest - 
+2271463 RPS (6 connections)
+I 250929 185103.611 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,824,698 Bps (data 2,271,215 rps lag 664 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%; CPU: 6.35%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,824,698 Bps (data 2,271,215 rps lag 664 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%
+I 250929 185113.612 [pool-1-thread-1] VkNetTest - 
+2175951 RPS (6 connections)
+I 250929 185113.612 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,091,287 Bps (data 2,175,751 rps lag 682 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%; CPU: 6.16%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,091,287 Bps (data 2,175,751 rps lag 682 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%
+I 250929 185123.613 [pool-1-thread-1] VkNetTest - 
+2106216 RPS (6 connections)
+I 250929 185123.613 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 82,365,208 Bps (data 2,106,011 rps lag 713 us); Write: 9 Bps; rtt 203 us; TOP bytes read TimeAndSale: 100%; CPU: 6.05%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 82,365,208 Bps (data 2,106,011 rps lag 713 us); Write: 9 Bps; rtt 203 us; TOP bytes read TimeAndSale: 100%
+I 250929 185133.615 [pool-1-thread-1] VkNetTest - 
+2235078 RPS (6 connections)
+I 250929 185133.615 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,394,826 Bps (data 2,234,629 rps lag 642 us); Write: 9 Bps; rtt 153 us; TOP bytes read TimeAndSale: 100%; CPU: 5.89%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,394,826 Bps (data 2,234,629 rps lag 642 us); Write: 9 Bps; rtt 153 us; TOP bytes read TimeAndSale: 100%
+I 250929 185143.616 [pool-1-thread-1] VkNetTest - 
+2212299 RPS (6 connections)
+I 250929 185143.616 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,513,103 Bps (data 2,212,118 rps lag 707 us); Write: 9 Bps; rtt 220 us; TOP bytes read TimeAndSale: 100%; CPU: 5.57%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,513,103 Bps (data 2,212,118 rps lag 707 us); Write: 9 Bps; rtt 220 us; TOP bytes read TimeAndSale: 100%
+I 250929 185153.618 [pool-1-thread-1] VkNetTest - 
+2333136 RPS (6 connections)
+I 250929 185153.618 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 91,230,466 Bps (data 2,332,669 rps lag 655 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%; CPU: 5.79%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 91,230,466 Bps (data 2,332,669 rps lag 655 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%
+I 250929 185203.619 [pool-1-thread-1] VkNetTest - 
+2588800 RPS (6 connections)
+I 250929 185203.619 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 101,232,792 Bps (data 2,588,438 rps lag 588 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%; CPU: 5.88%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 101,232,792 Bps (data 2,588,438 rps lag 588 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%
+I 250929 185213.620 [pool-1-thread-1] VkNetTest - 
+2554213 RPS (6 connections)
+I 250929 185213.620 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 99,886,703 Bps (data 2,554,019 rps lag 582 us); Write: 9 Bps; rtt 158 us; TOP bytes read TimeAndSale: 100%; CPU: 5.36%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 99,886,703 Bps (data 2,554,019 rps lag 582 us); Write: 9 Bps; rtt 158 us; TOP bytes read TimeAndSale: 100%
+I 250929 185223.621 [pool-1-thread-1] VkNetTest - 
+2381356 RPS (6 connections)
+I 250929 185223.621 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 93,125,355 Bps (data 2,381,139 rps lag 620 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%; CPU: 5.59%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 93,125,355 Bps (data 2,381,139 rps lag 620 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%
+I 250929 185233.622 [pool-1-thread-1] VkNetTest - 
+2248176 RPS (6 connections)
+I 250929 185233.622 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,913,292 Bps (data 2,247,910 rps lag 644 us); Write: 9 Bps; rtt 158 us; TOP bytes read TimeAndSale: 100%; CPU: 5.53%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,913,292 Bps (data 2,247,910 rps lag 644 us); Write: 9 Bps; rtt 158 us; TOP bytes read TimeAndSale: 100%
+I 250929 185243.623 [pool-1-thread-1] VkNetTest - 
+2227985 RPS (6 connections)
+I 250929 185243.623 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,125,521 Bps (data 2,227,783 rps lag 652 us); Write: 9 Bps; rtt 165 us; TOP bytes read TimeAndSale: 100%; CPU: 6.10%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,125,521 Bps (data 2,227,783 rps lag 652 us); Write: 9 Bps; rtt 165 us; TOP bytes read TimeAndSale: 100%
+I 250929 185253.624 [pool-1-thread-1] VkNetTest - 
+2171263 RPS (6 connections)
+I 250929 185253.624 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 84,904,952 Bps (data 2,170,997 rps lag 695 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%; CPU: 5.64%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 84,904,952 Bps (data 2,170,997 rps lag 695 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%
+I 250929 185303.625 [pool-1-thread-1] VkNetTest - 
+2107674 RPS (6 connections)
+I 250929 185303.625 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 82,424,153 Bps (data 2,107,511 rps lag 787 us); Write: 9 Bps; rtt 284 us; TOP bytes read TimeAndSale: 100%; CPU: 6.19%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 82,424,153 Bps (data 2,107,511 rps lag 787 us); Write: 9 Bps; rtt 284 us; TOP bytes read TimeAndSale: 100%
+I 250929 185313.628 [pool-1-thread-1] VkNetTest - 
+2263623 RPS (6 connections)
+I 250929 185313.628 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,501,269 Bps (data 2,262,939 rps lag 741 us); Write: 9 Bps; rtt 269 us; TOP bytes read TimeAndSale: 100%; CPU: 6.14%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,501,269 Bps (data 2,262,939 rps lag 741 us); Write: 9 Bps; rtt 269 us; TOP bytes read TimeAndSale: 100%
+I 250929 185323.630 [pool-1-thread-1] VkNetTest - 
+2561321 RPS (6 connections)
+I 250929 185323.630 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 100,153,388 Bps (data 2,560,842 rps lag 580 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%; CPU: 5.81%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 100,153,388 Bps (data 2,560,842 rps lag 580 us); Write: 9 Bps; rtt 155 us; TOP bytes read TimeAndSale: 100%
+I 250929 185333.631 [pool-1-thread-1] VkNetTest - 
+2597288 RPS (6 connections)
+I 250929 185333.631 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 101,566,443 Bps (data 2,596,999 rps lag 577 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%; CPU: 5.47%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 101,566,443 Bps (data 2,596,999 rps lag 577 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%
+I 250929 185343.633 [pool-1-thread-1] VkNetTest - 
+2477976 RPS (6 connections)
+I 250929 185343.633 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 96,894,187 Bps (data 2,477,481 rps lag 719 us); Write: 9 Bps; rtt 286 us; TOP bytes read TimeAndSale: 100%; CPU: 6.02%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 96,894,187 Bps (data 2,477,481 rps lag 719 us); Write: 9 Bps; rtt 286 us; TOP bytes read TimeAndSale: 100%
+I 250929 185353.635 [pool-1-thread-1] VkNetTest - 
+2349975 RPS (6 connections)
+I 250929 185353.635 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 91,884,396 Bps (data 2,349,444 rps lag 625 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%; CPU: 5.78%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 91,884,396 Bps (data 2,349,444 rps lag 625 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%
+I 250929 185403.636 [pool-1-thread-1] VkNetTest - 
+2221196 RPS (6 connections)
+I 250929 185403.636 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,864,411 Bps (data 2,221,036 rps lag 657 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%; CPU: 5.69%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,864,411 Bps (data 2,221,036 rps lag 657 us); Write: 9 Bps; rtt 168 us; TOP bytes read TimeAndSale: 100%
+I 250929 185413.638 [pool-1-thread-1] VkNetTest - 
+2181023 RPS (6 connections)
+I 250929 185413.638 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,281,229 Bps (data 2,180,586 rps lag 671 us); Write: 9 Bps; rtt 175 us; TOP bytes read TimeAndSale: 100%; CPU: 5.81%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,281,229 Bps (data 2,180,586 rps lag 671 us); Write: 9 Bps; rtt 175 us; TOP bytes read TimeAndSale: 100%
+I 250929 185423.640 [pool-1-thread-1] VkNetTest - 
+2213764 RPS (6 connections)
+I 250929 185423.640 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,561,817 Bps (data 2,213,375 rps lag 665 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%; CPU: 6.07%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,561,817 Bps (data 2,213,375 rps lag 665 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%
+I 250929 185433.642 [pool-1-thread-1] VkNetTest - 
+2192577 RPS (6 connections)
+I 250929 185433.642 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,732,704 Bps (data 2,192,084 rps lag 698 us); Write: 9 Bps; rtt 202 us; TOP bytes read TimeAndSale: 100%; CPU: 5.81%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,732,704 Bps (data 2,192,084 rps lag 698 us); Write: 9 Bps; rtt 202 us; TOP bytes read TimeAndSale: 100%
+I 250929 185443.643 [pool-1-thread-1] VkNetTest - 
+2327852 RPS (6 connections)
+I 250929 185443.643 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 91,033,884 Bps (data 2,327,702 rps lag 628 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%; CPU: 5.67%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 91,033,884 Bps (data 2,327,702 rps lag 628 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%
+I 250929 185453.646 [pool-1-thread-1] VkNetTest - 
+2593947 RPS (6 connections)
+I 250929 185453.646 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 101,419,831 Bps (data 2,593,272 rps lag 580 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%; CPU: 5.91%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 101,419,831 Bps (data 2,593,272 rps lag 580 us); Write: 9 Bps; rtt 162 us; TOP bytes read TimeAndSale: 100%
+I 250929 185503.649 [pool-1-thread-1] VkNetTest - 
+2502832 RPS (6 connections)
+I 250929 185503.649 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,845,604 Bps (data 2,501,877 rps lag 677 us); Write: 9 Bps; rtt 247 us; TOP bytes read TimeAndSale: 100%; CPU: 5.86%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,845,604 Bps (data 2,501,877 rps lag 677 us); Write: 9 Bps; rtt 247 us; TOP bytes read TimeAndSale: 100%
+I 250929 185513.651 [pool-1-thread-1] VkNetTest - 
+2310169 RPS (6 connections)
+I 250929 185513.651 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 90,329,913 Bps (data 2,309,727 rps lag 661 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%; CPU: 5.66%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 90,329,913 Bps (data 2,309,727 rps lag 661 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%
+I 250929 185523.653 [pool-1-thread-1] VkNetTest - 
+1943565 RPS (6 connections)
+I 250929 185523.653 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 75,994,688 Bps (data 1,943,212 rps lag 1,004 us); Write: 8 Bps; rtt 468 us; TOP bytes read TimeAndSale: 100%; CPU: 5.87%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 75,994,688 Bps (data 1,943,212 rps lag 1,004 us); Write: 8 Bps; rtt 468 us; TOP bytes read TimeAndSale: 100%
+I 250929 185533.655 [pool-1-thread-1] VkNetTest - 
+2056483 RPS (6 connections)
+I 250929 185533.655 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 80,409,053 Bps (data 2,056,059 rps lag 811 us); Write: 9 Bps; rtt 295 us; TOP bytes read TimeAndSale: 100%; CPU: 5.96%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 80,409,053 Bps (data 2,056,059 rps lag 811 us); Write: 9 Bps; rtt 295 us; TOP bytes read TimeAndSale: 100%
+I 250929 185543.657 [pool-1-thread-1] VkNetTest - 
+2166434 RPS (6 connections)
+I 250929 185543.657 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 84,709,251 Bps (data 2,166,020 rps lag 693 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%; CPU: 5.48%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 84,709,251 Bps (data 2,166,020 rps lag 693 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%
+I 250929 185553.659 [pool-1-thread-1] VkNetTest - 
+2218672 RPS (6 connections)
+I 250929 185553.659 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,751,236 Bps (data 2,218,228 rps lag 677 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%; CPU: 5.85%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,751,236 Bps (data 2,218,228 rps lag 677 us); Write: 9 Bps; rtt 188 us; TOP bytes read TimeAndSale: 100%
+I 250929 185603.661 [pool-1-thread-1] VkNetTest - 
+2138438 RPS (6 connections)
+I 250929 185603.661 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,611,510 Bps (data 2,137,949 rps lag 801 us); Write: 9 Bps; rtt 311 us; TOP bytes read TimeAndSale: 100%; CPU: 5.95%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,611,510 Bps (data 2,137,949 rps lag 801 us); Write: 9 Bps; rtt 311 us; TOP bytes read TimeAndSale: 100%
+I 250929 185613.663 [pool-1-thread-1] VkNetTest - 
+2507038 RPS (6 connections)
+I 250929 185613.663 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 98,023,878 Bps (data 2,506,475 rps lag 623 us); Write: 8 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%; CPU: 6.01%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 98,023,878 Bps (data 2,506,475 rps lag 623 us); Write: 8 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%
+I 250929 185623.665 [pool-1-thread-1] VkNetTest - 
+2569758 RPS (6 connections)
+I 250929 185623.665 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 100,479,761 Bps (data 2,569,285 rps lag 593 us); Write: 8 Bps; rtt 169 us; TOP bytes read TimeAndSale: 100%; CPU: 5.59%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 100,479,761 Bps (data 2,569,285 rps lag 593 us); Write: 8 Bps; rtt 169 us; TOP bytes read TimeAndSale: 100%
+I 250929 185633.667 [pool-1-thread-1] VkNetTest - 
+2425947 RPS (6 connections)
+I 250929 185633.667 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 94,855,678 Bps (data 2,425,482 rps lag 628 us); Write: 9 Bps; rtt 175 us; TOP bytes read TimeAndSale: 100%; CPU: 6.55%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 94,855,678 Bps (data 2,425,482 rps lag 628 us); Write: 9 Bps; rtt 175 us; TOP bytes read TimeAndSale: 100%
+I 250929 185643.669 [pool-1-thread-1] VkNetTest - 
+2210320 RPS (6 connections)
+I 250929 185643.669 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,423,896 Bps (data 2,209,917 rps lag 670 us); Write: 9 Bps; rtt 177 us; TOP bytes read TimeAndSale: 100%; CPU: 5.85%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,423,896 Bps (data 2,209,917 rps lag 670 us); Write: 9 Bps; rtt 177 us; TOP bytes read TimeAndSale: 100%
+I 250929 185653.671 [pool-1-thread-1] VkNetTest - 
+2151307 RPS (6 connections)
+I 250929 185653.671 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 84,119,581 Bps (data 2,150,921 rps lag 692 us); Write: 9 Bps; rtt 190 us; TOP bytes read TimeAndSale: 100%; CPU: 5.81%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 84,119,581 Bps (data 2,150,921 rps lag 692 us); Write: 9 Bps; rtt 190 us; TOP bytes read TimeAndSale: 100%
+I 250929 185703.673 [pool-1-thread-1] VkNetTest - 
+2173992 RPS (6 connections)
+I 250929 185703.673 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,000,906 Bps (data 2,173,495 rps lag 727 us); Write: 9 Bps; rtt 228 us; TOP bytes read TimeAndSale: 100%; CPU: 6.11%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,000,906 Bps (data 2,173,495 rps lag 727 us); Write: 9 Bps; rtt 228 us; TOP bytes read TimeAndSale: 100%
+I 250929 185713.675 [pool-1-thread-1] VkNetTest - 
+2179303 RPS (6 connections)
+I 250929 185713.675 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,208,191 Bps (data 2,178,806 rps lag 1,077 us); Write: 9 Bps; rtt 591 us; TOP bytes read TimeAndSale: 100%; CPU: 5.79%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,208,191 Bps (data 2,178,806 rps lag 1,077 us); Write: 9 Bps; rtt 591 us; TOP bytes read TimeAndSale: 100%
+I 250929 185723.676 [pool-1-thread-1] VkNetTest - 
+2417672 RPS (6 connections)
+I 250929 185723.676 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 94,547,848 Bps (data 2,417,533 rps lag 629 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%; CPU: 5.72%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 94,547,848 Bps (data 2,417,533 rps lag 629 us); Write: 9 Bps; rtt 182 us; TOP bytes read TimeAndSale: 100%
+I 250929 185733.677 [pool-1-thread-1] VkNetTest - 
+2498168 RPS (6 connections)
+I 250929 185733.677 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,687,471 Bps (data 2,497,821 rps lag 647 us); Write: 9 Bps; rtt 218 us; TOP bytes read TimeAndSale: 100%; CPU: 6.05%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,687,471 Bps (data 2,497,821 rps lag 647 us); Write: 9 Bps; rtt 218 us; TOP bytes read TimeAndSale: 100%
+I 250929 185743.679 [pool-1-thread-1] VkNetTest - 
+2400362 RPS (6 connections)
+I 250929 185743.679 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 93,857,818 Bps (data 2,399,917 rps lag 622 us); Write: 9 Bps; rtt 173 us; TOP bytes read TimeAndSale: 100%; CPU: 5.65%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 93,857,818 Bps (data 2,399,917 rps lag 622 us); Write: 9 Bps; rtt 173 us; TOP bytes read TimeAndSale: 100%
+I 250929 185753.681 [pool-1-thread-1] VkNetTest - 
+2228898 RPS (6 connections)
+I 250929 185753.681 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,151,564 Bps (data 2,228,417 rps lag 683 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 6.22%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,151,564 Bps (data 2,228,417 rps lag 683 us); Write: 9 Bps; rtt 196 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 185803.682 [pool-1-thread-1] VkNetTest - 
+2171980 RPS (6 connections)
+I 250929 185803.682 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 84,938,994 Bps (data 2,171,819 rps lag 682 us); Write: 9 Bps; rtt 184 us; TOP bytes read TimeAndSale: 100%; CPU: 5.86%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 84,938,994 Bps (data 2,171,819 rps lag 682 us); Write: 9 Bps; rtt 184 us; TOP bytes read TimeAndSale: 100%
+I 250929 185813.684 [pool-1-thread-1] VkNetTest - 
+2053435 RPS (6 connections)
+I 250929 185813.684 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 80,291,577 Bps (data 2,053,019 rps lag 728 us); Write: 9 Bps; rtt 206 us; TOP bytes read TimeAndSale: 100%; CPU: 5.82%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 80,291,577 Bps (data 2,053,019 rps lag 728 us); Write: 9 Bps; rtt 206 us; TOP bytes read TimeAndSale: 100%
+I 250929 185823.685 [pool-1-thread-1] VkNetTest - 
+2150125 RPS (6 connections)
+I 250929 185823.685 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 84,081,549 Bps (data 2,149,895 rps lag 697 us); Write: 9 Bps; rtt 195 us; TOP bytes read TimeAndSale: 100%; CPU: 5.56%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 84,081,549 Bps (data 2,149,895 rps lag 697 us); Write: 9 Bps; rtt 195 us; TOP bytes read TimeAndSale: 100%
+I 250929 185833.688 [pool-1-thread-1] VkNetTest - 
+2256889 RPS (6 connections)
+I 250929 185833.688 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,240,652 Bps (data 2,256,295 rps lag 668 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 6.02%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,240,652 Bps (data 2,256,295 rps lag 668 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 185843.689 [pool-1-thread-1] VkNetTest - 
+2359670 RPS (6 connections)
+I 250929 185843.689 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 92,275,027 Bps (data 2,359,433 rps lag 751 us); Write: 9 Bps; rtt 304 us; TOP bytes read TimeAndSale: 100%; CPU: 5.44%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 92,275,027 Bps (data 2,359,433 rps lag 751 us); Write: 9 Bps; rtt 304 us; TOP bytes read TimeAndSale: 100%
+I 250929 185853.691 [pool-1-thread-1] VkNetTest - 
+2493648 RPS (6 connections)
+I 250929 185853.691 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,501,874 Bps (data 2,493,049 rps lag 619 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%; CPU: 5.53%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,501,874 Bps (data 2,493,049 rps lag 619 us); Write: 9 Bps; rtt 187 us; TOP bytes read TimeAndSale: 100%
+I 250929 185903.693 [pool-1-thread-1] VkNetTest - 
+2226284 RPS (6 connections)
+I 250929 185903.693 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 87,053,026 Bps (data 2,225,889 rps lag 711 us); Write: 9 Bps; rtt 231 us; TOP bytes read TimeAndSale: 100%; CPU: 6.04%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 87,053,026 Bps (data 2,225,889 rps lag 711 us); Write: 9 Bps; rtt 231 us; TOP bytes read TimeAndSale: 100%
+I 250929 185913.696 [pool-1-thread-1] VkNetTest - 
+2072662 RPS (6 connections)
+I 250929 185913.696 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 81,037,463 Bps (data 2,072,071 rps lag 817 us); Write: 9 Bps; rtt 302 us; TOP bytes read TimeAndSale: 100%; CPU: 5.32%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 81,037,463 Bps (data 2,072,071 rps lag 817 us); Write: 9 Bps; rtt 302 us; TOP bytes read TimeAndSale: 100%
+I 250929 185923.697 [pool-1-thread-1] VkNetTest - 
+2175941 RPS (6 connections)
+I 250929 185923.697 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,087,569 Bps (data 2,175,642 rps lag 700 us); Write: 9 Bps; rtt 201 us; TOP bytes read TimeAndSale: 100%; CPU: 5.82%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,087,569 Bps (data 2,175,642 rps lag 700 us); Write: 9 Bps; rtt 201 us; TOP bytes read TimeAndSale: 100%
+I 250929 185933.698 [pool-1-thread-1] VkNetTest - 
+2175652 RPS (6 connections)
+I 250929 185933.698 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,078,941 Bps (data 2,175,393 rps lag 701 us); Write: 9 Bps; rtt 201 us; TOP bytes read TimeAndSale: 100%; CPU: 5.85%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,078,941 Bps (data 2,175,393 rps lag 701 us); Write: 9 Bps; rtt 201 us; TOP bytes read TimeAndSale: 100%
+I 250929 185943.700 [pool-1-thread-1] VkNetTest - 
+2146512 RPS (6 connections)
+I 250929 185943.700 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 83,934,336 Bps (data 2,146,134 rps lag 917 us); Write: 9 Bps; rtt 420 us; TOP bytes read TimeAndSale: 100%; CPU: 6.03%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 83,934,336 Bps (data 2,146,134 rps lag 917 us); Write: 9 Bps; rtt 420 us; TOP bytes read TimeAndSale: 100%
+I 250929 185953.701 [pool-1-thread-1] VkNetTest - 
+2338141 RPS (6 connections)
+I 250929 185953.701 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 91,432,735 Bps (data 2,337,877 rps lag 640 us); Write: 9 Bps; rtt 181 us; TOP bytes read TimeAndSale: 100%; CPU: 5.62%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 91,432,735 Bps (data 2,337,877 rps lag 640 us); Write: 9 Bps; rtt 181 us; TOP bytes read TimeAndSale: 100%
+I 250929 190003.702 [pool-1-thread-1] VkNetTest - 
+2548862 RPS (6 connections)
+I 250929 190003.702 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 99,681,091 Bps (data 2,548,750 rps lag 604 us); Write: 9 Bps; rtt 179 us; TOP bytes read TimeAndSale: 100%; CPU: 6.15%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 99,681,091 Bps (data 2,548,750 rps lag 604 us); Write: 9 Bps; rtt 179 us; TOP bytes read TimeAndSale: 100%
+I 250929 190013.703 [pool-1-thread-1] VkNetTest - 
+2547603 RPS (6 connections)
+I 250929 190013.703 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 99,621,692 Bps (data 2,547,266 rps lag 579 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%; CPU: 6.21%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 99,621,692 Bps (data 2,547,266 rps lag 579 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%
+I 250929 190023.705 [pool-1-thread-1] VkNetTest - 
+2336974 RPS (6 connections)
+I 250929 190023.705 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 91,379,273 Bps (data 2,336,486 rps lag 627 us); Write: 9 Bps; rtt 159 us; TOP bytes read TimeAndSale: 100%; CPU: 5.87%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 91,379,273 Bps (data 2,336,486 rps lag 627 us); Write: 9 Bps; rtt 159 us; TOP bytes read TimeAndSale: 100%
+I 250929 190033.706 [pool-1-thread-1] VkNetTest - 
+2183275 RPS (6 connections)
+I 250929 190033.706 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,378,861 Bps (data 2,183,056 rps lag 664 us); Write: 9 Bps; rtt 163 us; TOP bytes read TimeAndSale: 100%; CPU: 5.71%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,378,861 Bps (data 2,183,056 rps lag 664 us); Write: 9 Bps; rtt 163 us; TOP bytes read TimeAndSale: 100%
+I 250929 190043.707 [pool-1-thread-1] VkNetTest - 
+2209812 RPS (6 connections)
+I 250929 190043.707 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,417,403 Bps (data 2,209,628 rps lag 691 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%; CPU: 6.13%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,417,403 Bps (data 2,209,628 rps lag 691 us); Write: 9 Bps; rtt 198 us; TOP bytes read TimeAndSale: 100%
+I 250929 190053.709 [pool-1-thread-1] VkNetTest - 
+2005249 RPS (6 connections)
+I 250929 190053.709 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 78,406,918 Bps (data 2,004,832 rps lag 785 us); Write: 9 Bps; rtt 255 us; TOP bytes read TimeAndSale: 100%; CPU: 5.98%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 78,406,918 Bps (data 2,004,832 rps lag 785 us); Write: 9 Bps; rtt 255 us; TOP bytes read TimeAndSale: 100%
+I 250929 190103.710 [pool-1-thread-1] VkNetTest - 
+2264264 RPS (6 connections)
+I 250929 190103.710 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 88,544,017 Bps (data 2,264,017 rps lag 742 us); Write: 10 Bps; rtt 263 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 6.00%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 88,544,017 Bps (data 2,264,017 rps lag 742 us); Write: 10 Bps; rtt 263 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 190113.711 [pool-1-thread-1] VkNetTest - 
+2484286 RPS (6 connections)
+I 250929 190113.712 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 97,142,645 Bps (data 2,483,872 rps lag 674 us); Write: 9 Bps; rtt 239 us; TOP bytes read TimeAndSale: 100%; CPU: 5.65%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 97,142,645 Bps (data 2,483,872 rps lag 674 us); Write: 9 Bps; rtt 239 us; TOP bytes read TimeAndSale: 100%
+I 250929 190123.714 [pool-1-thread-1] VkNetTest - 
+2543838 RPS (6 connections)
+I 250929 190123.714 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 99,468,953 Bps (data 2,543,350 rps lag 701 us); Write: 9 Bps; rtt 277 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 5.48%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 99,468,953 Bps (data 2,543,350 rps lag 701 us); Write: 9 Bps; rtt 277 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 190133.714 [pool-1-thread-1] VkNetTest - 
+2431682 RPS (6 connections)
+I 250929 190133.714 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 95,098,365 Bps (data 2,431,621 rps lag 615 us); Write: 9 Bps; rtt 171 us; TOP bytes read TimeAndSale: 100%; CPU: 5.75%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 95,098,365 Bps (data 2,431,621 rps lag 615 us); Write: 9 Bps; rtt 171 us; TOP bytes read TimeAndSale: 100%
+I 250929 190143.715 [pool-1-thread-1] VkNetTest - 
+2203776 RPS (6 connections)
+I 250929 190143.715 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,177,277 Bps (data 2,203,473 rps lag 694 us); Write: 9 Bps; rtt 205 us; TOP bytes read TimeAndSale: 100%; CPU: 5.52%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,177,277 Bps (data 2,203,473 rps lag 694 us); Write: 9 Bps; rtt 205 us; TOP bytes read TimeAndSale: 100%
+I 250929 190153.717 [pool-1-thread-1] VkNetTest - 
+2174912 RPS (6 connections)
+I 250929 190153.717 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,043,568 Bps (data 2,174,518 rps lag 687 us); Write: 9 Bps; rtt 191 us; TOP bytes read TimeAndSale: 100%; CPU: 5.75%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,043,568 Bps (data 2,174,518 rps lag 687 us); Write: 9 Bps; rtt 191 us; TOP bytes read TimeAndSale: 100%
+I 250929 190203.718 [pool-1-thread-1] VkNetTest - 
+2196936 RPS (6 connections)
+I 250929 190203.718 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,912,624 Bps (data 2,196,715 rps lag 660 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%; CPU: 6.21%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,912,624 Bps (data 2,196,715 rps lag 660 us); Write: 9 Bps; rtt 164 us; TOP bytes read TimeAndSale: 100%
+I 250929 190213.720 [pool-1-thread-1] VkNetTest - 
+2196025 RPS (6 connections)
+I 250929 190213.720 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,868,078 Bps (data 2,195,567 rps lag 645 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%; CPU: 5.84%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,868,078 Bps (data 2,195,567 rps lag 645 us); Write: 9 Bps; rtt 151 us; TOP bytes read TimeAndSale: 100%
+I 250929 190223.721 [pool-1-thread-1] VkNetTest - 
+2115733 RPS (6 connections)
+I 250929 190223.721 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 82,737,645 Bps (data 2,115,562 rps lag 680 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%; CPU: 5.98%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 82,737,645 Bps (data 2,115,562 rps lag 680 us); Write: 9 Bps; rtt 174 us; TOP bytes read TimeAndSale: 100%
+I 250929 190233.723 [pool-1-thread-1] VkNetTest - 
+2374661 RPS (6 connections)
+I 250929 190233.723 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 92,851,431 Bps (data 2,374,145 rps lag 633 us); Write: 9 Bps; rtt 178 us; TOP bytes read TimeAndSale: 100%; CPU: 5.87%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 92,851,431 Bps (data 2,374,145 rps lag 633 us); Write: 9 Bps; rtt 178 us; TOP bytes read TimeAndSale: 100%
+I 250929 190243.724 [pool-1-thread-1] VkNetTest - 
+2528192 RPS (6 connections)
+I 250929 190243.724 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 98,868,216 Bps (data 2,527,980 rps lag 657 us); Write: 9 Bps; rtt 231 us; TOP bytes read TimeAndSale: 100%; CPU: 5.89%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 98,868,216 Bps (data 2,527,980 rps lag 657 us); Write: 9 Bps; rtt 231 us; TOP bytes read TimeAndSale: 100%
+I 250929 190253.724 [pool-1-thread-1] VkNetTest - 
+2655982 RPS (6 connections)
+I 250929 190253.724 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 103,873,642 Bps (data 2,655,982 rps lag 549 us); Write: 9 Bps; rtt 138 us; TOP bytes read TimeAndSale: 100%; CPU: 5.82%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 103,873,642 Bps (data 2,655,982 rps lag 549 us); Write: 9 Bps; rtt 138 us; TOP bytes read TimeAndSale: 100%
+I 250929 190303.725 [pool-1-thread-1] VkNetTest - 
+2369621 RPS (6 connections)
+I 250929 190303.725 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 92,664,381 Bps (data 2,369,364 rps lag 628 us); Write: 9 Bps; rtt 169 us; TOP bytes read TimeAndSale: 100%; CPU: 6.32%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 92,664,381 Bps (data 2,369,364 rps lag 628 us); Write: 9 Bps; rtt 169 us; TOP bytes read TimeAndSale: 100%
+I 250929 190313.727 [pool-1-thread-1] VkNetTest - 
+2204946 RPS (6 connections)
+I 250929 190313.727 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 86,215,002 Bps (data 2,204,464 rps lag 691 us); Write: 9 Bps; rtt 199 us; TOP bytes read TimeAndSale: 100%; CPU: 5.94%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 86,215,002 Bps (data 2,204,464 rps lag 691 us); Write: 9 Bps; rtt 199 us; TOP bytes read TimeAndSale: 100%
+I 250929 190323.728 [pool-1-thread-1] VkNetTest - 
+2194313 RPS (6 connections)
+I 250929 190323.728 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 85,815,073 Bps (data 2,194,197 rps lag 679 us); Write: 9 Bps; rtt 186 us; TOP bytes read TimeAndSale: 100%; CPU: 5.99%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 85,815,073 Bps (data 2,194,197 rps lag 679 us); Write: 9 Bps; rtt 186 us; TOP bytes read TimeAndSale: 100%
+E 250929 190329.633 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from 127.0.0.1:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.633 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from 127.0.0.1:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.633 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from [0:0:0:0:0:0:0:1]:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.633 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from [0:0:0:0:0:0:0:1]:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.633 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from 127.0.0.1:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.633 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from 127.0.0.1:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 190329.635 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 190329.635 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 190329.636 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 190329.636 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 190329.636 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 190329.636 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+E 250929 190329.636 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.637 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.636 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.636 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketWriter.doWork(SocketWriter.java:61)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.636 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 190329.639 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+E 250929 190329.636 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketWriter.doWork(SocketWriter.java:61)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 190329.640 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 190329.639 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 190329.638 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 190329.638 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 190329.640 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 190329.641 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 190329.641 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 190329.641 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 190329.641 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+E 250929 190329.641 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketWriter.doWork(SocketWriter.java:61)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.642 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.642 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 190329.642 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketWriter.doWork(SocketWriter.java:61)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+W 250929 191008.047 [main] Options - DEPRECATED option -l|--log <file> is used. Use -Dlog.file=<file> option.
+I 250929 191008.048 [main] VkNetTest - Using record TimeAndSale
+I 250929 191008.703 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191008.706 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191008.707 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191008.707 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191008.708 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191008.708 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191008.709 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191008.710 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191008.711 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191008.711 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191008.712 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191008.712 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191008.716 [pool-1-thread-1] VkNetTest - 
+0 RPS (6 connections)
+I 250929 191008.719 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.719 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.719 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 191008.719 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.719 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.719 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.721 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.721 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.721 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.722 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 191008.722 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.722 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191008.744 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 0 Bps; Write: 0 Bps; CPU: 24.56%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [0] Read: 0 Bps; Write: 0 Bps
+I 250929 191008.833 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191008.835 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191008.841 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 191008.849 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191008.867 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191009.034 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191018.752 [pool-1-thread-1] VkNetTest - 
+13502481 RPS (6 connections)
+I 250929 191018.756 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 526,252,897 Bps (data 13,457,947 rps lag 1,765 us); Write: 2,825,087 Bps (sub 597,847 rps); rtt 2,082 us; TOP bytes read TimeAndSale: 99%; write TimeAndSale: 99%; CPU: 30.88%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 526,252,897 Bps (data 13,457,947 rps lag 1,765 us); Write: 2,825,087 Bps (sub 597,847 rps); rtt 2,082 us; TOP bytes read TimeAndSale: 99%; write TimeAndSale: 99%
+I 250929 191028.759 [pool-1-thread-1] VkNetTest - 
+12521708 RPS (6 connections)
+I 250929 191028.760 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 489,237,456 Bps (data 12,510,121 rps lag 361 us); Write: 9 Bps; rtt 322 us; TOP bytes read TimeAndSale: 100%; CPU: 28.35%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 489,237,456 Bps (data 12,510,121 rps lag 361 us); Write: 9 Bps; rtt 322 us; TOP bytes read TimeAndSale: 100%

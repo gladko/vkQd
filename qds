@@ -1,7 +1,7 @@
 #!/bin/bash
 
-QDS_LIBS_DIR="libs/3.320/"
-QDS_SUFFIX="-3.320.jar"
+QDS_LIBS_DIR="libs/3.338/"
+QDS_SUFFIX="-3.338.jar"
 QDS_PATH="."
 
 for lib in "qds-tools" "qds" "dxlib" "qds-file" "mars" "qds-monitoring" "dxfeed-api"; do

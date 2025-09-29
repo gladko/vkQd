@@ -37,3 +37,15 @@ qds tool contains nettest tool.
 # consumers
 ./qds nettest -C 6 -s 10 -l sharding-consumer.log -S 1000000 c "(hash0of2@localhost:7002)(hash1of2@localhost:7004)"
 ```
+
+## vk net test
+```
+# producer
+./qds vknettest -s 10 -S 1000000 -l vk-producer.log p :7003
+# or
+./qds vknettest -s 10 -S 1000000 -g seq -l vk-producer.log p :7003
+
+# consumers
+./qds vknettest -C 6 -s 10 -l vk-consumer.log -S 1000000 c localhost:7003
+```
+

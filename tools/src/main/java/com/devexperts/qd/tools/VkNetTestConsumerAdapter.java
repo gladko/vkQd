@@ -7,25 +7,26 @@ import com.devexperts.qd.qtp.*;
 import com.devexperts.qd.stats.QDStats;
 import com.devexperts.qd.util.DataIterators;
 
+import java.util.List;
+
 
 public class VkNetTestConsumerAdapter extends MessageAdapter {
     private static final Logging log = Logging.getLogging(VkNetTestConsumerAdapter.class);
 
     public static class Factory extends MessageAdapter.ConfigurableFactory {
-        private final RecordBuffer subscription;
+        private final List<String> symbols;
         private final Stat stat;
         private final QDFilter filter;
 
-        Factory(RecordBuffer subscription, QDFilter filter, Stat stat) {
-//            super(ticker, null, null, filter);
-            this.subscription = subscription;
+        Factory(List<String> symbols, QDFilter filter, Stat stat) {
+            this.symbols = symbols;
             this.filter = filter;
             this.stat = stat;
         }
 
         @Override
         public MessageAdapter createAdapter(QDStats stats) {
-            return new VkNetTestConsumerAdapter(stats, stat, subscription, filter);
+            return new VkNetTestConsumerAdapter(stats, stat, symbols, filter);
         }
     }
 
@@ -33,15 +34,22 @@ public class VkNetTestConsumerAdapter extends MessageAdapter {
     private final RecordBuffer subscription;
     private final Stat stat;
 
-    VkNetTestConsumerAdapter(QDStats stats, Stat stat, RecordBuffer subscription, QDFilter filter) {
+    VkNetTestConsumerAdapter(QDStats stats, Stat stat, List<String> symbols, QDFilter filter) {
         super(null, stats);
         this.doNotCloseOnErrors = true; // special mode to decode even bad stuff
-        this.subscription = new RecordBuffer();
-        this.subscription.process(subscription);
+        this.subscription = buildSubscription(symbols);
         this.filter = filter;
         this.stat = stat;
         useDescribeProtocol();
         addMask(getMessageMask(VkNetTest.SUBSCRIPTION_TYPE));
+    }
+
+    private RecordBuffer buildSubscription(List<String> symbols) {
+        RecordBuffer buffer = new RecordBuffer(RecordMode.SUBSCRIPTION);
+        for (String symbol : symbols) {
+            buffer.add(VkNetTest.record, VkNetTest.SCHEME.getCodec().encode(symbol), symbol);
+        }
+        return buffer;
     }
 
     @Override
@@ -73,8 +81,6 @@ public class VkNetTestConsumerAdapter extends MessageAdapter {
             DataIterators.skipRecord(record, it);
         }
         stat.counter.addAndGet(count);
-
-//        System.out.println(stat.counter.get());
     }
 
     @Override

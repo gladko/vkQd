@@ -1,0 +1,444 @@
+W 250929 191104.648 [main] Options - DEPRECATED option -l|--log <file> is used. Use -Dlog.file=<file> option.
+I 250929 191104.649 [main] VkNetTest - Using record TimeAndSale
+I 250929 191105.267 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191105.271 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191105.271 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191105.272 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191105.273 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191105.275 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191105.277 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191105.277 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191105.278 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191105.278 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191105.278 [main] ClientSocket-VkNetTestConsumer - Starting ClientSocketConnector to localhost:7003
+I 250929 191105.279 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191105.280 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 191105.280 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 191105.280 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191105.280 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191105.280 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 191105.280 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191105.285 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 191105.285 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 191105.285 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191105.285 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to 127.0.0.1:7003
+I 250929 191105.285 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191105.285 [pool-1-thread-1] VkNetTest - 
+0 RPS (6 connections)
+I 250929 191105.285 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connected to [0:0:0:0:0:0:0:1]:7003
+I 250929 191105.309 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 0 Bps; Write: 0 Bps; CPU: 27.94%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [0] Read: 0 Bps; Write: 0 Bps
+I 250929 191105.401 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 191105.401 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 191105.406 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191105.414 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 127.0.0.1
+I 250929 191105.481 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191105.483 [localhost:7003-Reader] MessageAdapter - VkNetTestConsumer received protocol descriptor [type=qtp, version=QDS-3.338, opt=hs] sending [TICKER, STREAM, HISTORY, DATA] from 0:0:0:0:0:0:0:1
+I 250929 191115.310 [pool-1-thread-1] VkNetTest - 
+12959106 RPS (6 connections)
+I 250929 191115.314 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 505,613,126 Bps (data 12,929,792 rps lag 28,618 us); Write: 2,828,191 Bps (sub 598,503 rps); rtt 28,264 us; TOP bytes read TimeAndSale: 99%; write TimeAndSale: 99%; CPU: 30.99%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 505,613,126 Bps (data 12,929,792 rps lag 28,618 us); Write: 2,828,191 Bps (sub 598,503 rps); rtt 28,264 us; TOP bytes read TimeAndSale: 99%; write TimeAndSale: 99%
+I 250929 191125.321 [pool-1-thread-1] VkNetTest - 
+12137279 RPS (6 connections)
+I 250929 191125.323 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 474,088,999 Bps (data 12,121,970 rps lag 1,748 us); Write: 9 Bps; rtt 1,710 us; TOP bytes read TimeAndSale: 100%; CPU: 27.47%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 474,088,999 Bps (data 12,121,970 rps lag 1,748 us); Write: 9 Bps; rtt 1,710 us; TOP bytes read TimeAndSale: 100%
+I 250929 191135.335 [pool-1-thread-1] VkNetTest - 
+11558769 RPS (6 connections)
+I 250929 191135.337 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 451,346,273 Bps (data 11,541,244 rps lag 262 us); Write: 9 Bps; rtt 221 us; TOP bytes read TimeAndSale: 100%; CPU: 26.91%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 451,346,273 Bps (data 11,541,244 rps lag 262 us); Write: 9 Bps; rtt 221 us; TOP bytes read TimeAndSale: 100%
+I 250929 191145.372 [pool-1-thread-1] VkNetTest - 
+10757483 RPS (6 connections)
+I 250929 191145.376 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 419,263,746 Bps (data 10,720,635 rps lag 372 us); Write: 9 Bps; rtt 330 us; TOP bytes read TimeAndSale: 100%; CPU: 24.92%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 419,263,746 Bps (data 10,720,635 rps lag 372 us); Write: 9 Bps; rtt 330 us; TOP bytes read TimeAndSale: 100%
+I 250929 191155.378 [pool-1-thread-1] VkNetTest - 
+10383291 RPS (6 connections)
+I 250929 191155.379 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 405,770,815 Bps (data 10,375,507 rps lag 253 us); Write: 9 Bps; rtt 207 us; TOP bytes read TimeAndSale: 100%; CPU: 29.03%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 405,770,815 Bps (data 10,375,507 rps lag 253 us); Write: 9 Bps; rtt 207 us; TOP bytes read TimeAndSale: 100%
+I 250929 191205.382 [pool-1-thread-1] VkNetTest - 
+9172361 RPS (6 connections)
+I 250929 191205.383 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 358,549,858 Bps (data 9,168,268 rps lag 295 us); Write: 9 Bps; rtt 244 us; TOP bytes read TimeAndSale: 100%; CPU: 26.18%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 358,549,858 Bps (data 9,168,268 rps lag 295 us); Write: 9 Bps; rtt 244 us; TOP bytes read TimeAndSale: 100%
+I 250929 191215.385 [pool-1-thread-1] VkNetTest - 
+8066344 RPS (6 connections)
+I 250929 191215.386 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 315,385,272 Bps (data 8,064,300 rps lag 408 us); Write: 9 Bps; rtt 350 us; TOP bytes read TimeAndSale: 100%; CPU: 27.72%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 315,385,272 Bps (data 8,064,300 rps lag 408 us); Write: 9 Bps; rtt 350 us; TOP bytes read TimeAndSale: 100%
+I 250929 191225.387 [pool-1-thread-1] VkNetTest - 
+8247403 RPS (6 connections)
+I 250929 191225.390 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 322,506,683 Bps (data 8,246,411 rps lag 407 us); Write: 9 Bps; rtt 351 us; TOP bytes read TimeAndSale: 100%; CPU: 26.38%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 322,506,683 Bps (data 8,246,411 rps lag 407 us); Write: 9 Bps; rtt 351 us; TOP bytes read TimeAndSale: 100%
+I 250929 191235.399 [pool-1-thread-1] VkNetTest - 
+8131144 RPS (6 connections)
+I 250929 191235.400 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 317,577,822 Bps (data 8,120,388 rps lag 348 us); Write: 9 Bps; rtt 290 us; TOP bytes read TimeAndSale: 100%; CPU: 26.81%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 317,577,822 Bps (data 8,120,388 rps lag 348 us); Write: 9 Bps; rtt 290 us; TOP bytes read TimeAndSale: 100%
+I 250929 191245.403 [pool-1-thread-1] VkNetTest - 
+7727956 RPS (6 connections)
+I 250929 191245.405 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 302,107,228 Bps (data 7,725,028 rps lag 400 us); Write: 9 Bps; rtt 339 us; TOP bytes read TimeAndSale: 100%; CPU: 24.53%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 302,107,228 Bps (data 7,725,028 rps lag 400 us); Write: 9 Bps; rtt 339 us; TOP bytes read TimeAndSale: 100%
+I 250929 191255.406 [pool-1-thread-1] VkNetTest - 
+8044692 RPS (6 connections)
+I 250929 191255.408 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 314,511,868 Bps (data 8,042,220 rps lag 341 us); Write: 9 Bps; rtt 282 us; TOP bytes read TimeAndSale: 100%; CPU: 28.07%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 314,511,868 Bps (data 8,042,220 rps lag 341 us); Write: 9 Bps; rtt 282 us; TOP bytes read TimeAndSale: 100%
+I 250929 191305.411 [pool-1-thread-1] VkNetTest - 
+8941243 RPS (6 connections)
+I 250929 191305.412 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 349,507,585 Bps (data 8,936,988 rps lag 278 us); Write: 9 Bps; rtt 225 us; TOP bytes read TimeAndSale: 100%; CPU: 28.51%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 349,507,585 Bps (data 8,936,988 rps lag 278 us); Write: 9 Bps; rtt 225 us; TOP bytes read TimeAndSale: 100%
+I 250929 191315.415 [pool-1-thread-1] VkNetTest - 
+10208005 RPS (6 connections)
+I 250929 191315.416 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 399,007,392 Bps (data 10,203,713 rps lag 267 us); Write: 9 Bps; rtt 220 us; TOP bytes read TimeAndSale: 100%; CPU: 29.37%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 399,007,392 Bps (data 10,203,713 rps lag 267 us); Write: 9 Bps; rtt 220 us; TOP bytes read TimeAndSale: 100%
+I 250929 191325.418 [pool-1-thread-1] VkNetTest - 
+10674070 RPS (6 connections)
+I 250929 191325.418 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 417,326,524 Bps (data 10,670,764 rps lag 283 us); Write: 9 Bps; rtt 238 us; TOP bytes read TimeAndSale: 100%; CPU: 27.51%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 417,326,524 Bps (data 10,670,764 rps lag 283 us); Write: 9 Bps; rtt 238 us; TOP bytes read TimeAndSale: 100%
+I 250929 191335.423 [pool-1-thread-1] VkNetTest - 
+9162599 RPS (6 connections)
+I 250929 191335.434 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 358,382,236 Bps (data 9,164,139 rps lag 685 us); Write: 9 Bps; rtt 634 us; TOP bytes read TimeAndSale: 100%; CPU: 25.09%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 358,382,236 Bps (data 9,164,139 rps lag 685 us); Write: 9 Bps; rtt 634 us; TOP bytes read TimeAndSale: 100%
+I 250929 191345.437 [pool-1-thread-1] VkNetTest - 
+8648217 RPS (6 connections)
+I 250929 191345.439 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 337,488,112 Bps (data 8,630,169 rps lag 280 us); Write: 9 Bps; rtt 226 us; TOP bytes read TimeAndSale: 100%; CPU: 26.57%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 337,488,112 Bps (data 8,630,169 rps lag 280 us); Write: 9 Bps; rtt 226 us; TOP bytes read TimeAndSale: 100%
+I 250929 191355.446 [pool-1-thread-1] VkNetTest - 
+7728714 RPS (6 connections)
+I 250929 191355.447 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 301,913,588 Bps (data 7,720,416 rps lag 460 us); Write: 9 Bps; rtt 399 us; TOP bytes read TimeAndSale: 100%; CPU: 28.01%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 301,913,588 Bps (data 7,720,416 rps lag 460 us); Write: 9 Bps; rtt 399 us; TOP bytes read TimeAndSale: 100%
+I 250929 191405.455 [pool-1-thread-1] VkNetTest - 
+8123365 RPS (6 connections)
+I 250929 191405.456 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 317,468,282 Bps (data 8,117,166 rps lag 510 us); Write: 9 Bps; rtt 455 us; TOP bytes read TimeAndSale: 100%; CPU: 24.42%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 317,468,282 Bps (data 8,117,166 rps lag 510 us); Write: 9 Bps; rtt 455 us; TOP bytes read TimeAndSale: 100%
+I 250929 191415.458 [pool-1-thread-1] VkNetTest - 
+6445871 RPS (6 connections)
+I 250929 191415.463 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 252,017,897 Bps (data 6,444,805 rps lag 483 us); Write: 9 Bps; rtt 396 us; TOP bytes read TimeAndSale: 100%; CPU: 19.93%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 252,017,897 Bps (data 6,444,805 rps lag 483 us); Write: 9 Bps; rtt 396 us; TOP bytes read TimeAndSale: 100%
+I 250929 191425.465 [pool-1-thread-1] VkNetTest - 
+7875404 RPS (6 connections)
+I 250929 191425.467 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 307,758,070 Bps (data 7,869,324 rps lag 897 us); Write: 9 Bps; rtt 831 us; TOP bytes read TimeAndSale: 100%; CPU: 26.69%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 307,758,070 Bps (data 7,869,324 rps lag 897 us); Write: 9 Bps; rtt 831 us; TOP bytes read TimeAndSale: 100%
+I 250929 191435.468 [pool-1-thread-1] VkNetTest - 
+9422211 RPS (6 connections)
+I 250929 191435.469 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 368,397,254 Bps (data 9,419,415 rps lag 1,097 us); Write: 9 Bps; rtt 1,043 us; TOP bytes read TimeAndSale: 100%; CPU: 26.55%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 368,397,254 Bps (data 9,419,415 rps lag 1,097 us); Write: 9 Bps; rtt 1,043 us; TOP bytes read TimeAndSale: 100%
+I 250929 191445.471 [pool-1-thread-1] VkNetTest - 
+9911348 RPS (6 connections)
+I 250929 191445.473 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 387,487,140 Bps (data 9,908,685 rps lag 921 us); Write: 9 Bps; rtt 870 us; TOP bytes read TimeAndSale: 100%; CPU: 26.64%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 387,487,140 Bps (data 9,908,685 rps lag 921 us); Write: 9 Bps; rtt 870 us; TOP bytes read TimeAndSale: 100%
+I 250929 191455.474 [pool-1-thread-1] VkNetTest - 
+9173274 RPS (6 connections)
+I 250929 191455.476 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 358,604,058 Bps (data 9,169,569 rps lag 728 us); Write: 8 Bps; rtt 673 us; TOP bytes read TimeAndSale: 100%; CPU: 24.34%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 358,604,058 Bps (data 9,169,569 rps lag 728 us); Write: 8 Bps; rtt 673 us; TOP bytes read TimeAndSale: 100%
+I 250929 191505.477 [pool-1-thread-1] VkNetTest - 
+8332036 RPS (6 connections)
+I 250929 191505.480 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 325,751,075 Bps (data 8,330,367 rps lag 492 us); Write: 9 Bps; rtt 431 us; TOP bytes read TimeAndSale: 100%; CPU: 27.33%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 325,751,075 Bps (data 8,330,367 rps lag 492 us); Write: 9 Bps; rtt 431 us; TOP bytes read TimeAndSale: 100%
+I 250929 191515.482 [pool-1-thread-1] VkNetTest - 
+7097268 RPS (6 connections)
+I 250929 191515.484 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 277,368,247 Bps (data 7,092,917 rps lag 504 us); Write: 9 Bps; rtt 432 us; TOP bytes read TimeAndSale: 100%; CPU: 26.27%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 277,368,247 Bps (data 7,092,917 rps lag 504 us); Write: 9 Bps; rtt 432 us; TOP bytes read TimeAndSale: 100%
+I 250929 191525.486 [pool-1-thread-1] VkNetTest - 
+7231792 RPS (6 connections)
+I 250929 191525.488 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 282,755,920 Bps (data 7,229,201 rps lag 700 us); Write: 9 Bps; rtt 631 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 25.24%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 282,755,920 Bps (data 7,229,201 rps lag 700 us); Write: 9 Bps; rtt 631 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 191535.508 [pool-1-thread-1] VkNetTest - 
+7503418 RPS (6 connections)
+I 250929 191535.509 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 292,796,746 Bps (data 7,486,688 rps lag 1,010 us); Write: 9 Bps; rtt 944 us; TOP bytes read TimeAndSale: 100%; CPU: 25.14%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 292,796,746 Bps (data 7,486,688 rps lag 1,010 us); Write: 9 Bps; rtt 944 us; TOP bytes read TimeAndSale: 100%
+I 250929 191545.510 [pool-1-thread-1] VkNetTest - 
+8020104 RPS (6 connections)
+I 250929 191545.511 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 313,589,706 Bps (data 8,018,871 rps lag 521 us); Write: 9 Bps; rtt 458 us; TOP bytes read TimeAndSale: 100%; CPU: 27.90%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 313,589,706 Bps (data 8,018,871 rps lag 521 us); Write: 9 Bps; rtt 458 us; TOP bytes read TimeAndSale: 100%
+I 250929 191555.525 [pool-1-thread-1] VkNetTest - 
+9459282 RPS (6 connections)
+I 250929 191555.527 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 369,357,237 Bps (data 9,444,390 rps lag 307 us); Write: 9 Bps; rtt 252 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 29.59%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 369,357,237 Bps (data 9,444,390 rps lag 307 us); Write: 9 Bps; rtt 252 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 191605.572 [pool-1-thread-1] VkNetTest - 
+9889608 RPS (6 connections)
+I 250929 191605.572 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 384,974,657 Bps (data 9,843,804 rps lag 709 us); Write: 9 Bps; rtt 657 us; TOP bytes read TimeAndSale: 100%; CPU: 27.23%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 384,974,657 Bps (data 9,843,804 rps lag 709 us); Write: 9 Bps; rtt 657 us; TOP bytes read TimeAndSale: 100%
+I 250929 191615.583 [pool-1-thread-1] VkNetTest - 
+8998379 RPS (6 connections)
+I 250929 191615.585 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 351,515,033 Bps (data 8,988,461 rps lag 399 us); Write: 9 Bps; rtt 342 us; TOP bytes read TimeAndSale: 100%; CPU: 27.77%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 351,515,033 Bps (data 8,988,461 rps lag 399 us); Write: 9 Bps; rtt 342 us; TOP bytes read TimeAndSale: 100%
+I 250929 191625.589 [pool-1-thread-1] VkNetTest - 
+8020979 RPS (6 connections)
+I 250929 191625.590 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 313,529,851 Bps (data 8,016,279 rps lag 401 us); Write: 9 Bps; rtt 339 us; TOP bytes read TimeAndSale: 100%; CPU: 27.33%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 313,529,851 Bps (data 8,016,279 rps lag 401 us); Write: 9 Bps; rtt 339 us; TOP bytes read TimeAndSale: 100%
+I 250929 191635.592 [pool-1-thread-1] VkNetTest - 
+8257241 RPS (6 connections)
+I 250929 191635.593 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 322,815,078 Bps (data 8,255,032 rps lag 787 us); Write: 9 Bps; rtt 725 us; TOP bytes read TimeAndSale: 100%; CPU: 28.51%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 322,815,078 Bps (data 8,255,032 rps lag 787 us); Write: 9 Bps; rtt 725 us; TOP bytes read TimeAndSale: 100%
+I 250929 191645.596 [pool-1-thread-1] VkNetTest - 
+7936545 RPS (6 connections)
+I 250929 191645.598 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 310,291,090 Bps (data 7,933,893 rps lag 321 us); Write: 9 Bps; rtt 257 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 27.10%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 310,291,090 Bps (data 7,933,893 rps lag 321 us); Write: 9 Bps; rtt 257 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 191655.599 [pool-1-thread-1] VkNetTest - 
+8021335 RPS (6 connections)
+I 250929 191655.600 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 313,578,318 Bps (data 8,018,328 rps lag 373 us); Write: 9 Bps; rtt 310 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%; CPU: 26.95%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 313,578,318 Bps (data 8,018,328 rps lag 373 us); Write: 9 Bps; rtt 310 us; TOP bytes read TimeAndSale: 100%; write TimeAndSale: 100%
+I 250929 191705.601 [pool-1-thread-1] VkNetTest - 
+9448978 RPS (6 connections)
+I 250929 191705.602 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 369,443,049 Bps (data 9,447,103 rps lag 265 us); Write: 9 Bps; rtt 210 us; TOP bytes read TimeAndSale: 100%; CPU: 27.64%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 369,443,049 Bps (data 9,447,103 rps lag 265 us); Write: 9 Bps; rtt 210 us; TOP bytes read TimeAndSale: 100%
+I 250929 191715.604 [pool-1-thread-1] VkNetTest - 
+10241985 RPS (6 connections)
+I 250929 191715.605 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 400,431,725 Bps (data 10,238,736 rps lag 263 us); Write: 9 Bps; rtt 213 us; TOP bytes read TimeAndSale: 100%; CPU: 28.56%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 400,431,725 Bps (data 10,238,736 rps lag 263 us); Write: 9 Bps; rtt 213 us; TOP bytes read TimeAndSale: 100%
+I 250929 191725.606 [pool-1-thread-1] VkNetTest - 
+9604351 RPS (6 connections)
+I 250929 191725.607 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 375,558,363 Bps (data 9,602,712 rps lag 254 us); Write: 9 Bps; rtt 200 us; TOP bytes read TimeAndSale: 100%; CPU: 27.58%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 375,558,363 Bps (data 9,602,712 rps lag 254 us); Write: 9 Bps; rtt 200 us; TOP bytes read TimeAndSale: 100%
+I 250929 191735.609 [pool-1-thread-1] VkNetTest - 
+8643477 RPS (6 connections)
+I 250929 191735.610 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 337,926,860 Bps (data 8,640,821 rps lag 254 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%; CPU: 28.47%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 337,926,860 Bps (data 8,640,821 rps lag 254 us); Write: 9 Bps; rtt 194 us; TOP bytes read TimeAndSale: 100%
+I 250929 191745.612 [pool-1-thread-1] VkNetTest - 
+7890812 RPS (6 connections)
+I 250929 191745.613 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 308,487,412 Bps (data 7,888,323 rps lag 262 us); Write: 9 Bps; rtt 197 us; TOP bytes read TimeAndSale: 100%; CPU: 27.64%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 308,487,412 Bps (data 7,888,323 rps lag 262 us); Write: 9 Bps; rtt 197 us; TOP bytes read TimeAndSale: 100%
+I 250929 191755.616 [pool-1-thread-1] VkNetTest - 
+7841806 RPS (6 connections)
+I 250929 191755.620 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 306,641,299 Bps (data 7,840,460 rps lag 307 us); Write: 9 Bps; rtt 242 us; TOP bytes read TimeAndSale: 100%; CPU: 27.04%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 306,641,299 Bps (data 7,840,460 rps lag 307 us); Write: 9 Bps; rtt 242 us; TOP bytes read TimeAndSale: 100%
+I 250929 191805.622 [pool-1-thread-1] VkNetTest - 
+8025394 RPS (6 connections)
+I 250929 191805.624 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 313,588,049 Bps (data 8,018,871 rps lag 392 us); Write: 9 Bps; rtt 330 us; TOP bytes read TimeAndSale: 100%; CPU: 27.31%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 313,588,049 Bps (data 8,018,871 rps lag 392 us); Write: 9 Bps; rtt 330 us; TOP bytes read TimeAndSale: 100%
+I 250929 191815.632 [pool-1-thread-1] VkNetTest - 
+8223819 RPS (6 connections)
+I 250929 191815.633 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 321,310,006 Bps (data 8,215,660 rps lag 413 us); Write: 9 Bps; rtt 352 us; TOP bytes read TimeAndSale: 100%; CPU: 25.54%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 321,310,006 Bps (data 8,215,660 rps lag 413 us); Write: 9 Bps; rtt 352 us; TOP bytes read TimeAndSale: 100%
+I 250929 191825.635 [pool-1-thread-1] VkNetTest - 
+9848108 RPS (6 connections)
+I 250929 191825.636 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 385,016,197 Bps (data 9,844,900 rps lag 310 us); Write: 9 Bps; rtt 257 us; TOP bytes read TimeAndSale: 100%; CPU: 26.94%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 385,016,197 Bps (data 9,844,900 rps lag 310 us); Write: 9 Bps; rtt 257 us; TOP bytes read TimeAndSale: 100%
+I 250929 191835.638 [pool-1-thread-1] VkNetTest - 
+9992016 RPS (6 connections)
+I 250929 191835.639 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 390,644,557 Bps (data 9,989,121 rps lag 237 us); Write: 9 Bps; rtt 185 us; TOP bytes read TimeAndSale: 100%; CPU: 28.78%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 390,644,557 Bps (data 9,989,121 rps lag 237 us); Write: 9 Bps; rtt 185 us; TOP bytes read TimeAndSale: 100%
+I 250929 191845.641 [pool-1-thread-1] VkNetTest - 
+9113644 RPS (6 connections)
+I 250929 191845.642 [pool-1-thread-1] VkNetTest - Subscription: 0; Storage: 0; Buffer: 0; Dropped: 0; Read: 356,334,647 Bps (data 9,111,070 rps lag 271 us); Write: 9 Bps; rtt 214 us; TOP bytes read TimeAndSale: 100%; CPU: 29.42%
+    ClientSocket-VkNetTestConsumer*6 localhost:7003 [6] Read: 356,334,647 Bps (data 9,111,070 rps lag 271 us); Write: 9 Bps; rtt 214 us; TOP bytes read TimeAndSale: 100%
+E 250929 191852.054 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from [0:0:0:0:0:0:0:1]:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.055 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from 127.0.0.1:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.055 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from [0:0:0:0:0:0:0:1]:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.055 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from 127.0.0.1:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 191852.057 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+E 250929 191852.055 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from [0:0:0:0:0:0:0:1]:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.055 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Disconnected from 127.0.0.1:7003
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:63)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 191852.057 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 191852.057 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191852.058 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191852.059 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+E 250929 191852.059 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.059 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketWriter.doWork(SocketWriter.java:61)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 191852.059 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+E 250929 191852.060 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.059 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.061 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketWriter.doWork(SocketWriter.java:61)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 191852.060 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191852.061 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+E 250929 191852.060 [localhost:7003-Writer] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketWriter.doWork(SocketWriter.java:61)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+I 250929 191852.061 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191852.061 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191852.061 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191852.062 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Resolving IPs for localhost
+I 250929 191852.061 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 191852.061 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+I 250929 191852.062 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to 127.0.0.1:7003
+I 250929 191852.062 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Connecting to [0:0:0:0:0:0:0:1]:7003
+E 250929 191852.062 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.063 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.063 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to 127.0.0.1:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
+E 250929 191852.063 [localhost:7003-Reader] ClientSocket-VkNetTestConsumer - Failed to connect to [0:0:0:0:0:0:0:1]:7003
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:639)
+	at java.base/java.net.Socket.connect(Socket.java:588)
+	at java.base/java.net.Socket.<init>(Socket.java:512)
+	at java.base/java.net.Socket.<init>(Socket.java:292)
+	at com.devexperts.qd.qtp.socket.ClientSocketConnector.createSocket(ClientSocketConnector.java:504)
+	at com.devexperts.qd.qtp.socket.ClientSocketSource.nextSocket(ClientSocketSource.java:118)
+	at com.devexperts.qd.qtp.socket.SocketHandler.initThreadData(SocketHandler.java:234)
+	at com.devexperts.qd.qtp.socket.SocketReader.doWork(SocketReader.java:44)
+	at com.devexperts.qd.qtp.QTPWorkerThread.run(QTPWorkerThread.java:73)
