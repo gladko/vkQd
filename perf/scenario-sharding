@@ -1,0 +1,15 @@
+##################################################################
+# SHARDING scenario
+# 1M symbols
+# 1 producer -> 2 MUX with sharding -> 6 consumers
+##################################################################
+
+# producer
+./qds nettest -S 1000000 --stat 10 --log sharding-producer.log p "(localhost:7001)(localhost:7002)"
+
+# 2 sharded MUXes
+./qds multiplexor --stat 10s --log sharding-mux-1.log :7001 :5001
+./qds multiplexor --stat 10s --log sharding-mux-2.log :7002 :5002
+
+# consumers
+./qds nettest -S 1000000 -C 6 --stat 10 --log sharding-consumer.log c "(hash0of2@localhost:5001)(hash1of2@localhost:5002)"

@@ -3,7 +3,6 @@ package com.devexperts.qd.tools;
 import com.devexperts.logging.Logging;
 import com.devexperts.qd.DataScheme;
 import com.devexperts.qd.QDFilter;
-import com.devexperts.qd.SubscriptionIterator;
 import com.devexperts.qd.ng.RecordProvider;
 import com.devexperts.qd.qtp.MessageAdapter;
 import com.devexperts.qd.qtp.MessageType;
@@ -88,14 +87,13 @@ public class VkNetTestProducerAdapter extends MessageAdapter {
         notifyListener();
     }
 
-    @Override
-    protected void processSubscription(SubscriptionIterator iterator, MessageType message) {
-        // Just in case we have a legacy QD on the other side that sends us subscription anyway
-        int c = 0;
-        while (iterator.nextRecord() != null)
-            c++;
-        log.debug("Ignored " + c + " " + message + " messages");
-    }
+//    @Override
+//    protected void processSubscription(SubscriptionIterator iterator, MessageType message) {
+//        int c = 0;
+//        while (iterator.nextRecord() != null)
+//            c++;
+//        log.debug("Ignored " + c + " " + message + " messages");
+//    }
 
     @Override
     public boolean retrieveMessages(MessageVisitor visitor) {

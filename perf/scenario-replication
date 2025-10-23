@@ -1,0 +1,18 @@
+##################################################################
+# REPLICATION scenario
+# 1M symbols
+# 1 producer -> 1 MUX -> 2 MUX -> 6 consumers
+##################################################################
+
+./qds nettest -S 1000000 --stat 10 --log replication-producer.log p localhost:7000
+
+# tier-1 MUX
+./qds multiplexor --stat 10s --log replication-mux-tier-1.log  :7000 :5000
+
+# 2 tier-2 MUX
+./qds multiplexor --stat 10s --log replication-mux-tier-2-1.log localhost:5000 :7001
+./qds multiplexor --stat 10s --log replication-mux-tier-2-2.log localhost:5000 :7002
+
+# consumers
+./qds nettest -C 3 -S 1000000 --stat 10 --log replication-consumer1.log c localhost:7001
+./qds nettest -C 3 -S 1000000 --stat 10 --log replication-consumer2.log c localhost:7002

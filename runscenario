@@ -1,0 +1,18 @@
+#!/bin/bash
+
+SCENARIO_FILE="$1"
+
+if [[ ! -f "$SCENARIO_FILE" ]]; then
+    echo "File not found: $SCENARIO_FILE"
+    return 1
+fi
+
+while IFS= read -r line || [[ -n "$line" ]]; do
+    # Skip empty lines and lines starting with #
+    [[ -z "$line" || "$line" == \#* ]] && continue
+
+    # Start the process in the background
+    eval "$line" &
+    echo "Started: $line with PID $!"
+done < "$SCENARIO_FILE"
+

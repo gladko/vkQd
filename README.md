@@ -7,7 +7,7 @@
 4. install jmxtools to local maven repo
 ```
 mvn install:install-file \
--Dfile=~\Downloads\jmxtools-1.2.1.jar \
+-Dfile=libs/jmxtools-1.2.1.jar \
 -DgroupId=com.sun.jdmk \
 -DartifactId=jmxtools \
 -Dversion=1.2.1 \
