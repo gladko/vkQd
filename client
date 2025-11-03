@@ -10,8 +10,8 @@ done
 
 # add custom tools
 QDS_PATH="$QDS_PATH;libs/config-1.4.3.jar"
-QDS_PATH="$QDS_PATH;tools/build/libs/vk-qds-tools-0.0.1.jar"
+QDS_PATH="$QDS_PATH;qdApp/build/libs/qdApp-0.0.1.jar"
 
 
 # echo "using QDS_PATH: $QDS_PATH"
-java -cp "$QDS_PATH" com.devexperts.qd.tools.Tools "$@"
+java -cp "$QDS_PATH" "$@"

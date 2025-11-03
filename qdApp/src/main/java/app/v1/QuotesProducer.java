@@ -1,5 +1,7 @@
-package app;
+package app.v1;
 
+import app.Util;
+import com.devexperts.logging.Logging;
 import com.devexperts.qd.QDDistributor;
 import com.devexperts.qd.QDTicker;
 import com.devexperts.qd.ng.RecordBuffer;
@@ -15,41 +17,48 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import static app.Util.*;
 
-public class QuotesGenerator {
+// FIXME: it's analogue of "./qds nettest -Dcom.devexperts.qd.tools.NetTest.record=Quote ..."
+public class QuotesProducer {
+    private static final Logging log = Logging.getLogging(QuotesProducer.class);
+
+    private static final int STAT_REPORT_PERIOD = 10;
     private static final AtomicLong calcIterations = new AtomicLong();
-    private static final AtomicLong counter = new AtomicLong();
+    private static final AtomicLong recordCounter = new AtomicLong();
 
     public static void main(String[] args) throws InterruptedException {
+        initLog();
+
         QDTicker ticker = Util.createTicker(QDStats.VOID);
-        Util.startAgentConnector(ticker, ":9000");
+        String address = args[0];
+        Util.startProducerConnector(ticker, address);
 
         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-        QuotesGenerator quotesGenerator = new QuotesGenerator(ticker);
+        QuotesProducer quotesProducer = new QuotesProducer(ticker);
         executorService.scheduleWithFixedDelay(
-                quotesGenerator::printStat, 0, REPORT_PERIOD, TimeUnit.SECONDS);
+                quotesProducer::printStat, 0, STAT_REPORT_PERIOD, TimeUnit.SECONDS);
 
-        quotesGenerator.publishQuotes();
+        quotesProducer.publishQuotes();
 
         Thread.sleep(Long.MAX_VALUE);
     }
 
-    QDDistributor qdDistributor;
-    SubscriptionHolder subscriptionHolder;
+    private final QDDistributor qdDistributor;
+    private final SubscriptionCollector subscriptionCollector;
 
-    QuotesGenerator(QDTicker ticker) {
+    public QuotesProducer(QDTicker ticker) {
         qdDistributor = ticker.distributorBuilder().build();
-        subscriptionHolder = new SubscriptionHolder(qdDistributor, x -> {});
+        subscriptionCollector = new SubscriptionCollector(qdDistributor, x -> {});
     }
 
-    void publishQuotes() {
+    private void publishQuotes() {
 //        Set<String> symbols = generateSymbols();
 
         Random random = new Random();
         while (true) {
             try {
                 RecordBuffer buffer = RecordBuffer.getInstance();
-                for (String symbol : subscriptionHolder.getSubscription()) {
+                for (String symbol : subscriptionCollector.getSubscription()) {
 //                for (String symbol : symbols) {
                     RecordCursor cur = buffer.add(QUOTE, CODEC.encode(symbol), symbol);
                     double price = 100 * random.nextDouble();
@@ -58,21 +67,20 @@ public class QuotesGenerator {
 
                 qdDistributor.process(buffer);
                 calcIterations.incrementAndGet();
-                counter.addAndGet(buffer.size());
+                recordCounter.addAndGet(buffer.size());
 
                 buffer.release();
 
                 Thread.sleep(5);
             } catch (Exception e) {
-                System.out.println(e);
-                e.printStackTrace();
+                log.error(e.toString(), e);
             }
         }
     }
 
     private void printStat() {
-        System.out.println("subscriptions: " + subscriptionHolder.size());
-        System.out.println("calcIterations: " + calcIterations.getAndSet(0) / REPORT_PERIOD);
-        System.out.println("counter: " + counter.getAndSet(0) / REPORT_PERIOD);
+        log.info("subscriptions: " + subscriptionCollector.size());
+        log.info("calcIterations: " + calcIterations.getAndSet(0) / STAT_REPORT_PERIOD);
+        log.info("RPS: " + recordCounter.getAndSet(0) / STAT_REPORT_PERIOD);
     }
 }

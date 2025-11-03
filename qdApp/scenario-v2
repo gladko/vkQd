@@ -1,0 +1,12 @@
+##################################################################
+# Volatility calculation v2 scenario
+##################################################################
+
+# quotes producer
+./qds nettest -Dcom.devexperts.qd.tools.NetTest.record=Quote -S 1000000 --stat 10 --log v2.quote-producer.log p :9000
+
+# Volatility calculator
+./client app.v2.VolatilityCalculator :Quote@localhost:9000 :Greeks@:7000
+
+# Volatility consumer
+./qds nettest -Dcom.devexperts.qd.tools.NetTest.record=Greeks -S 1000000 --stat 10 --log v2.greeks-consumer.log c localhost:7000

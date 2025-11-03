@@ -1,7 +1,10 @@
-package app;
+package app.v1;
 
+import app.Util;
+import com.devexperts.logging.Logging;
 import com.devexperts.qd.QDAgent;
 import com.devexperts.qd.QDDistributor;
+import com.devexperts.qd.QDFilter;
 import com.devexperts.qd.QDTicker;
 import com.devexperts.qd.kit.HashFilter;
 import com.devexperts.qd.ng.AbstractRecordSink;
@@ -21,16 +24,22 @@ import java.util.concurrent.atomic.AtomicLong;
 import static app.Util.*;
 
 public class VolatilityCalculator {
-    private static final int ITERATIONS = 300; // must be between 100 and 300
+    private static final Logging log = Logging.getLogging(VolatilityCalculator.class);
+
+    private static final int STAT_REPORT_PERIOD = 10;
+    private static final int VOLATILITY_CALC_COMPLEXITY = 300; // must be between 100 and 300
     private static final int WORKERS_COUNT = 1;
     private static final List<Worker> workers = new ArrayList<>();
-    private static final AtomicLong calcIterations = new AtomicLong();
-    private static final AtomicLong counter = new AtomicLong();
+    private static final AtomicLong calcIterationsCounter = new AtomicLong();
+    private static final AtomicLong producerRecordsCounter = new AtomicLong();
 
     public static void main(String[] args) throws InterruptedException {
-        QDTicker ticker = Util.createTicker(QDStats.VOID);
+        initLog();
 
-        initConnectors(ticker);
+        QDTicker ticker = Util.createTicker(QDStats.VOID);
+        String agentAddress = args[0];       // for consuming Quotes
+        String distributorAddress = args[1]; // for distributing Greeks
+        initConnectors(ticker, agentAddress, distributorAddress);
 
         for (int i = 0; i < WORKERS_COUNT; i++) {
             Worker worker = new Worker(ticker, i, WORKERS_COUNT);
@@ -40,28 +49,32 @@ public class VolatilityCalculator {
 
         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
         executorService.scheduleWithFixedDelay(
-                VolatilityCalculator::printStat, 0, REPORT_PERIOD, TimeUnit.SECONDS);
+                VolatilityCalculator::printStat, 0, STAT_REPORT_PERIOD, TimeUnit.SECONDS);
 
         Thread.sleep(Long.MAX_VALUE);
     }
 
-    private static void initConnectors(QDTicker ticker) {
-        Util.startAgentConnector(ticker, ":7000"); // for distributing Greeks
-        Util.startDistributorConnector(ticker, "127.0.0.1:9000"); // for consuming Quotes
+    // FIXME: connection filters are needed
+    private static void initConnectors(QDTicker ticker, String agentAddress, String distributorAddress) {
+        Util.startConsumerConnector(ticker, agentAddress);
+        Util.startProducerConnector(ticker, distributorAddress);
     }
 
     static class Worker extends Thread {
         QDDistributor qdDistributor;
         QDAgent agent;
-        SubscriptionHolder subscription;
+        SubscriptionCollector subscription;
 
         Worker(QDTicker ticker, int index, int workers) {
+            QDFilter filter = workers > 1 ? HashFilter.valueOf(scheme, HashFilter.formatName(index, workers))
+                : QDFilter.ANYTHING;
+
             qdDistributor = ticker.distributorBuilder()
-                    .withFilter(HashFilter.valueOf(scheme, HashFilter.formatName(index, workers)))
+                    .withFilter(filter)
                     .build();
             agent = ticker.agentBuilder().build();
 
-            subscription = new SubscriptionHolder(qdDistributor, s -> Util.setSubscription(agent, Util.QUOTE, s));
+            subscription = new SubscriptionCollector(qdDistributor, s -> Util.setSubscription(agent, Util.QUOTE, s));
         }
 
         @Override
@@ -76,42 +89,33 @@ public class VolatilityCalculator {
                         public void append(RecordCursor cursor) {
                             double bidPrice = WideDecimal.toDouble(cursor.getLong(BID_PRICE_INDEX));
                             RecordCursor outCursor = outBuffer.add(GREEK, cursor.getCipher(), cursor.getSymbol());
-                            outCursor.setLong(VOLATILITY_INDEX, WideDecimal.composeWide(calcVolatility(bidPrice)));
+                            double volatility = calcVolatility(bidPrice, VOLATILITY_CALC_COMPLEXITY);
+                            outCursor.setLong(VOLATILITY_INDEX, WideDecimal.composeWide(volatility));
                         }
                     });
                     if (!outBuffer.isEmpty()) {
                         qdDistributor.process(outBuffer);
-                        calcIterations.incrementAndGet();
-                        counter.addAndGet(outBuffer.size());
+                        calcIterationsCounter.incrementAndGet();
+                        producerRecordsCounter.addAndGet(outBuffer.size());
                     }
                     inBuffer.release();
                     outBuffer.release();
+                    Thread.sleep(5);
                 } catch (Exception e) {
-                    System.out.println(e);
-                    e.printStackTrace();
+                    log.error(e.toString(), e);
                 }
             }
-        }
-
-        private double calcVolatility(double bidPrice) {
-            // A simple computation to simulate CPU work
-            long result = 0;
-
-            for (int i = 1; i <= ITERATIONS; i++) {
-                result += Math.pow(bidPrice, 2) * Math.sqrt(i);
-            }
-            return result;
         }
     }
 
     private static void printStat() {
-        AtomicInteger totalSubscr = new AtomicInteger();
+        AtomicInteger totalSubscription = new AtomicInteger();
         workers.forEach(w -> {
-            totalSubscr.addAndGet(w.subscription.size());
+            totalSubscription.addAndGet(w.subscription.size());
 //            System.out.println("subscription: " + w.subscription.size());
         });
-        System.out.println("totalSubscription: " + totalSubscr);
-        System.out.println("calcIterations: " + calcIterations.getAndSet(0) / REPORT_PERIOD);
-        System.out.println("counter: " + counter.getAndSet(0) / REPORT_PERIOD);
+        log.info("totalSubscription: " + totalSubscription);
+        log.info("calcIterations: " + calcIterationsCounter.getAndSet(0) / STAT_REPORT_PERIOD);
+        log.info("RPS: " + producerRecordsCounter.getAndSet(0) / STAT_REPORT_PERIOD);
     }
 }

@@ -4,6 +4,7 @@
 # 1 producer -> 1 MUX -> 2 MUX -> 6 consumers
 ##################################################################
 
+# producer
 ./qds nettest -S 1000000 --stat 10 --log replication-producer.log p localhost:7000
 
 # tier-1 MUX

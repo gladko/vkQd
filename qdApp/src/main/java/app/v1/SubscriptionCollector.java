@@ -1,4 +1,4 @@
-package app;
+package app.v1;
 
 import com.devexperts.qd.QDDistributor;
 import com.devexperts.qd.ng.AbstractRecordSink;
@@ -9,10 +9,10 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 
-public class SubscriptionHolder {
+public class SubscriptionCollector {
     private final Set<String> subscription = ConcurrentHashMap.newKeySet();
 
-    SubscriptionHolder(QDDistributor qdDistributor, Consumer<Set<String>> updateListener) {
+    SubscriptionCollector(QDDistributor qdDistributor, Consumer<Set<String>> updateListener) {
         qdDistributor.getAddedRecordProvider().setRecordListener(provider -> {
             provider.retrieve(new AbstractRecordSink() {
                 @Override

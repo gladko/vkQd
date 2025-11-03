@@ -53,3 +53,8 @@ where bidPrice is `Quote.Bid.Price` field record in DXFeedScheme.
 - custom MessageAdapter in Client and QuoteGenerator
 - replay prepared Quotes in QuoteGenerator
 - replace ticker to stream
+
+
+## Kill ALL
+`kill -9 $(ps -ef | grep com.devexperts.qd.tools.Tools | awk '{print $2}')`
+`kill -9 $(ps -ef | grep java | grep app.v | awk '{print $2}')`

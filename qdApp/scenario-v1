@@ -1,0 +1,12 @@
+##################################################################
+# Volatility calculation v1 scenario
+##################################################################
+
+# quotes producer
+./client -Dlog=v1.quote-producer.log app.v1.QuotesProducer :9000
+
+# Volatility calculator
+./client app.v1.VolatilityCalculator localhost:9000 :7000
+
+# Volatility consumers
+./client -Dlog=v1.greeks-consumer.log app.v1.Client "127.0.0.1:7000"
