@@ -1,5 +1,6 @@
 package app.v1;
 
+import app.SubscriptionCollector;
 import app.Util;
 import com.devexperts.logging.Logging;
 import com.devexperts.qd.QDAgent;
@@ -74,7 +75,8 @@ public class VolatilityCalculator {
                     .build();
             agent = ticker.agentBuilder().build();
 
-            subscription = new SubscriptionCollector(qdDistributor, s -> Util.setSubscription(agent, Util.QUOTE, s));
+            subscription = new SubscriptionCollector(qdDistributor,
+                    s -> Util.setSubscription(agent, Util.QUOTE_RECORD, s.get(QUOTE_RECORD.getName())));
         }
 
         @Override
@@ -88,7 +90,7 @@ public class VolatilityCalculator {
                         @Override
                         public void append(RecordCursor cursor) {
                             double bidPrice = WideDecimal.toDouble(cursor.getLong(BID_PRICE_INDEX));
-                            RecordCursor outCursor = outBuffer.add(GREEK, cursor.getCipher(), cursor.getSymbol());
+                            RecordCursor outCursor = outBuffer.add(GREEK_RECORD, cursor.getCipher(), cursor.getSymbol());
                             double volatility = calcVolatility(bidPrice, VOLATILITY_CALC_COMPLEXITY);
                             outCursor.setLong(VOLATILITY_INDEX, WideDecimal.composeWide(volatility));
                         }
@@ -111,7 +113,7 @@ public class VolatilityCalculator {
     private static void printStat() {
         AtomicInteger totalSubscription = new AtomicInteger();
         workers.forEach(w -> {
-            totalSubscription.addAndGet(w.subscription.size());
+            totalSubscription.addAndGet(w.subscription.getSubscription(GREEK_RECORD.getName()).size());
 //            System.out.println("subscription: " + w.subscription.size());
         });
         log.info("totalSubscription: " + totalSubscription);

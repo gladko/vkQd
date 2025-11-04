@@ -1,5 +1,6 @@
 package app.v1;
 
+import app.SubscriptionCollector;
 import app.Util;
 import com.devexperts.logging.Logging;
 import com.devexperts.qd.QDDistributor;
@@ -48,7 +49,7 @@ public class QuotesProducer {
 
     public QuotesProducer(QDTicker ticker) {
         qdDistributor = ticker.distributorBuilder().build();
-        subscriptionCollector = new SubscriptionCollector(qdDistributor, x -> {});
+        subscriptionCollector = new SubscriptionCollector(qdDistributor);
     }
 
     private void publishQuotes() {
@@ -58,9 +59,9 @@ public class QuotesProducer {
         while (true) {
             try {
                 RecordBuffer buffer = RecordBuffer.getInstance();
-                for (String symbol : subscriptionCollector.getSubscription()) {
+                for (String symbol : subscriptionCollector.getSubscription(QUOTE_RECORD.getName())) {
 //                for (String symbol : symbols) {
-                    RecordCursor cur = buffer.add(QUOTE, CODEC.encode(symbol), symbol);
+                    RecordCursor cur = buffer.add(QUOTE_RECORD, CODEC.encode(symbol), symbol);
                     double price = 100 * random.nextDouble();
                     cur.setLong(BID_PRICE_INDEX, WideDecimal.composeWide(price));
                 }
@@ -79,7 +80,7 @@ public class QuotesProducer {
     }
 
     private void printStat() {
-        log.info("subscriptions: " + subscriptionCollector.size());
+        log.info("subscriptions: " + subscriptionCollector.getSubscription(QUOTE_RECORD.getName()).size());
         log.info("calcIterations: " + calcIterations.getAndSet(0) / STAT_REPORT_PERIOD);
         log.info("RPS: " + recordCounter.getAndSet(0) / STAT_REPORT_PERIOD);
     }

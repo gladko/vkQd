@@ -1,0 +1,8 @@
+##################################################################
+# QD-bug scenario
+##################################################################
+
+./qds multiplexor --stat 10s --log replication-mux-core.log "(:7001)(:7002)" :5000
+./qds multiplexor --stat 10s --log replication-mux-quote.log :8000 :6000
+
+./client app.Test localhost:9000 :7000

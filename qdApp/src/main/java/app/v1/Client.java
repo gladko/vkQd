@@ -55,7 +55,7 @@ public class Client {
             this.id = id;
             qdAgent = ticker.agentBuilder().build();
             qdAgent.setRecordListener(this::onDataAvailable);
-            Util.setSubscription(qdAgent, GREEK, symbols);
+            Util.setSubscription(qdAgent, GREEK_RECORD, symbols);
         }
 
         private void onDataAvailable(RecordProvider recordProvider) {

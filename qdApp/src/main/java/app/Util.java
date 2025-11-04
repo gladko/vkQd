@@ -22,11 +22,11 @@ public class Util {
 
     public static final DefaultScheme scheme = DXFeedScheme.getInstance();
     public static final SymbolCodec CODEC = scheme.getCodec();
-    public static final DefaultRecord QUOTE = Util.scheme.findRecordByName("Quote");
-    public static final int BID_PRICE_INDEX = QUOTE.findFieldByName("Quote.Bid.Price").getIndex();
+    public static final DefaultRecord QUOTE_RECORD = Util.scheme.findRecordByName("Quote");
+    public static final int BID_PRICE_INDEX = QUOTE_RECORD.findFieldByName("Quote.Bid.Price").getIndex();
 
-    public static final DefaultRecord GREEK = Util.scheme.findRecordByName("Greeks");
-    public static final int VOLATILITY_INDEX = GREEK.findFieldByName("Greeks.Volatility").getIndex();
+    public static final DefaultRecord GREEK_RECORD = Util.scheme.findRecordByName("Greeks");
+    public static final int VOLATILITY_INDEX = GREEK_RECORD.findFieldByName("Greeks.Volatility").getIndex();
 
     public static QDTicker createTicker(QDStats stats) {
         return QDFactory.getDefaultFactory()
