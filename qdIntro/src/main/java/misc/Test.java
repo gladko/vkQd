@@ -1,4 +1,4 @@
-package app;
+package misc;
 
 import com.devexperts.qd.*;
 import com.devexperts.qd.kit.AbstractDataIntField;
@@ -22,9 +22,11 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
-
+/**
+ * Test reproduces bug in QD monitoring: QD-1709
+ */
 public class Test {
-    static final boolean MUX_CASE = true;
+    static final boolean MUX_CASE = false;
     static final boolean USE_QDENDPOINT = false;
     static final Collection<String> symbols = IntStream.range(0, 10)
             .mapToObj(Integer::toString)

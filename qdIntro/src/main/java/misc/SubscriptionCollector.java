@@ -1,4 +1,4 @@
-package app;
+package misc;
 
 import com.devexperts.qd.QDDistributor;
 import com.devexperts.qd.ng.AbstractRecordSink;

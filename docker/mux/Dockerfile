@@ -7,7 +7,8 @@ COPY libs /app/libs
 
 ENV CLASSPATH=libs/3.338/qds-tools-3.338.jar:libs/3.338/qds-3.338.jar:libs/3.338/dxlib-3.338.jar:libs/3.338/qds-file-3.338.jar:libs/3.338/mars-3.338.jar:libs/3.338/qds-monitoring-3.338.jar:libs/3.338/dxfeed-api-3.338.jar:libs/config-1.4.3.jar:libs/vk-qds-tools-0.0.1.jar
 
-# Doesn't work
+# Doesn't work.
+# TODO: try: chmod 777 ./qds
 # CMD ./qds multiplexor --stat 10s :7000 :5000
 
 # WORKS

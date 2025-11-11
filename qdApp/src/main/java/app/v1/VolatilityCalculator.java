@@ -1,6 +1,6 @@
 package app.v1;
 
-import app.SubscriptionCollector;
+import misc.SubscriptionCollector;
 import app.Util;
 import com.devexperts.logging.Logging;
 import com.devexperts.qd.QDAgent;

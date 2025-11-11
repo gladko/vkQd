@@ -1,20 +1,4 @@
 dependencies {
-    implementation ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
-    implementation ("com.devexperts.qd:dxlib:${qdsVersion}")
-    implementation ("com.devexperts.qd:mars:${qdsVersion}")
-    implementation ("com.devexperts.qd:qds:${qdsVersion}")
-    implementation ("com.devexperts.qd:qds-file:${qdsVersion}")
-    implementation ("com.devexperts.qd:qds-monitoring:${qdsVersion}")
-    implementation ("com.devexperts.qd:qds-tools:${qdsVersion}")
-
-//    implementation files("../libs/${qdsVersion}/dxfeed-api-${qdsVersion}.jar")
-//    implementation files("../libs/${qdsVersion}/dxlib-${qdsVersion}.jar")
-//    implementation files("../libs/${qdsVersion}/mars-${qdsVersion}.jar")
-//    implementation files("../libs/${qdsVersion}/qds-${qdsVersion}.jar")
-//    implementation files("../libs/${qdsVersion}/qds-file-${qdsVersion}.jar")
-//    implementation files("../libs/${qdsVersion}/qds-monitoring-${qdsVersion}.jar")
-//    implementation files("../libs/${qdsVersion}/qds-tools-${qdsVersion}.jar")
-
     // I believe that junit does not impact on perf test results.
     implementation("org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}")
     implementation "org.junit.jupiter:junit-jupiter-params:${junitJupiterVersion}"

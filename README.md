@@ -14,8 +14,8 @@
     -Dpackaging=jar \
     -DgeneratePom=true
     ```
-3. in QDS/pom.xml change jmxtool version on actual value (that you have found)
-4. run `mvn clean package` in QDS directory
+3. in QDS/pom.xml change `jmxtool.version` on actual value (that you have found)
+4. run `mvn clean package install` in QDS directory
 
 
 # DX QD records
