@@ -31,14 +31,12 @@ subprojects {
     apply plugin: 'idea'
 
     dependencies {
-        implementation ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
-        implementation ("com.devexperts.qd:dxlib:${qdsVersion}")
-        implementation ("com.devexperts.qd:mars:${qdsVersion}")
+//        implementation ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
         implementation ("com.devexperts.qd:qds:${qdsVersion}")
-        implementation ("com.devexperts.qd:qds-file:${qdsVersion}")
         implementation ("com.devexperts.qd:qds-monitoring:${qdsVersion}")
+//        implementation ("com.devexperts.qd:qds-file:${qdsVersion}")
         implementation ("com.devexperts.qd:qds-tools:${qdsVersion}")
-
+        runtimeOnly "com.sun.jdmk:jmxtools:1.2.1"
 //    implementation files("../libs/${qdsVersion}/dxfeed-api-${qdsVersion}.jar")
 //    implementation files("../libs/${qdsVersion}/dxlib-${qdsVersion}.jar")
 //    implementation files("../libs/${qdsVersion}/mars-${qdsVersion}.jar")

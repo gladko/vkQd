@@ -67,8 +67,8 @@ public class VkNetTestConsumerAdapter extends MessageAdapter {
         desc.addReceive(desc.newMessageDescriptor(MessageType.RAW_DATA));
         for (QDContract contract : QDContract.values()) {
             desc.addReceive(desc.newMessageDescriptor(MessageType.forData(contract)));
-            desc.addReceive(desc.newMessageDescriptor(MessageType.forAddSubscription(contract)));
-            desc.addReceive(desc.newMessageDescriptor(MessageType.forRemoveSubscription(contract)));
+            desc.addSend(desc.newMessageDescriptor(MessageType.forAddSubscription(contract)));
+            desc.addSend(desc.newMessageDescriptor(MessageType.forRemoveSubscription(contract)));
         }
     }
 

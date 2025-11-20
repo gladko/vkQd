@@ -16,4 +16,6 @@
 ```
 
 ## Kill ALL
-`kill -9 $(ps -ef | grep com.devexperts.qd.tools.Tools | awk '{print $2}')`
+```bash
+kill -9 $(ps -ef | grep com.devexperts.qd.tools.Tools | awk '{print $2}')
+```

@@ -1,4 +1,4 @@
-package intro;
+package intro.qd;
 
 import com.devexperts.qd.QDDistributor;
 import com.devexperts.qd.QDTicker;
@@ -11,7 +11,7 @@ import com.devexperts.qd.stats.QDStats;
 import com.devexperts.util.WideDecimal;
 
 import java.util.concurrent.ThreadLocalRandom;
-import static intro.SingleProcessDemo.*;
+import static intro.qd.SingleProcessDemo.*;
 
 public class ClientProducer {
     private final QDDistributor qdDistributor;

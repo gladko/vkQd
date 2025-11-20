@@ -1,4 +1,4 @@
-package intro;
+package intro.qd;
 
 import com.devexperts.qd.tools.Multiplexor;
 

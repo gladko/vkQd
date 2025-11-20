@@ -1,4 +1,4 @@
-package intro;
+package intro.qd;
 
 import com.devexperts.qd.QDTicker;
 import com.devexperts.qd.qtp.*;

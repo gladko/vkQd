@@ -1,4 +1,4 @@
-package intro;
+package intro.qd;
 
 import com.devexperts.qd.QDAgent;
 import com.devexperts.qd.QDTicker;
@@ -9,7 +9,7 @@ import com.devexperts.qd.qtp.MessageConnectors;
 import com.devexperts.qd.stats.QDStats;
 import com.devexperts.util.WideDecimal;
 
-import static intro.SingleProcessDemo.*;
+import static intro.qd.SingleProcessDemo.*;
 
 public class ClientConsumer {
     private final QDAgent qdAgent;

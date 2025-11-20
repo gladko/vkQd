@@ -22,6 +22,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
+import static com.devexperts.qd.qtp.MessageConnectors.*;
 /**
  * Test reproduces bug in QD monitoring: QD-1709
  */
@@ -40,6 +41,23 @@ public class Test {
 
 
     public static void main(String[] args) throws InterruptedException {
+        QDTicker qdTicker1 = createTicker(QDStats.VOID);
+        QDTicker qdTicker2 = createTicker(QDStats.VOID);
+        // Opens data provider server socket
+        startMessageConnectors(
+                createMessageConnectors(
+                        applicationConnectionFactory(
+                new AgentAdapter.Factory(qdTicker1, null, null, null)),
+                        ":123"));
+
+        // Opens data consumer client socket
+        startMessageConnectors(
+                createMessageConnectors(
+                        applicationConnectionFactory(
+                new DistributorAdapter.Factory(qdTicker2, null, null, null)),
+                        "localhost:123"));
+
+
         if (MUX_CASE) {
             // start 2 MUXes:
             //   ./qds multiplexor --stat 10s --log replication-mux-core.log "(:7001)(:7002)" :5000

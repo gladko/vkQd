@@ -17,25 +17,34 @@
 3. in QDS/pom.xml change `jmxtool.version` on actual value (that you have found)
 4. run `mvn clean package install` in QDS directory
 
+## QD project main modules
+ - dxlib:   io, logging, JMX, services, util
+ - qd-core
+ - qd-rmi
+ - proto:   base connection abstractions and logic
+ - dxFeed-XXX
+ - qd-sample
+ - benchmarks
 
-# DX QD records
-Quote
-Trade
-TradeETH
-Summary
-Fundamental
-Profile
-Order
-AnalyticOrder
-SpreadOrder
-MarketMaker
-TimeAndSale
-OptionSale
-TradeHistory
-Candle
-Message
-Configuration
-Greeks
-TheoPrice
-Underlying
-Series
+
+## DXFeedScheme records
+ - Quote
+ - Trade
+ - TradeETH
+ - Summary
+ - Fundamental
+ - Profile
+ - Order
+ - AnalyticOrder
+ - SpreadOrder
+ - MarketMaker
+ - TimeAndSale
+ - OptionSale
+ - TradeHistory
+ - Candle
+ - Message
+ - Configuration
+ - Greeks
+ - TheoPrice
+ - Underlying
+ - Series
