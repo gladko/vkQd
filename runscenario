@@ -8,25 +8,24 @@ if [[ ! -f "$SCENARIO_FILE" ]]; then
 fi
 
 # Symbol indicating the line should be joined with the next one
-join_symbol=","
+join_symbol="\\"
 buffer=""
 
 while IFS= read -r line || [[ -n "$line" ]]; do
-    # Skip empty lines and lines starting with #
-    [[ -z "$line" || "$line" == \#* ]] && continue
-
     # Remove any trailing carriage return (CTRL-M)
     line="${line//$'\r'/}"
 
+    # Skip empty lines and lines starting with #
+    [[ -z "$line" || "$line" == \#* ]] && continue
+
     # Check if line ends with the join_symbol
     if [[ "$line" == *"$join_symbol" ]]; then
-      # Remove the join_symbol and append to buffer
+      # Remove the join_symbol and append line to buffer
       buffer+="${line%$join_symbol}"
     else
-      # Append the line and print buffer with the line
+      # Append the line and Start the process in the background
       buffer+="$line"
 #      echo "--> $buffer"
-      # Start the process in the background
       eval "$buffer" &
       echo "Started: '$buffer' with PID $!"
       buffer=""

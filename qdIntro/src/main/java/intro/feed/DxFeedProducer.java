@@ -13,11 +13,13 @@ public class DxFeedProducer {
     public DxFeedProducer(DXPublisher publisher) {
         this.publisher = publisher;
     }
-    public void publishQuotes(String symbol) {
+
+    public void publishQuotes(String symbol) throws InterruptedException {
         while (true) {
             Quote quote = new Quote(symbol);
             quote.setBidPrice(ThreadLocalRandom.current().nextDouble(100));
             publisher.publishEvents(List.of(quote));
+            Thread.sleep(100);
         }
     }
 

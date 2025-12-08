@@ -17,6 +17,11 @@
 3. in QDS/pom.xml change `jmxtool.version` on actual value (that you have found)
 4. run `mvn clean package install` in QDS directory
 
+## Kill all qd tools
+```bash
+kill -9 $(ps -ef | grep com.devexperts.qd.tools.Tools | awk '{print $2}')
+```
+
 ## QD project main modules
  - dxlib:   io, logging, JMX, services, util
  - qd-core

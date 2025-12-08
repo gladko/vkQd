@@ -22,12 +22,18 @@ public class ClientProducer {
 
     public void publishQuotes(String symbol) {
         while (true) {
-            RecordBuffer buffer = RecordBuffer.getInstance();
-            RecordCursor cur = buffer.add(QUOTE, SCHEME.getCodec().encode(symbol), symbol);
-            double price = ThreadLocalRandom.current().nextDouble(100);
-            cur.setLong(QUOTE_BID_PRICE_INDEX, WideDecimal.composeWide(price));
-            qdDistributor.process(buffer);
-            buffer.release();
+            try {
+                RecordBuffer buffer = RecordBuffer.getInstance();
+                RecordCursor cur = buffer.add(QUOTE, SCHEME.getCodec().encode(symbol), symbol);
+                double price = ThreadLocalRandom.current().nextDouble(100);
+                cur.setLong(QUOTE_BID_PRICE_INDEX, WideDecimal.composeWide(price));
+                qdDistributor.process(buffer);
+                buffer.release();
+                Thread.sleep(300);
+            } catch (Exception e) {
+                System.out.println(e);
+                throw new RuntimeException(e);
+            }
         }
     }
 
@@ -40,13 +46,13 @@ public class ClientProducer {
         MessageConnectors.startMessageConnectors(
                 MessageConnectors.createMessageConnectors(
                         MessageConnectors.applicationConnectionFactory(distAdapter),
-                        "127.0.0.1:7000")
-//                        ":8000")
+//                        "127.0.0.1:7000")
+                        ":8000")
+//                        "(:8000[bindAddr=km1.test])(:8000[bindAddr=km2.test])(:8000[bindAddr=localhost])")
         );
 
         ClientProducer producer = new ClientProducer(ticker);
-        new Thread(() -> producer.publishQuotes("IBM")).start();
-
+        producer.publishQuotes("IBM");
         Thread.sleep(Long.MAX_VALUE);
     }
 }
