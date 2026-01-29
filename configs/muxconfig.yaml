@@ -1,0 +1,32 @@
+
+
+# DISTRIBUTOR_ADDRESS="\
+#  (:7011[name=out])\
+#  (:Quote,:Trade@:7012[name=quotes_out])"
+
+# AGENT_ADDRESS="\
+#  (:Summary,:Greeks@delayed[delay=1000]+ssl[protocols=TLSv1.3]+:7015[name=in,subscriptionThreads=3,subscriptionKeepAlive=0])\
+
+
+distributorAddress:
+  - name: out
+#    address: :wrong_commented_value
+    address: ":7011"  # somme comment msg
+#    Another comment msg
+  - name: quotes_out
+    address: ":7012"
+    filter: ":Quote,:Trade"
+
+agentAddress:
+  - name: in
+    address: ":7015"
+    filter: ":Summary,:Greeks"
+    codecs:
+      delayed:
+        delay: 1000
+        bufferLimit: 10000
+      ssl:
+        protocols: TLSv1.3
+    params:
+      subscriptionThreads: 3
+      subscriptionKeepAlive: 0
