@@ -1,5 +1,3 @@
-package misc;
-
 import com.devexperts.qd.*;
 import com.devexperts.qd.kit.AbstractDataIntField;
 import com.devexperts.qd.kit.DefaultRecord;
@@ -13,6 +11,7 @@ import com.devexperts.qd.ng.RecordProvider;
 import com.devexperts.qd.qtp.*;
 import com.devexperts.qd.stats.QDStats;
 import com.dxfeed.api.impl.DXFeedScheme;
+import misc.SubscriptionCollector;
 
 import java.util.Collection;
 import java.util.EnumSet;
@@ -26,7 +25,7 @@ import static com.devexperts.qd.qtp.MessageConnectors.*;
 /**
  * Test reproduces bug in QD monitoring: QD-1709
  */
-public class Test {
+public class Qd_1709_Test {
     static final boolean MUX_CASE = false;
     static final boolean USE_QDENDPOINT = false;
     static final Collection<String> symbols = IntStream.range(0, 10)

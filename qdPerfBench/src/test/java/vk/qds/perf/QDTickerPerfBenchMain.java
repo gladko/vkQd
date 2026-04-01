@@ -29,7 +29,7 @@ public class QDTickerPerfBenchMain {
 	// Set of cases suitable for simulation of incoming data insertion
 	static SeriesParams REPEATER_INCOMING_DATA = new SeriesParams(
 			new QDTickerPerfBench.TestParameters()
-					.setInstrListCount(30_000)					// 1.5M instruments
+					.setSymbolsCount(30_000)					// 1.5M instruments
 					.setAgentSeparateThreadReceiving(true)
 					.setAgentSeparateSubscription(true),		// each worker has a dedicated subscription
 			new int[] {1, 10, 20, 30, 100}, 					// worker QDAgents
@@ -41,7 +41,7 @@ public class QDTickerPerfBenchMain {
 	// Set of cases suitable for simulation outgoing data insertion
 	static SeriesParams REPEATER_OUTGOING_DATA = new SeriesParams(
 			new QDTickerPerfBench.TestParameters()
-					.setInstrListCount(30_000)
+					.setSymbolsCount(30_000)
 					.setAgentSeparateThreadReceiving(true)
 					.setAgentSeparateSubscription(true),			// each connection has a dedicated subscription
 			new int[] {1, 3, 5, 10, 15},							// QDAgents of outgoing data connections + component internal consumers
@@ -55,7 +55,7 @@ public class QDTickerPerfBenchMain {
 
 	static SeriesParams TEST = new SeriesParams(
 			new QDTickerPerfBench.TestParameters()
-					.setInstrListCount(30_000)
+					.setSymbolsCount(30_000)
 					.setAgentSeparateThreadReceiving(true)
 					.setAgentSeparateSubscription(true),			// each connection has a dedicated subscription
 			new int[] {1, 3, 5, 10, 15},							// QDAgents of outgoing data connections + component internal consumers
@@ -85,10 +85,10 @@ public class QDTickerPerfBenchMain {
 	}
 
 	private static void storeResultsToRepository() throws IOException {
-		List<ResultPair> totalRepo = SymbolUtil.loadObject(RESULT_STORAGE_DIR, RESULTS_REPOSITORY_KEY);
+		List<ResultPair> totalRepo = Storage.loadObject(RESULT_STORAGE_DIR, RESULTS_REPOSITORY_KEY);
 		totalRepo = totalRepo == null ? new ArrayList<>() : totalRepo;
 		totalRepo.addAll(RESULTS_REPOSITORY);
-		SymbolUtil.storeObject(RESULT_STORAGE_DIR, RESULTS_REPOSITORY_KEY, totalRepo);
+		Storage.storeObject(RESULT_STORAGE_DIR, RESULTS_REPOSITORY_KEY, totalRepo);
 	}
 
 
@@ -115,7 +115,7 @@ public class QDTickerPerfBenchMain {
 					System.out.println(e);
 				}
 			}
-			SymbolUtil.storeObject(RESULT_STORAGE_DIR, testName + ":" + currentSeries.getKey(), currentSeries);
+			Storage.storeObject(RESULT_STORAGE_DIR, testName + ":" + currentSeries.getKey(), currentSeries);
 		}
 
 		writeResultsToSVGImage(testName, resultDataSet);

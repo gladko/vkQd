@@ -10,6 +10,7 @@ import com.devexperts.qd.ng.RecordCursor;
 import com.devexperts.qd.ng.RecordListener;
 import com.devexperts.qd.ng.RecordProvider;
 import com.devexperts.qd.stats.QDStats;
+import com.devexperts.qd.tools.QdProtectedAPIUsageHelper;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -71,7 +72,7 @@ public class QDTickerPerfBench {
 
 	void init(TestParameters parameters) {
 		this.parameters = parameters;
-		this.symbols = SymbolUtil.createRealSymbols(parameters.instrListCount);
+		this.symbols = QdProtectedAPIUsageHelper.generateSymbols(parameters.symbolsCount);
 		ticker = QDUtil.createTicker(QDStats.VOID);
 		publishCounter = new AtomicLong();
 		receivedCounter = new AtomicLong();
@@ -103,18 +104,18 @@ public class QDTickerPerfBench {
 
 	private static Stream<TestParameters> symbolsCountTestParams() {
 		return Stream.of(
-				new TestParameters().setInstrListCount(100).setAgentsCount(1),
-				new TestParameters().setInstrListCount(1_000).setAgentsCount(1),
-				new TestParameters().setInstrListCount(10_000).setAgentsCount(1),
-				new TestParameters().setInstrListCount(100).setAgentsCount(5),
-				new TestParameters().setInstrListCount(1_000).setAgentsCount(5),
-				new TestParameters().setInstrListCount(10_000).setAgentsCount(5));
+				new TestParameters().setSymbolsCount(100).setAgentsCount(1),
+				new TestParameters().setSymbolsCount(1_000).setAgentsCount(1),
+				new TestParameters().setSymbolsCount(10_000).setAgentsCount(1),
+				new TestParameters().setSymbolsCount(100).setAgentsCount(5),
+				new TestParameters().setSymbolsCount(1_000).setAgentsCount(5),
+				new TestParameters().setSymbolsCount(10_000).setAgentsCount(5));
 	}
 
 	@ParameterizedTest
 	@MethodSource("symbolsCountTestParams")
 	public void symbolsCountTest(TestParameters params) throws InterruptedException {
-		System.out.println("\n- instrListCount=" + params.instrListCount + ", agentsCount=" + params.agentsCount);
+		System.out.println("\n- symbolsCount=" + params.symbolsCount + ", agentsCount=" + params.agentsCount);
 		init(params);
 		testRunImpl(timeLimiter(10));
 	}
@@ -132,7 +133,7 @@ public class QDTickerPerfBench {
 	public void agentCountTest_50kSymbols(int agentCount) throws InterruptedException {
 		System.out.println("\n- agentsCount=" + agentCount);
 		init(new TestParameters()
-				.setInstrListCount(1000)
+				.setSymbolsCount(50_000)
 				.setAgentsCount(agentCount));
 		testRunImpl(timeLimiter(10));
 	}
@@ -142,7 +143,7 @@ public class QDTickerPerfBench {
 	public void agentCountTest_5kSymbols(int agentCount) throws InterruptedException {
 		System.out.println("\n- agentsCount=" + agentCount);
 		init(new TestParameters()
-				.setInstrListCount(100)
+				.setSymbolsCount(5_000)
 				.setAgentsCount(agentCount));
 		testRunImpl(timeLimiter(10));
 	}
@@ -378,6 +379,9 @@ public class QDTickerPerfBench {
 		}
 
 		public ResultItem avg(int count) {
+			if (count == 0) {
+				return new ResultItem(0, 0);
+			}
 			return new ResultItem(published / count, received / count);
 		}
 
@@ -398,9 +402,9 @@ public class QDTickerPerfBench {
 		}
 	}
 
-	// TODO: make fields final and use lombok for builder generation
+
 	static class TestParameters implements Serializable {
-		int instrListCount = 1000;
+		int symbolsCount = 100_000;
 		int packageSize = 10;
 		int distributorsCount = 1;
 		int agentsCount = 1;
@@ -411,7 +415,7 @@ public class QDTickerPerfBench {
 
 		public TestParameters copy() {
 			return new TestParameters()
-					.setInstrListCount(instrListCount)
+					.setSymbolsCount(symbolsCount)
 					.setPackageSize(packageSize)
 					.setDistributorsCount(distributorsCount)
 					.setAgentsCount(agentsCount)
@@ -419,8 +423,8 @@ public class QDTickerPerfBench {
 					.setAgentSeparateSubscription(agentSeparateSubscription);
 		}
 
-		public TestParameters setInstrListCount(int instrListCount) {
-			this.instrListCount = instrListCount;
+		public TestParameters setSymbolsCount(int symbolsCount) {
+			this.symbolsCount = symbolsCount;
 			return this;
 		}
 
@@ -452,7 +456,7 @@ public class QDTickerPerfBench {
 		@Override
 		public String toString() {
 			return "TestParameters{" +
-					"instrListCount=" + instrListCount +
+					"symbolsCount=" + symbolsCount +
 					", packageSize=" + packageSize +
 					", distributorsCount=" + distributorsCount +
 					", agentsCount=" + agentsCount +

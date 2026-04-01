@@ -9,7 +9,7 @@
  * http://mozilla.org/MPL/2.0/.
  * !__
  */
-package com.devexperts.qd.tools;
+package misc;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -20,6 +20,7 @@ import java.util.function.Function;
 
 //TODO remove me after migration on new QD
 // copy-paste of QD class
+/*
 final class SymbolGenerator {
     private static final long GENERATOR_SEED = 1416948710541751L;
     static final int DEFAULT_TOTAL = 100000;
@@ -67,3 +68,5 @@ final class SymbolGenerator {
     private SymbolGenerator() {
     }
 }
+
+ */
