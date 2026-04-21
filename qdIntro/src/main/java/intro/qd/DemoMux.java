@@ -11,7 +11,7 @@ import java.util.List;
 public class DemoMux {
 
     public static void main(String[] args) throws InterruptedException {
-        QDTicker ticker = SingleProcessDemo.createTicker(QDStats.VOID);
+        QDTicker ticker = Util.createTicker(QDStats.VOID);
 
         List<MessageConnector> connectors = new ArrayList<>();
         // server socket for pushing data into MUX. Client-producer must connect to this socket.
