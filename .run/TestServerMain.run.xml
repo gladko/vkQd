@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="TestServerMain" type="Application" factoryName="Application" folderName="rmiMux" singleton="false" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="vk.vkPets.TestServerMain" />
+    <module name="vkQd.qdRmi.main" />
+    <option name="PROGRAM_PARAMETERS" value="localhost:8001" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="vk.vkPets.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

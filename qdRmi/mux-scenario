@@ -1,10 +1,23 @@
 #
-# MUXes
-# :8000 for servers
-# :9000 for clients
+# Expected:
+#   1. custom routing responses come from single server
+#   2. default routing responses come from different servers
+# Example:
+# client:rmi@ayLzL,       custom routing response from: rmi@SYCHA,        default routing response from: rmi@SYCHA
+# client:rmi@DGUpx,       custom routing response from: rmi@SYCHA,        default routing response from: rmi@gOfcS
+# client:rmi@tqraZ,       custom routing response from: rmi@SYCHA,        default routing response from: rmi@gOfcS
+# client:rmi@VnWWK,       custom routing response from: rmi@SYCHA,        default routing response from: rmi@SYCHA
+# client:rmi@lTOIE,       custom routing response from: rmi@SYCHA,        default routing response from: rmi@gOfcS
+# client:rmi@wbOdV,       custom routing response from: rmi@SYCHA,        default routing response from: rmi@gOfcS
+# client:rmi@fgufs,       custom routing response from: rmi@SYCHA,        default routing response from: rmi@SYCHA
 #
-./qds multiplexor --log mux1.log :8001 :9001 -R --stat 10s
-./qds multiplexor --log mux2.log :8002 :9002 -R --stat 10s
+#
+# MUXes
+# :800X for servers
+# :900X for clients. [advertise=none] means balancing on MUX
+#
+./qds multiplexor --log mux1.log :8001 :9001[advertise=none] -R --stat 10s
+./qds multiplexor --log mux2.log :8002 :9002[advertise=none] -R --stat 10s
 
 
 #
@@ -15,8 +28,10 @@
 
 
 #
-# client connects to a one MUX, the second is fallback
+# client connects to a one arbitrary MUX, the second is fallback
 #
+./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
+./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
 ./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
 ./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
 ./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
