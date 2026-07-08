@@ -2,9 +2,6 @@ package vk.vkPets;
 
 import com.devexperts.connector.proto.EndpointId;
 import com.devexperts.rmi.RMIServiceInterface;
-import com.devexperts.rmi.task.RMITask;
-
-import java.util.Map;
 
 @RMIServiceInterface
 public interface BarService {
@@ -19,7 +16,7 @@ public interface BarService {
 
         @Override
         public String bar(String x) {
-            return "bar-" + endpointId;
+            return endpointId.toString();
         }
     }
 }

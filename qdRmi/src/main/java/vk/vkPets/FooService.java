@@ -21,9 +21,9 @@ public interface FooService {
         public String foo(String x) {
             RMITask<?> rmiTask = RMITask.current();
             Map<String, String> properties = rmiTask.getRequestMessage().getProperties();
-            System.out.println(properties);
+//            System.out.println("endpointId: " + endpointId + ", properties: " + properties + ", params: " + x);
 
-            return "foo-" + endpointId;
+            return endpointId.toString();
         }
     }
 }

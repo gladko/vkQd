@@ -3,4 +3,5 @@ include 'qdApp'
 include 'qdPerfBench'
 include 'tools'
 include 'qdRmi'
+include 'qdRmiMux'
 

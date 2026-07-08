@@ -27,17 +27,23 @@ public class TestClientMain {
         try (RMIEndpoint endpoint = RMIEndpoint.createEndpoint(RMIEndpoint.Side.CLIENT)) {
             endpoint.connect(address);
 
-            EndpointId endpointId = ((RMIEndpointImpl) endpoint).getEndpointId();
+            EndpointId clientId = ((RMIEndpointImpl) endpoint).getEndpointId();
 
             FooService fooService = endpoint.getClient().getProxy(FooService.class);
             BarService barService = endpoint.getClient().getProxy(BarService.class);
 
             while (true) {
 //                String fooResult = fooService.foo("1");
-                String fooResult = callFoo(endpoint, Map.of("x-param", "aaa"));
+//                int i = ThreadLocalRandom.current().nextInt(10);
+                int i = 1;
+                Map<String, String> requestProps = Map.of("x-header", Integer.toString(i));
+                String fooResult = callFoo(endpoint, requestProps, new Object[]{"test-" + i});
+
                 String barResult = barService.bar("1");
 
-                System.out.println(endpointId + ": " + fooResult + " / " + barResult);
+                System.out.println("client:" + clientId
+                        + ",\tfoo response from: " + fooResult
+                        + ",\tbar response from:" + barResult);
 
                 TimeUnit.SECONDS.sleep(1);
             }
@@ -45,8 +51,8 @@ public class TestClientMain {
     }
 
 
-    private static String callFoo(RMIEndpoint endpoint, Map<String, String> requestProps) throws RMIException {
-        RMIRequestMessage<String> message = new RMIRequestMessage<>(RMIRequestType.DEFAULT, FOO, "test")
+    private static String callFoo(RMIEndpoint endpoint, Map<String, String> requestProps, Object[] params) throws RMIException {
+        RMIRequestMessage<String> message = new RMIRequestMessage<>(RMIRequestType.DEFAULT, FOO, params)
                         .changeProperties(requestProps);
         RMIRequest<String> request = endpoint.getClient().getPort("").createRequest(message);
         request.send();
