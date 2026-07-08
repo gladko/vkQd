@@ -1,0 +1,24 @@
+#
+# MUXes
+# :8000 for servers
+# :9000 for clients
+#
+./qds multiplexor --log mux1.log :8001 :9001 -R --stat 10s
+./qds multiplexor --log mux2.log :8002 :9002 -R --stat 10s
+
+
+#
+# server connects to both MUXes
+#
+./client vk.vkPets.TestServerMain "(localhost:8001)(localhost:8002)"
+./client vk.vkPets.TestServerMain "(localhost:8001)(localhost:8002)"
+
+
+#
+# client connects to a one MUX, the second is fallback
+#
+./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
+./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
+./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
+./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"
+./client vk.vkPets.TestClientMain "localhost:9001,localhost:9002"

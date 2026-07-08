@@ -20,6 +20,7 @@
 ## Kill all qd tools
 ```bash
 kill -9 $(ps -ef | grep com.devexperts.qd.tools.Tools | awk '{print $2}')
+kill -9 $(ps -ef | grep vk.vkPets | awk '{print $2}')
 ```
 
 ## QD project main modules

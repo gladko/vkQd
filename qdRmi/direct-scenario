@@ -1,0 +1,8 @@
+
+
+./client -Dlog=client1.log vk.vkPets.TestClientMain "localhost:8888"
+./client -Dlog=client2.log vk.vkPets.TestClientMain "localhost:8888"
+./client -Dlog=client3.log vk.vkPets.TestClientMain "localhost:8888"
+./client -Dlog=client4.log vk.vkPets.TestClientMain "localhost:8888"
+
+./client -Dlog=server.log vk.vkPets.TestServerMain ":8888"
