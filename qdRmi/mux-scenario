@@ -1,4 +1,7 @@
 #
+# RMI MUX scenario:  RMI calls go through MUX where the calls are routed to target server instance using some
+# load balancing logic.
+#
 # Expected:
 #   1. custom routing responses come from single server
 #   2. default routing responses come from different servers
@@ -14,10 +17,11 @@
 #
 # MUXes
 # :800X for servers
-# :900X for clients. [advertise=none] means balancing on MUX
+# :900X for clients. [advertise=none] means balancing on MUX. Otherwise, balancing (resolving target server instance)
+#    will be executed on client.
 #
-./qds multiplexor --log mux1.log :8001 :9001[advertise=none] -R --stat 10s
-./qds multiplexor --log mux2.log :8002 :9002[advertise=none] -R --stat 10s
+./qds multiplexor --log logs/mux1.log :8001 :9001[advertise=none] -R --stat 10s
+./qds multiplexor --log logs/mux2.log :8002 :9002[advertise=none] -R --stat 10s
 
 
 #

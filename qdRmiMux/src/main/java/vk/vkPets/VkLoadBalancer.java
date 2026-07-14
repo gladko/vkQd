@@ -8,23 +8,6 @@ import com.devexperts.rmi.task.ConsistentLoadBalancer;
 public class VkLoadBalancer extends ConsistentLoadBalancer {
     private static final Logging log = Logging.getLogging(VkLoadBalancer.class);
 
-//    private final RMILoadBalancer delegate = new ConsistentLoadBalancer();
-//
-//    @Override
-//    public Promise<BalanceResult> balance(RMIRequestMessage<?> request) {
-//        return ...;
-//    }
-//
-//    @Override
-//    public void updateServiceDescriptor(RMIServiceDescriptor descriptor) {
-//        delegate.updateServiceDescriptor(descriptor);
-//    }
-//
-//    @Override
-//    public void close() {
-//        delegate.close();
-//    }
-
     @Override
     public int getRequestKey(RMIRequestMessage<?> request) {
 //        log.info("routing " + request);

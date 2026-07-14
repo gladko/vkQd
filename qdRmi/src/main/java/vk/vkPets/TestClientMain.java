@@ -18,7 +18,6 @@ public class TestClientMain {
     private static EndpointId clientId;
     private static RMIClientPort clientPort;
 
-    private static FooService fooService;
     private static BarService barService;
 
 
@@ -34,7 +33,6 @@ public class TestClientMain {
             clientId = ((RMIEndpointImpl) endpoint).getEndpointId();
             clientPort = endpoint.getClient().getPort("testSubject");
 
-            fooService = endpoint.getClient().getProxy(FooService.class);
             barService = endpoint.getClient().getProxy(BarService.class);
 
             while (true) {
@@ -50,12 +48,12 @@ public class TestClientMain {
     }
 
     private static void doIteration() throws Exception {
-        //                int xValue = ThreadLocalRandom.current().nextInt(10);
         int xValue = 1; // may be accountId, userId  or smth else
         Map<String, String> requestProps = Map.of("x-header", Integer.toString(xValue));
         String fooResult = callFoo(clientPort, requestProps, new Object[]{"test"});
 
         String barResult = barService.bar("test");
+//      TODO dxFeed: wanted API
 //      String barResult2 = callWithProps(() -> fooService.foo("test"), requestProps);
 
         System.out.println("client:" + clientId
@@ -73,7 +71,7 @@ public class TestClientMain {
         return request.getBlocking();
     }
 
-    // todo: create dynamic proxy to use FooService through its java interface
+    // todo workaround: create dynamic proxy to use FooService through its java interface
     private static <V> V callWithProps(Callable<V> callable, Map<String, String> requestProps) throws Exception {
         // todo: put requestProps to some ThreadLocal storage and use it for RMIRequestMessage building
         return callable.call();

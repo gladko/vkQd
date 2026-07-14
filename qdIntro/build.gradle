@@ -1,5 +1,0 @@
-task deployQd(type: Copy) {
-    doFirst({ mkdir "../libs/${qdsVersion}" })
-    into "../libs/${qdsVersion}"
-    from configurations.runtimeClasspath
-}

@@ -21,13 +21,18 @@ subprojects {
     apply plugin: 'java-library'
     apply plugin: 'idea'
 
+    configurations {
+        qds
+        compileClasspath.extendsFrom(qds)
+    }
+
     dependencies {
-//        implementation ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
-        implementation ("com.devexperts.qd:qds:${qdsVersion}")
-        implementation ("com.devexperts.qd:qds-monitoring:${qdsVersion}")
-//        implementation ("com.devexperts.qd:qds-file:${qdsVersion}")
-        implementation ("com.devexperts.qd:qds-tools:${qdsVersion}")
-        runtimeOnly "com.sun.jdmk:jmxtools:1.2.1"
+//        qds ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
+        qds ("com.devexperts.qd:qds:${qdsVersion}")
+        qds ("com.devexperts.qd:qds-monitoring:${qdsVersion}")
+//        qds ("com.devexperts.qd:qds-file:${qdsVersion}")
+        qds ("com.devexperts.qd:qds-tools:${qdsVersion}")
+
 //    implementation files("../libs/${qdsVersion}/dxfeed-api-${qdsVersion}.jar")
 //    implementation files("../libs/${qdsVersion}/dxlib-${qdsVersion}.jar")
 //    implementation files("../libs/${qdsVersion}/mars-${qdsVersion}.jar")
@@ -36,7 +41,22 @@ subprojects {
 //    implementation files("../libs/${qdsVersion}/qds-monitoring-${qdsVersion}.jar")
 //    implementation files("../libs/${qdsVersion}/qds-tools-${qdsVersion}.jar")
 
+        runtimeOnly "com.sun.jdmk:jmxtools:1.2.1"
         compileOnly 'org.jetbrains:annotations:19.0.0'
         testCompileOnly 'org.jetbrains:annotations:19.0.0'
+    }
+
+    tasks.register("deployQd", Copy) {
+        doFirst {
+            mkdir "../libs/${qdsVersion}"
+        }
+
+        into "../libs/${qdsVersion}"
+        from configurations.qds
+
+        doLast {
+            def gitignoreFile = file("../libs/${qdsVersion}/.gitignore")
+            gitignoreFile.text = "*"
+        }
     }
 }
