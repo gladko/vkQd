@@ -6,7 +6,33 @@ buildscript {
     }
 }
 
+configurations {
+    qds
+}
+
+dependencies {
+    qds "com.devexperts.qd:qds:${qdsVersion}"
+    qds "com.devexperts.qd:qds-monitoring:${qdsVersion}"
+    qds "com.devexperts.qd:qds-tools:${qdsVersion}"
+}
+
+tasks.register("deployQd", Copy) {
+    def targetDir = file("./libs/${qdsVersion}")
+
+    from(configurations.qds)
+    into(targetDir)
+
+    doLast {
+        file("${targetDir}/.gitignore").text = "*"
+    }
+}
+
+
 allprojects {
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+
     group = 'vk.vkPets'
     version = '0.0.1'
 
@@ -14,24 +40,13 @@ allprojects {
         mavenLocal()
         mavenCentral()
     }
-}
-
-subprojects {
-    apply plugin: 'java'
-    apply plugin: 'java-library'
-    apply plugin: 'idea'
-
-    configurations {
-        qds
-        compileClasspath.extendsFrom(qds)
-    }
 
     dependencies {
-//        qds ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
-        qds ("com.devexperts.qd:qds:${qdsVersion}")
-        qds ("com.devexperts.qd:qds-monitoring:${qdsVersion}")
-//        qds ("com.devexperts.qd:qds-file:${qdsVersion}")
-        qds ("com.devexperts.qd:qds-tools:${qdsVersion}")
+        api "com.devexperts.qd:qds:${qdsVersion}"
+        api "com.devexperts.qd:qds-monitoring:${qdsVersion}"
+        api "com.devexperts.qd:qds-tools:${qdsVersion}"
+//        api ("com.devexperts.qd:qds-file:${qdsVersion}")
+//        api ("com.devexperts.qd:dxfeed-api:${qdsVersion}")
 
 //    implementation files("../libs/${qdsVersion}/dxfeed-api-${qdsVersion}.jar")
 //    implementation files("../libs/${qdsVersion}/dxlib-${qdsVersion}.jar")
@@ -44,19 +59,5 @@ subprojects {
         runtimeOnly "com.sun.jdmk:jmxtools:1.2.1"
         compileOnly 'org.jetbrains:annotations:19.0.0'
         testCompileOnly 'org.jetbrains:annotations:19.0.0'
-    }
-
-    tasks.register("deployQd", Copy) {
-        doFirst {
-            mkdir "../libs/${qdsVersion}"
-        }
-
-        into "../libs/${qdsVersion}"
-        from configurations.qds
-
-        doLast {
-            def gitignoreFile = file("../libs/${qdsVersion}/.gitignore")
-            gitignoreFile.text = "*"
-        }
     }
 }

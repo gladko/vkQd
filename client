@@ -1,6 +1,6 @@
 #!/bin/bash
 
 source ./qds-path.sh
-CLASSPATH="$QDS_PATH;qdApp/build/libs/qdApp-0.0.1.jar;qdRmi/build/libs/qdRmi-0.0.1.jar"
+CLASSPATH="${QDS_PATH}${PATH_SEP}qdApp/build/libs/qdApp-0.0.1.jar${PATH_SEP}qdRmi/build/libs/qdRmi-0.0.1.jar"
 
 java -cp $CLASSPATH $@

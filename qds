@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source ./qds-path.sh
-CLASSPATH="$QDS_PATH;tools/build/libs/vk-qds-tools-0.0.1.jar;qdRmiMux/build/libs/qdRmiMux-0.0.1.jar"
+CLASSPATH="${QDS_PATH}${PATH_SEP}tools/build/libs/vk-qds-tools-0.0.1.jar${PATH_SEP}qdRmiMux/build/libs/qdRmiMux-0.0.1.jar"
 
 # echo "using QDS_PATH: $QDS_PATH"
 java -cp $CLASSPATH com.devexperts.qd.tools.Tools $@
