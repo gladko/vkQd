@@ -32,25 +32,33 @@ kill -9 $(ps -ef | grep vk.vkPets | awk '{print $2}')
  - qd-sample
  - benchmarks
 
+## docker playground
+### build qds image
+```bash
+# 1. prepare libs. Make sure Dockerfile specifies desired QDS version 
+./gradlew deployQd
 
-## DXFeedScheme records
- - Quote
- - Trade
- - TradeETH
- - Summary
- - Fundamental
- - Profile
- - Order
- - AnalyticOrder
- - SpreadOrder
- - MarketMaker
- - TimeAndSale
- - OptionSale
- - TradeHistory
- - Candle
- - Message
- - Configuration
- - Greeks
- - TheoPrice
- - Underlying
- - Series
+# 2. optional: open this directory in WSL. In my case, it's.
+cd /mnt/c/Users/vkozak/workspace/projects/vkPets/vkQd
+
+# 3. build qds image
+docker build -t qds .
+```
+
+### run
+```bash
+docker network create vkqd-test-network
+
+docker run -d --name mux-root --network vkqd-test-network -p 37010:7010 -p 37015:7015 qds multiplexor --stat 10 :7010 :7015
+docker run -d --name mux1 --network vkqd-test-network -p 37115:7015 qds multiplexor --stat 10 mux-root:7015 :7015
+docker run -d --name mux2 --network vkqd-test-network -p 37215:7015 qds multiplexor --stat 10 mux-root:7015 :7015
+
+# verify: subscribe on connect to mux1 and post into mux-root. Expected data flows post -> mux-root -> mux1 -> connect
+./qds connect localhost:37115 Quote IBM
+./qds post localhost:7010
+ -> Quote IBM 20:00:11 2 5 6 22:00:11 7
+
+docker run -d --name producer --network vkqd-test-network qds nettest -S 1000000 --stat 10 p mux-root:7010
+docker run -d --name consumer1 --network vkqd-test-network qds nettest -C 3 -S 1000000 --stat 10 c mux1:7015
+docker run -d --name consumer2 --network vkqd-test-network qds nettest -C 3 -S 1000000 --stat 10 c mux2:7015
+```
